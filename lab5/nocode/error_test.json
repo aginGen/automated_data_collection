@@ -1,0 +1,26 @@
+{
+  "workflow_id": "gDcZ951gS989oaCU",
+  "execution_id": "11",
+  "status": "success",
+  "duration_s": 19.3597,
+  "requests": 3,
+  "response_bytes": 183,
+  "wire_body_bytes": 183,
+  "peak_memory_mib": 293.957,
+  "node_runs": {
+    "Manual start": 1,
+    "Fetch quote pages": 1,
+    "Check quote pages": 1,
+    "Log HTTP error": 2,
+    "Error CSV": 2,
+    "Save error log": 2
+  },
+  "node_items": {
+    "Manual start": 1,
+    "Fetch quote pages": 1,
+    "Check quote pages": 1,
+    "Log HTTP error": 2,
+    "Error CSV": 2,
+    "Save error log": 2
+  }
+}

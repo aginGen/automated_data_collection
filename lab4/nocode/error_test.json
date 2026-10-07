@@ -1,0 +1,24 @@
+{
+  "workflow_id": "PPEdmzhg06f3dIoE",
+  "execution_id": "9",
+  "status": "success",
+  "duration_s": 3.2455,
+  "requests": 3,
+  "response_bytes": 183,
+  "wire_body_bytes": 183,
+  "peak_memory_mib": 329.957,
+  "node_runs": {
+    "Manual start": 1,
+    "Render page with JS": 1,
+    "Log HTTP error": 1,
+    "Error CSV": 1,
+    "Save error log": 1
+  },
+  "node_items": {
+    "Manual start": 1,
+    "Render page with JS": 0,
+    "Log HTTP error": 1,
+    "Error CSV": 1,
+    "Save error log": 1
+  }
+}

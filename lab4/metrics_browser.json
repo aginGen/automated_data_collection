@@ -1,0 +1,134 @@
+[
+  {
+    "source": "scrapingcourse",
+    "rows": 147,
+    "duration_s": 44.0643,
+    "iterations": 15,
+    "failures": 0,
+    "block_media": false,
+    "requests": 31,
+    "response_bytes": 1062610,
+    "blocked_media": 0,
+    "blocked_robots": 187,
+    "metric_errors": [],
+    "xhr": [
+      {
+        "url": "https://www.scrapingcourse.com/cdn-cgi/rum?",
+        "status": 204
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=0",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=10",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=20",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=30",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=40",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=50",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=60",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=70",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=80",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=90",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=100",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=110",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=120",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=130",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=140",
+        "status": 200
+      },
+      {
+        "url": "https://www.scrapingcourse.com/ajax/products?offset=150",
+        "status": 204
+      }
+    ],
+    "extraction_benchmark": {
+      "sample_elements": 50,
+      "per_element_s": 0.236862,
+      "bulk_sample_s": 0.00604,
+      "speedup": 39.21
+    },
+    "peak_memory_mib": 505.602
+  },
+  {
+    "source": "scrapingsandbox",
+    "rows": 200,
+    "duration_s": 13.0243,
+    "iterations": 9,
+    "failures": 0,
+    "block_media": false,
+    "requests": 215,
+    "response_bytes": 468866,
+    "blocked_media": 0,
+    "blocked_robots": 0,
+    "metric_errors": [],
+    "xhr": [
+      {
+        "url": "https://scrapingsandbox.com/cdn-cgi/rum?",
+        "status": 204
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=5d3j6",
+        "status": 200
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=1sngw",
+        "status": 200
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=1nsuv",
+        "status": 200
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=1l2t7",
+        "status": 200
+      }
+    ],
+    "extraction_benchmark": {
+      "sample_elements": 50,
+      "per_element_s": 0.386508,
+      "bulk_sample_s": 0.008193,
+      "speedup": 47.18
+    },
+    "peak_memory_mib": 622.875
+  }
+]

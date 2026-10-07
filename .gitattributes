@@ -1,1 +1,3 @@
 lab2/octoparse_raw.csv -text -diff
+
+lab4/artifacts/static_*.html -text -diff

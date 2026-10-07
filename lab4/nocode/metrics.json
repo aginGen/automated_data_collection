@@ -1,0 +1,74 @@
+{
+  "workflow_id": "8lFSRoOFch4OuJGw",
+  "execution_id": "13",
+  "status": "success",
+  "duration_s": 5.8953,
+  "requests": 1,
+  "response_bytes": 220479,
+  "wire_body_bytes": 220479,
+  "peak_memory_mib": 312.848,
+  "node_runs": {
+    "Manual start": 1,
+    "Render page with JS": 1,
+    "Check rendered HTML": 1,
+    "Extract product cards": 1,
+    "Split cards": 1,
+    "Extract fields": 1,
+    "Transform fields": 1,
+    "Remove duplicates": 1,
+    "Limit result": 1,
+    "CSV": 1,
+    "Save CSV": 1
+  },
+  "node_items": {
+    "Manual start": 1,
+    "Render page with JS": 1,
+    "Check rendered HTML": 0,
+    "Extract product cards": 1,
+    "Split cards": 40,
+    "Extract fields": 40,
+    "Transform fields": 40,
+    "Remove duplicates": 40,
+    "Limit result": 30,
+    "CSV": 1,
+    "Save CSV": 1
+  },
+  "rendering_requests": 1,
+  "renderer_metrics": {
+    "source": "scrapingsandbox",
+    "rows": 30,
+    "duration_s": 4.6136,
+    "iterations": 1,
+    "failures": 0,
+    "block_media": true,
+    "requests": 22,
+    "response_bytes": 456924,
+    "blocked_media": 42,
+    "blocked_robots": 0,
+    "metric_errors": [],
+    "xhr": [
+      {
+        "url": "https://scrapingsandbox.com/cdn-cgi/rum?",
+        "status": 204
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=5d3j6",
+        "status": 200
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=1sngw",
+        "status": 200
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=1nsuv",
+        "status": 200
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=1l2t7",
+        "status": 200
+      }
+    ],
+    "peak_memory_mib": 491.613
+  },
+  "rows": 30
+}

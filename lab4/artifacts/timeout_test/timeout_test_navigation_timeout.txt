@@ -1,0 +1,3 @@
+Locator.wait_for: Timeout 500ms exceeded.
+Call log:
+  - waiting for locator(".missing-card").first to be visible

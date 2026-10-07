@@ -1,0 +1,420 @@
+{
+  "name": "Lab 3 Open Library REST API",
+  "nodes": [
+    {
+      "id": "9d9abe84-8374-4488-bfe5-c8cfbe83e5ff",
+      "name": "Manual start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -500,
+        100
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "30d458b8-331c-4ab9-84b0-045f729dbc27",
+      "name": "Daily schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -500,
+        320
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "39a5278d-c801-4d72-a155-d5f0d59be388",
+      "name": "Fetch books",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -200,
+        100
+      ],
+      "parameters": {
+        "url": "https://openlibrary.org/search.json",
+        "options": {
+          "timeout": 25000,
+          "pagination": {
+            "pagination": {
+              "paginationMode": "updateAParameterInEachRequest",
+              "parameters": {
+                "parameters": [
+                  {
+                    "type": "qs",
+                    "name": "offset",
+                    "value": "={{ $pageCount * 10 }}"
+                  }
+                ]
+              },
+              "paginationCompleteWhen": "other",
+              "completeExpression": "={{ $response.body.docs.length === 0 }}",
+              "limitPagesFetched": true,
+              "maxRequests": 3,
+              "requestInterval": 1100
+            }
+          }
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "university-data-collection-n8n/1.0"
+            }
+          ]
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "q",
+              "value": "python programming"
+            },
+            {
+              "name": "limit",
+              "value": "10"
+            },
+            {
+              "name": "offset",
+              "value": "0"
+            },
+            {
+              "name": "sort",
+              "value": "key"
+            },
+            {
+              "name": "fields",
+              "value": "key,title,first_publish_year,edition_count"
+            }
+          ]
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 1100,
+      "onError": "continueErrorOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "id": "e172b8ac-8c60-4efc-a523-dd7c9aa70bdc",
+      "name": "Split records",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        50,
+        100
+      ],
+      "parameters": {
+        "fieldToSplitOut": "docs",
+        "include": "noOtherFields",
+        "options": {}
+      }
+    },
+    {
+      "id": "fe250490-a1fe-4df1-b7b7-c1247210e2e5",
+      "name": "Transform fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        300,
+        100
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "4bbbcaa2-1483-4fa0-b751-3db17e5b71f3",
+              "name": "work_id",
+              "value": "={{ $json.key }}",
+              "type": "string"
+            },
+            {
+              "id": "4fd4b568-bd70-4499-bd0e-555dfec5e041",
+              "name": "title",
+              "value": "={{ $json.title.trim().replace(/\\s+/g, ' ') }}",
+              "type": "string"
+            },
+            {
+              "id": "75eb8ab9-d87f-481e-9698-b312d4239646",
+              "name": "first_publish_year",
+              "value": "={{ $json.first_publish_year == null ? null : Number($json.first_publish_year) }}",
+              "type": "number"
+            },
+            {
+              "id": "9c60677e-4760-46e5-ad30-5826b44e0c15",
+              "name": "edition_count",
+              "value": "={{ Number($json.edition_count) }}",
+              "type": "number"
+            },
+            {
+              "id": "bfcd0113-bd32-478f-b9a4-e28d4c7a4bde",
+              "name": "url",
+              "value": "={{ 'https://openlibrary.org' + $json.key }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "4080e018-fe1f-4f4e-863a-30ec188c57ee",
+      "name": "CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        550,
+        100
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "nocode_result.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "be71aeae-d53e-44c9-9ea8-80f20ea1c1fa",
+      "name": "Save CSV",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        770,
+        100
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "nocode/nocode_result.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "75f1905d-ca0a-42a5-bdb5-bcefa77f71ca",
+      "name": "Log HTTP error",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        500,
+        550
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "813fa2e8-4738-485e-a3bc-68f742a71048",
+              "name": "message",
+              "value": "={{ $json.error || ('Missing expected response fields: ' + JSON.stringify($json).slice(0,200)) }}",
+              "type": "string"
+            },
+            {
+              "id": "6219e34e-1d0a-4ad5-97e5-b7437dc2ec43",
+              "name": "stage",
+              "value": "HTTP request",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "e79baf5e-7ffd-4231-8a00-90a6e72cac8a",
+      "name": "Error CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        750,
+        550
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "error_log.csv"
+        }
+      }
+    },
+    {
+      "id": "acd24dcd-bfe5-4846-90dd-1b49684e9d64",
+      "name": "Save error log",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1000,
+        550
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "nocode/error_log.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "4019e4be-804d-4ee7-9a96-e574fe6b212a",
+      "name": "Check books response",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -75,
+        100
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ !Array.isArray($json.docs) }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Manual start": {
+      "main": [
+        [
+          {
+            "node": "Fetch books",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Daily schedule": {
+      "main": [
+        [
+          {
+            "node": "Fetch books",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch books": {
+      "main": [
+        [
+          {
+            "node": "Check books response",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split records": {
+      "main": [
+        [
+          {
+            "node": "Transform fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform fields": {
+      "main": [
+        [
+          {
+            "node": "CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "CSV": {
+      "main": [
+        [
+          {
+            "node": "Save CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log HTTP error": {
+      "main": [
+        [
+          {
+            "node": "Error CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error CSV": {
+      "main": [
+        [
+          {
+            "node": "Save error log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check books response": {
+      "main": [
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Split records",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Yekaterinburg",
+    "saveDataSuccessExecution": "all",
+    "saveDataErrorExecution": "all"
+  }
+}

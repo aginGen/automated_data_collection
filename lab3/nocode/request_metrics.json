@@ -1,0 +1,23 @@
+[
+  {
+    "host": "openlibrary.org",
+    "path": "/search.json?q=python%20programming&limit=10&offset=0&sort=key&fields=key%2Ctitle%2Cfirst_publish_year%2Cedition_count",
+    "status": 200,
+    "wire_body_bytes": 495,
+    "payload_bytes": 1303
+  },
+  {
+    "host": "openlibrary.org",
+    "path": "/search.json?q=python%20programming&limit=10&offset=10&sort=key&fields=key%2Ctitle%2Cfirst_publish_year%2Cedition_count",
+    "status": 200,
+    "wire_body_bytes": 448,
+    "payload_bytes": 1227
+  },
+  {
+    "host": "openlibrary.org",
+    "path": "/search.json?q=python%20programming&limit=10&offset=20&sort=key&fields=key%2Ctitle%2Cfirst_publish_year%2Cedition_count",
+    "status": 200,
+    "wire_body_bytes": 542,
+    "payload_bytes": 1351
+  }
+]

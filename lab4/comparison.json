@@ -1,0 +1,11 @@
+{
+  "browser_rows": 347,
+  "light_rows": 347,
+  "mismatches": 0,
+  "fields": [
+    "key",
+    "title",
+    "price",
+    "url"
+  ]
+}

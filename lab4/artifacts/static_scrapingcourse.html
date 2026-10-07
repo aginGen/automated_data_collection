@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infinite Scroll Challenge to Learn Web Scraping - ScrapingCourse.com</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZGD14H87G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NZGD14H87G');
+    </script>
+    <link rel="preload" as="style" href="https://www.scrapingcourse.com/build/assets/app-DxJb4DfE.css" /><link rel="modulepreload" href="https://www.scrapingcourse.com/build/assets/app-D2jpX1vH.js" /><link rel="stylesheet" href="https://www.scrapingcourse.com/build/assets/app-DxJb4DfE.css" /><script type="module" src="https://www.scrapingcourse.com/build/assets/app-D2jpX1vH.js"></script>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1174.0" data-gr-ext-installed="" itemscope itemtype="http://schema.org/WebPage">
+    <header itemscope itemtype="http://schema.org/WPHeader">
+        <!-- Navigation bar -->
+        <nav id="main-navigation" class="navbar" data-testid="main-navigation" data-nav="main">
+            <div class="container" id="nav-container" data-testid="nav-container" data-nav="container">
+                <a href="/" class="logo-link flex items-center pt-4 pb-12" id="logo-link" data-testid="logo-link" data-nav="logo-link">
+                    <img width="12" height="18" src="https://www.scrapingcourse.com/assets/images/logo.svg" class="logo-image inline-block" data-testid="logo-image" data-nav="logo-image">
+                    <span class="brand-name font-bold text-lg leading-6 ml-2 highlight" data-testid="brand-name-1" data-nav="brand-name-1">Scraping</span>
+                    <span class="brand-name text-lg leading-6 ml-1 highlight" data-testid="brand-name-2" data-nav="brand-name-2">Course</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-content py-4" id="main-content" data-testid="main-content" data-content="main">
+        <div class="container" id="content-container" data-testid="content-container" data-content="container">
+            <div id="product-catalog" class="catalog product-catalog" data-testid="product-catalog">
+
+    <h1 id="page-title" class="page-title text-4xl font-bold mb-2 text-left gradient-text highlight gradient-text leading-10" data-testid="page-title" data-content="title">
+    Scraping Infinite Scrolling Pages
+</h1>
+
+<div class="challenge-info bg-[#EDF1FD] rounded-md p-4 mb-8 mt-5" id="challenge-info" data-testid="challenge-info" data-content="challenge-info">
+    <div class="info-header flex items-center gap-2 pb-2" id="info-header" data-testid="info-header" data-content="info-header">
+        <img width="25" height="15" src="https://www.scrapingcourse.com/assets/images/challenge.svg" data-testid="challenge-image" data-content="challenge-image">
+        <h2 class="challenge-title text-xl font-bold" id="challenge-title" data-testid="challenge-title" data-content="challenge-title">Challenge</h2>
+    </div>
+    <p class="challenge-description flex" id="challenge-description" data-testid="challenge-description" data-content="challenge-description">
+        Scroll down to load more products
+    </p>
+</div>
+
+<div id="product-grid" class="product-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-8" data-testid="product-grid">
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/chaz-kangeroo-hoodie">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh01-gray_main.jpg"
+                alt="Chaz Kangeroo Hoodie" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Chaz Kangeroo Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$52</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/teton-pullover-hoodie">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh02-black_main.jpg"
+                alt="Teton Pullover Hoodie" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Teton Pullover Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$70</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/bruno-compete-hoodie">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh03-black_main.jpg"
+                alt="Bruno Compete Hoodie" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Bruno Compete Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$63</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/frankie--sweatshirt">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh04-green_main.jpg"
+                alt="Frankie  Sweatshirt" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Frankie  Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$60</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/hollister-backyard-sweatshirt">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh05-white_main.jpg"
+                alt="Hollister Backyard Sweatshirt" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Hollister Backyard Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$52</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/stark-fundamental-hoodie">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh06-blue_main.jpg"
+                alt="Stark Fundamental Hoodie" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Stark Fundamental Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/hero-hoodie">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh07-gray_main.jpg"
+                alt="Hero Hoodie" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Hero Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$54</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/oslo-trek-hoodie">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh08-brown_main.jpg"
+                alt="Oslo Trek Hoodie" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Oslo Trek Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/abominable-hoodie">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh09-blue_main.jpg"
+                alt="Abominable Hoodie" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Abominable Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/mach-street-sweatshirt">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh10-blue_main.jpg"
+                alt="Mach Street Sweatshirt" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Mach Street Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$62</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/grayson-crewneck-sweatshirt">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh11-white_main.jpg"
+                alt="Grayson Crewneck Sweatshirt" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Grayson Crewneck Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$64</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ajax-full-zip-sweatshirt">
+                        <img
+                class="product-image rounded-lg"
+                width="200"
+                height="240"
+                decoding="async"
+                fetchpriority="high"
+                src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh12-green_main.jpg"
+                alt="Ajax Full-Zip Sweatshirt" class="mb-2 rounded-md w-full object-cover"
+            >
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ajax Full-Zip Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+    <div id="sentinel" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+            </div>
+</div>
+
+<div id="end-of-page">
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var observer = new IntersectionObserver(function(entries) {
+            // If intersectionRatio is 0, the sentinel is out of view and we don't need to do anything
+            if (entries[0].intersectionRatio <= 0) return;
+
+            loadMoreItems();
+        });
+
+        observer.observe(document.getElementById('end-of-page'));
+
+        // Start observing the sentinel
+        observer.observe(document.getElementById('sentinel'));
+
+        function loadMoreItems() {
+            document.getElementById('sentinel').style.display = 'grid';
+            var container = document.getElementById('product-grid');
+            var offset = container.getAttribute('data-offset') || "0";
+
+            fetch(`/ajax/products?offset=${offset}`)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('sentinel').style.display = 'none';
+                    container.insertAdjacentHTML('beforeend', html);
+                    container.setAttribute('data-offset', parseInt(offset) + 10);
+
+                    // Stop observer if there's no data to load from backend
+                    if (!html.trim() || html.length < 0) {
+                        observer.unobserve(document.getElementById('sentinel'));
+                        observer.unobserve(document.getElementById('end-of-page'));
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading more items:', error);
+                    document.getElementById('sentinel').style.display = 'none';
+                });
+        }
+    });
+
+</script>
+    
+        </div>
+    </main>
+
+    <!-- Bootstrap and jQuery libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

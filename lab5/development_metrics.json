@@ -1,0 +1,5 @@
+{
+  "python_minutes": 0.4,
+  "n8n_minutes": 17.644,
+  "method": "Elapsed file creation to first successful artifact; includes run validation, excludes earlier planning and shared environment installation."
+}

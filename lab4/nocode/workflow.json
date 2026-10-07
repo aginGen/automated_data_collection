@@ -1,0 +1,533 @@
+{
+  "name": "Lab 4 Dynamic products via rendering API",
+  "nodes": [
+    {
+      "id": "6dc012b7-b21d-4ca0-b959-aeeaa0577436",
+      "name": "Manual start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -500,
+        100
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "7803f73b-8b2c-4c69-803d-3bc792183e80",
+      "name": "Daily schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -500,
+        320
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "15bd8bd7-4023-48b0-b47f-c3b0dc3a49ee",
+      "name": "Render page with JS",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -200,
+        100
+      ],
+      "parameters": {
+        "url": "http://127.0.0.1:8789/render",
+        "options": {
+          "timeout": 90000
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "university-data-collection-n8n/1.0"
+            }
+          ]
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "source",
+              "value": "scrapingsandbox"
+            },
+            {
+              "name": "limit",
+              "value": "30"
+            }
+          ]
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 1100,
+      "onError": "continueErrorOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "id": "3df11570-b6e8-4cf5-bbf0-851424d4fb54",
+      "name": "Extract product cards",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        50,
+        100
+      ],
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "sourceData": "json",
+        "dataPropertyName": "html",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "cards",
+              "cssSelector": "a.product-card",
+              "returnValue": "html",
+              "returnArray": true
+            },
+            {
+              "key": "urls",
+              "cssSelector": "a.product-card",
+              "returnValue": "attribute",
+              "returnArray": true,
+              "attribute": "href"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "4d0885b0-6e54-4903-818e-647db7093c50",
+      "name": "Split cards",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        300,
+        100
+      ],
+      "parameters": {
+        "fieldToSplitOut": "cards,urls",
+        "include": "noOtherFields",
+        "options": {}
+      }
+    },
+    {
+      "id": "3012cfa4-6721-436a-8050-491292a698e3",
+      "name": "Extract fields",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        550,
+        100
+      ],
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "sourceData": "json",
+        "dataPropertyName": "cards",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "title",
+              "cssSelector": ".product-name",
+              "returnValue": "text",
+              "returnArray": false
+            },
+            {
+              "key": "price_text",
+              "cssSelector": ".price",
+              "returnValue": "text",
+              "returnArray": false
+            },
+            {
+              "key": "sku",
+              "cssSelector": ".sku",
+              "returnValue": "text",
+              "returnArray": false
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "4b0d3def-eeef-4e7d-9cb7-6ff908fa7450",
+      "name": "Transform fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        800,
+        100
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "795a7067-c80f-4e35-af04-d8ce0fcdb1b0",
+              "name": "key",
+              "value": "={{ 'scrapingsandbox:' + $json.sku }}",
+              "type": "string"
+            },
+            {
+              "id": "59b88fc2-696e-4810-a481-cdf83f1b586c",
+              "name": "title",
+              "value": "={{ $json.title.trim() }}",
+              "type": "string"
+            },
+            {
+              "id": "53c76e28-5b48-4304-b47f-96c32e46b39e",
+              "name": "price",
+              "value": "={{ Number($json.price_text.replace(/[^0-9.]/g, '')) }}",
+              "type": "number"
+            },
+            {
+              "id": "f35cd1ae-b81e-4672-be34-35c3bf3f417e",
+              "name": "currency",
+              "value": "USD",
+              "type": "string"
+            },
+            {
+              "id": "d6d55723-0844-42b5-8c5a-80b8a73de6bd",
+              "name": "url",
+              "value": "={{ 'https://scrapingsandbox.com' + $('Split cards').item.json.urls }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "75c4a7af-5ad2-4e42-920b-86778a2ad951",
+      "name": "Remove duplicates",
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 2,
+      "position": [
+        1050,
+        100
+      ],
+      "parameters": {
+        "operation": "removeDuplicateInputItems",
+        "compare": "selectedFields",
+        "fieldsToCompare": "key",
+        "options": {}
+      }
+    },
+    {
+      "id": "84f39f00-2afe-471e-9726-caeb3f41bd37",
+      "name": "Limit result",
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        1300,
+        100
+      ],
+      "parameters": {
+        "maxItems": 30
+      }
+    },
+    {
+      "id": "47d76f48-f134-44bd-af9d-39b289528278",
+      "name": "CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1550,
+        100
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "nocode_result.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "5db1ac7b-2939-4ba7-ac9c-24cc076ecb9e",
+      "name": "Save CSV",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1770,
+        100
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "nocode/nocode_result.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "4cb6c44d-8109-4753-9f5b-76d37f1a5cb5",
+      "name": "Log HTTP error",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        500,
+        550
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "46e2bf8b-ef15-4796-b63c-0d59c04a43e6",
+              "name": "message",
+              "value": "={{ $json.error || ('Missing expected response fields: ' + JSON.stringify($json).slice(0,200)) }}",
+              "type": "string"
+            },
+            {
+              "id": "f6a41453-eac9-4a1a-aef6-282cb85f8e1e",
+              "name": "stage",
+              "value": "HTTP request",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "11110fda-5d37-4b9e-b46f-ed31cf6a8780",
+      "name": "Error CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        750,
+        550
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "error_log.csv"
+        }
+      }
+    },
+    {
+      "id": "c475b0ba-6476-47da-aa22-fbd109f5dfed",
+      "name": "Save error log",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1000,
+        550
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "nocode/error_log.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "13797dee-95a2-4a3e-9c83-f47900077a15",
+      "name": "Check rendered HTML",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -75,
+        100
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ typeof $json.html !== 'string' || !$json.html.includes('product-card') }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Manual start": {
+      "main": [
+        [
+          {
+            "node": "Render page with JS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Daily schedule": {
+      "main": [
+        [
+          {
+            "node": "Render page with JS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Render page with JS": {
+      "main": [
+        [
+          {
+            "node": "Check rendered HTML",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract product cards": {
+      "main": [
+        [
+          {
+            "node": "Split cards",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split cards": {
+      "main": [
+        [
+          {
+            "node": "Extract fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract fields": {
+      "main": [
+        [
+          {
+            "node": "Transform fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform fields": {
+      "main": [
+        [
+          {
+            "node": "Remove duplicates",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remove duplicates": {
+      "main": [
+        [
+          {
+            "node": "Limit result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit result": {
+      "main": [
+        [
+          {
+            "node": "CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "CSV": {
+      "main": [
+        [
+          {
+            "node": "Save CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log HTTP error": {
+      "main": [
+        [
+          {
+            "node": "Error CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error CSV": {
+      "main": [
+        [
+          {
+            "node": "Save error log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check rendered HTML": {
+      "main": [
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract product cards",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Yekaterinburg",
+    "saveDataSuccessExecution": "all",
+    "saveDataErrorExecution": "all"
+  }
+}

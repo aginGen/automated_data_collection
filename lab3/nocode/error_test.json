@@ -1,0 +1,26 @@
+{
+  "workflow_id": "HGzhrLCwPOTuA7vQ",
+  "execution_id": "8",
+  "status": "success",
+  "duration_s": 3.1963,
+  "requests": 3,
+  "response_bytes": 183,
+  "wire_body_bytes": 183,
+  "peak_memory_mib": 335.227,
+  "node_runs": {
+    "Manual start": 1,
+    "Fetch books": 1,
+    "Check books response": 1,
+    "Log HTTP error": 1,
+    "Error CSV": 1,
+    "Save error log": 1
+  },
+  "node_items": {
+    "Manual start": 1,
+    "Fetch books": 1,
+    "Check books response": 1,
+    "Log HTTP error": 1,
+    "Error CSV": 1,
+    "Save error log": 1
+  }
+}

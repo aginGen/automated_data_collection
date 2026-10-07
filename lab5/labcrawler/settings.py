@@ -1,0 +1,38 @@
+BOT_NAME = "labcrawler"
+SPIDER_MODULES = ["labcrawler.spiders"]
+NEWSPIDER_MODULE = "labcrawler.spiders"
+
+USER_AGENT = "university-data-collection-lab5/1.0"
+ROBOTSTXT_OBEY = True
+
+CONCURRENT_REQUESTS = 2
+CONCURRENT_REQUESTS_PER_DOMAIN = 2
+DOWNLOAD_DELAY = 0.25
+RANDOMIZE_DOWNLOAD_DELAY = True
+
+AUTOTHROTTLE_ENABLED = True
+AUTOTHROTTLE_START_DELAY = 0.3
+AUTOTHROTTLE_MAX_DELAY = 3
+AUTOTHROTTLE_TARGET_CONCURRENCY = 1
+
+DOWNLOAD_TIMEOUT = 25
+RETRY_TIMES = 2
+RETRY_HTTP_CODES = [429, 500, 502, 503, 504]
+DEPTH_LIMIT = 25
+CLOSESPIDER_ITEMCOUNT = 300
+CLOSESPIDER_PAGECOUNT = 500
+CLOSESPIDER_TIMEOUT = 900
+
+HTTPCACHE_ENABLED = True
+HTTPCACHE_EXPIRATION_SECS = 86400
+HTTPCACHE_DIR = "httpcache"
+HTTPCACHE_IGNORE_HTTP_CODES = [429, 500, 502, 503, 504]
+LOG_LEVEL = "INFO"
+FEED_EXPORT_ENCODING = "utf-8"
+ITEM_PIPELINES = {
+    "labcrawler.pipelines.ValidationPipeline": 100,
+    "labcrawler.pipelines.CleaningPipeline": 200,
+    "labcrawler.pipelines.DeduplicationPipeline": 300,
+    "labcrawler.pipelines.SQLitePipeline": 400,
+}
+DOWNLOADER_MIDDLEWARES = {"labcrawler.middlewares.NetworkMetricsMiddleware": 850}
