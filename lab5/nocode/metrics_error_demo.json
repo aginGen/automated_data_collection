@@ -1,0 +1,21 @@
+{
+  "workflow_id": "ULcWuP4v95EQFJBC",
+  "execution_id": "21",
+  "status": "error",
+  "duration_s": 2.661,
+  "requests": 1,
+  "peak_memory_mib": 356.539,
+  "node_runs": {
+    "Manual start": 1,
+    "Fetch quote pages": 1,
+    "Check quote pages": 1,
+    "Log HTTP error": 1,
+    "Error CSV": 1,
+    "Save error log": 1,
+    "Stop and notify": 1
+  },
+  "wall_s": 3.8664,
+  "measurement": "n8n startedAt/stoppedAt",
+  "physical_requests": 3,
+  "requests_count_kind": "HTTP node executions; pagination and redirects may add physical requests"
+}

@@ -1,0 +1,29 @@
+{
+  "rows": 347,
+  "duplicates": 0,
+  "empty_required_share": 0.0,
+  "smoke_ok": true,
+  "nonpositive_prices": 0,
+  "completeness_percent": {
+    "key": 100.0,
+    "source": 100.0,
+    "sku": 100.0,
+    "title": 100.0,
+    "price": 100.0,
+    "currency": 100.0,
+    "url": 100.0,
+    "category": 57.64,
+    "image_url": 100.0
+  },
+  "types": {
+    "key": "object",
+    "source": "object",
+    "sku": "object",
+    "title": "object",
+    "price": "float64",
+    "currency": "object",
+    "url": "object",
+    "category": "object",
+    "image_url": "object"
+  }
+}

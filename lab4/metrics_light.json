@@ -1,0 +1,52 @@
+[
+  {
+    "source": "scrapingcourse",
+    "rows": 147,
+    "duration_s": 13.7921,
+    "requests": 17,
+    "response_bytes": 167576,
+    "peak_memory_mib": 97.93
+  },
+  {
+    "source": "scrapingsandbox",
+    "rows": 200,
+    "duration_s": 13.1058,
+    "iterations": 9,
+    "failures": 0,
+    "block_media": true,
+    "requests": 22,
+    "response_bytes": 579686,
+    "blocked_media": 201,
+    "blocked_robots": 0,
+    "metric_errors": [],
+    "xhr": [
+      {
+        "url": "https://scrapingsandbox.com/cdn-cgi/rum?",
+        "status": 204
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=5d3j6",
+        "status": 200
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=1l2t7",
+        "status": 200
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=1nsuv",
+        "status": 200
+      },
+      {
+        "url": "https://scrapingsandbox.com/?_rsc=1sngw",
+        "status": 200
+      }
+    ],
+    "extraction_benchmark": {
+      "sample_elements": 50,
+      "per_element_s": 0.369557,
+      "bulk_sample_s": 0.007827,
+      "speedup": 47.22
+    },
+    "peak_memory_mib": 585.699
+  }
+]

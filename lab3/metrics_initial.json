@@ -1,0 +1,20 @@
+{
+  "run": "initial",
+  "query": "python programming",
+  "fetched": 360,
+  "new_records": 360,
+  "total_rows": 360,
+  "search_pages": 4,
+  "language_rows": 225,
+  "merge_rows_before": 360,
+  "merge_rows_after": 360,
+  "duration_s": 348.8125,
+  "requests": 310,
+  "response_bytes": 180549,
+  "retries": 0,
+  "status_counts": {
+    "200": 310
+  },
+  "rate_headers": {},
+  "peak_memory_mib": 72.863
+}

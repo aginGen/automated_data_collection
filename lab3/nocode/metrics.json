@@ -1,0 +1,29 @@
+{
+  "workflow_id": "BXxtmoiN6ErJTcjs",
+  "execution_id": "12",
+  "status": "success",
+  "duration_s": 13.3383,
+  "requests": 3,
+  "response_bytes": 3881,
+  "wire_body_bytes": 1485,
+  "peak_memory_mib": 297.039,
+  "node_runs": {
+    "Manual start": 1,
+    "Fetch books": 1,
+    "Check books response": 1,
+    "Split records": 1,
+    "Transform fields": 1,
+    "CSV": 1,
+    "Save CSV": 1
+  },
+  "node_items": {
+    "Manual start": 1,
+    "Fetch books": 3,
+    "Check books response": 0,
+    "Split records": 30,
+    "Transform fields": 30,
+    "CSV": 1,
+    "Save CSV": 1
+  },
+  "rows": 30
+}

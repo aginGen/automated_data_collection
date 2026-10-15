@@ -1,0 +1,30 @@
+{
+  "workflow_id": "Wsy4IC1K0iLbG38f",
+  "execution_id": "22",
+  "status": "success",
+  "duration_s": 39.307,
+  "requests": 31,
+  "peak_memory_mib": 388.711,
+  "node_runs": {
+    "Manual start": 1,
+    "Fetch quote pages": 1,
+    "Check quote pages": 1,
+    "Extract quote cards": 1,
+    "Split cards": 1,
+    "Extract quote fields": 1,
+    "Prepare quote": 1,
+    "Loop over quotes": 31,
+    "Fetch author": 30,
+    "Check author page": 30,
+    "Extract author fields": 30,
+    "Normalize fields": 30,
+    "Polite wait": 30,
+    "Remove duplicates": 1,
+    "CSV": 1,
+    "Save CSV": 1
+  },
+  "rows": 30,
+  "wall_s": 40.4794,
+  "measurement": "n8n startedAt/stoppedAt",
+  "requests_count_kind": "HTTP node executions; pagination and redirects may add physical requests"
+}

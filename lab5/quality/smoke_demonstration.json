@@ -1,0 +1,24 @@
+[
+  {
+    "case": "normal",
+    "synthetic": false,
+    "warnings": [],
+    "exit_code": 0
+  },
+  {
+    "case": "volume_drop",
+    "synthetic": true,
+    "warnings": [
+      "Количество записей упало: 404 -> 300"
+    ],
+    "exit_code": 1
+  },
+  {
+    "case": "missing_fields",
+    "synthetic": true,
+    "warnings": [
+      "Пустые обязательные поля: 6.00%"
+    ],
+    "exit_code": 1
+  }
+]

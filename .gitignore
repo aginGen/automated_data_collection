@@ -9,3 +9,8 @@ venv/
 .env
 .env.*
 !.env.example
+
+.lab-runtime/
+/.lab-work/
+node_modules/
+**/.scrapy/

@@ -1,0 +1,22 @@
+{
+  "scrapingcourse": {
+    "url": "https://www.scrapingcourse.com/infinite-scrolling",
+    "http_status": 200,
+    "html_bytes": 18998,
+    "static_records": 12,
+    "target_text_found": true,
+    "no_js_before_scroll": 12,
+    "no_js_after_scroll": 12,
+    "embedded_complete_json": false
+  },
+  "scrapingsandbox": {
+    "url": "https://scrapingsandbox.com/infinite-scroll",
+    "http_status": 200,
+    "html_bytes": 122371,
+    "static_records": 20,
+    "target_text_found": true,
+    "no_js_before_scroll": 20,
+    "no_js_after_scroll": 20,
+    "embedded_complete_json": false
+  }
+}

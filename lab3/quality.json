@@ -1,0 +1,49 @@
+{
+  "rows": 360,
+  "unique_keys": 360,
+  "duplicates": 0,
+  "completeness_percent": {
+    "work_id": 100.0,
+    "title": 100.0,
+    "first_publish_year": 100.0,
+    "edition_count": 100.0,
+    "author_key": 99.17,
+    "author_name_catalogue": 99.17,
+    "author_count": 100.0,
+    "language_count": 100.0,
+    "languages": 60.0,
+    "collected_at": 100.0,
+    "url": 100.0,
+    "author_name_verified": 99.17,
+    "author_revision": 99.17,
+    "author_modified_at": 99.17,
+    "author_url": 99.17,
+    "author_matched": 100.0
+  },
+  "required_empty_rows": 0,
+  "business_rule_violations": {
+    "edition_count_positive": 0,
+    "publication_year_not_future": 0,
+    "valid_work_key": 0,
+    "nonempty_title": 0
+  },
+  "author_matches": 357,
+  "types": {
+    "work_id": "object",
+    "title": "object",
+    "first_publish_year": "Int64",
+    "edition_count": "Int64",
+    "author_key": "object",
+    "author_name_catalogue": "object",
+    "author_count": "int64",
+    "language_count": "int64",
+    "languages": "object",
+    "collected_at": "datetime64[ns, UTC]",
+    "url": "object",
+    "author_name_verified": "object",
+    "author_revision": "Int64",
+    "author_modified_at": "datetime64[ns, UTC]",
+    "author_url": "object",
+    "author_matched": "bool"
+  }
+}

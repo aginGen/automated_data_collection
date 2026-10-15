@@ -1,0 +1,37 @@
+{
+  "scrapingcourse": {
+    "first_card_attrs": {
+      "class": [
+        "product-item",
+        "flex",
+        "flex-col",
+        "items-center",
+        "rounded-lg"
+      ]
+    },
+    "card_name_text": "Chaz Kangeroo Hoodie",
+    "target_location": "DOM: .product-item .product-name",
+    "script_tags": 8,
+    "json_script_types": []
+  },
+  "scrapingsandbox": {
+    "first_card_attrs": {
+      "class": [
+        "product-card",
+        "group",
+        "block",
+        "rounded-xl",
+        "border",
+        "border-border",
+        "bg-card",
+        "p-3",
+        "card-hover"
+      ],
+      "href": "/product/1"
+    },
+    "card_name_text": "Lightweight Probiotics",
+    "target_location": "DOM: a.product-card .product-name",
+    "script_tags": 26,
+    "json_script_types": []
+  }
+}

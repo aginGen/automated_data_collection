@@ -1,0 +1,3674 @@
+{
+  "OL100618A": {
+    "key": "/authors/OL100618A",
+    "name": "Sean McGrath",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-08 16:24:07.101641"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL10893603A": {
+    "key": "/authors/OL10893603A",
+    "name": "Python Programming",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2022-11-19T22:57:13.830481"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1191776A": {
+    "key": "/authors/OL1191776A",
+    "name": "David H. Ahl",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-01-22T06:21:52.258502"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1194067A": {
+    "key": "/authors/OL1194067A",
+    "name": "John S. Conery",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-08-18 20:47:52.922147"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1287940A": {
+    "key": "/authors/OL1287940A",
+    "name": "Ivan Vasilev",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-13 06:30:31.825863"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL13209737A": {
+    "key": "/authors/OL13209737A",
+    "name": "James R. Payne",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2023-09-19T19:17:01.880655"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1395117A": {
+    "key": "/authors/OL1395117A",
+    "name": "Jonathan S. Harbour",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-07 16:07:04.578133"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1400993A": {
+    "key": "/authors/OL1400993A",
+    "name": "Shawn P. Wallace",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-07 16:51:23.699969"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1408320A": {
+    "key": "/authors/OL1408320A",
+    "name": "Rick Copeland",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-07 17:25:15.351319"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1427519A": {
+    "key": "/authors/OL1427519A",
+    "name": "Tony Gaddis",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2018-04-26T01:17:42.902020"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1435503A": {
+    "key": "/authors/OL1435503A",
+    "name": "Mark Guzdial",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-07 20:44:25.734482"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1438224A": {
+    "key": "/authors/OL1438224A",
+    "name": "Mark Pilgrim",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-05 19:32:06.00762"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1518186A": {
+    "key": "/authors/OL1518186A",
+    "name": "John M. Zelle",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-03 22:52:59.056957"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1521655A": {
+    "key": "/authors/OL1521655A",
+    "name": "Alex Martelli",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-03 23:16:48.992097"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1559191A": {
+    "key": "/authors/OL1559191A",
+    "name": "Michel Anders",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-04 02:15:00.160607"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1565244A": {
+    "key": "/authors/OL1565244A",
+    "name": "Gabriel Garrido",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-01 02:07:42.186818"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1618143A": {
+    "key": "/authors/OL1618143A",
+    "name": "Niall O'Higgins",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-01 08:42:30.708734"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1661767A": {
+    "key": "/authors/OL1661767A",
+    "name": "American Film Institute",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2017-06-10T20:46:50.294899"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1687515A": {
+    "key": "/authors/OL1687515A",
+    "name": "Alan Harris",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-08-31 04:44:52.714791"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1724571A": {
+    "key": "/authors/OL1724571A",
+    "name": "M. Lutz",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-08-29 04:28:46.615804"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1820519A": {
+    "key": "/authors/OL1820519A",
+    "name": "Graham Chapman",
+    "revision": 9,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-08-27T03:22:56.397666"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL1965911A": {
+    "key": "/authors/OL1965911A",
+    "name": "Preston Miller",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-08-22 02:50:58.959728"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL203473A": {
+    "key": "/authors/OL203473A",
+    "name": "Harvey M. Deitel",
+    "revision": 8,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-08-14T16:34:04.327615"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL20350A": {
+    "key": "/authors/OL20350A",
+    "name": "Hans Petter Langtangen",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-11 08:24:11.737778"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL217557A": {
+    "key": "/authors/OL217557A",
+    "name": "Mark G. Sobell",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-07 01:27:47.80315"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL22555A": {
+    "key": "/authors/OL22555A",
+    "name": "Eric Idle",
+    "revision": 11,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-08-27T03:23:22.579690"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL230918A": {
+    "key": "/authors/OL230918A",
+    "name": "G. Michael Schneider",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2020-03-13T02:07:15.577907"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2312475A": {
+    "key": "/authors/OL2312475A",
+    "name": "Alexander Gray",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2012-06-06T22:20:43.513361"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2386307A": {
+    "key": "/authors/OL2386307A",
+    "name": "Jacob Zimmerman",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-07 22:59:22.318334"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL246610A": {
+    "key": "/authors/OL246610A",
+    "name": "William Wright",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-26 16:55:33.158769"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL24872A": {
+    "key": "/authors/OL24872A",
+    "name": "Kenneth Alfred Lambert",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2026-01-16T02:55:28.667006"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL25278A": {
+    "key": "/authors/OL25278A",
+    "name": "Cay S. Horstmann",
+    "revision": 7,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-11-18T16:14:43.332734"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2648839A": {
+    "key": "/authors/OL2648839A",
+    "name": "Paul J. Deitel",
+    "revision": 7,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2026-07-11T11:05:47.070633"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2653132A": {
+    "key": "/authors/OL2653132A",
+    "name": "David Paper",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 13:35:46.87638"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2670067A": {
+    "key": "/authors/OL2670067A",
+    "name": "Eric Freeman",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 13:35:46.87638"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2679990A": {
+    "key": "/authors/OL2679990A",
+    "name": "Paul Gries",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 13:35:46.87638"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2693119A": {
+    "key": "/authors/OL2693119A",
+    "name": "Monty Python",
+    "revision": 6,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-08-27T17:06:48.883483"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2726789A": {
+    "key": "/authors/OL2726789A",
+    "name": "Andy Oram",
+    "revision": 5,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-08-06T17:31:45.959641"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2726828A": {
+    "key": "/authors/OL2726828A",
+    "name": "Samuele Pedroni",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 13:35:46.87638"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2726982A": {
+    "key": "/authors/OL2726982A",
+    "name": "Bill Lubanovic",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 13:35:46.87638"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2729664A": {
+    "key": "/authors/OL2729664A",
+    "name": "John Paul Mueller",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 13:35:46.87638"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2730654A": {
+    "key": "/authors/OL2730654A",
+    "name": "Galit Shmueli",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 13:35:46.87638"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2730706A": {
+    "key": "/authors/OL2730706A",
+    "name": "Russel Winder",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 13:35:46.87638"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2730991A": {
+    "key": "/authors/OL2730991A",
+    "name": "Arthur Griffith",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 13:35:46.87638"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL277085A": {
+    "key": "/authors/OL277085A",
+    "name": "Giuseppe Bonaccorso",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-04 11:17:17.544434"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2832193A": {
+    "key": "/authors/OL2832193A",
+    "name": "Mike McGrath",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 15:03:11.581851"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2844497A": {
+    "key": "/authors/OL2844497A",
+    "name": "Jules J. Berman",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 15:03:11.581851"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2846466A": {
+    "key": "/authors/OL2846466A",
+    "name": "Dave Brueck",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 15:03:11.581851"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL28590A": {
+    "key": "/authors/OL28590A",
+    "name": "John Mueller",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2021-07-29T20:51:19.061305"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2894589A": {
+    "key": "/authors/OL2894589A",
+    "name": "Matt Richardson",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 15:03:11.581851"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2909241A": {
+    "key": "/authors/OL2909241A",
+    "name": "Daryl D Harms",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 15:03:11.581851"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL29435A": {
+    "key": "/authors/OL29435A",
+    "name": "Steven Holzner",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-02-23T06:13:48.627670"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL2980475A": {
+    "key": "/authors/OL2980475A",
+    "name": "Jason Myers",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-29 15:03:11.581851"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3045923A": {
+    "key": "/authors/OL3045923A",
+    "name": "Denny Lee",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 08:14:56.482104"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3116228A": {
+    "key": "/authors/OL3116228A",
+    "name": "Magnus Lie Hetland",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 09:38:13.731961"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3116597A": {
+    "key": "/authors/OL3116597A",
+    "name": "Adrian Holovaty",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 09:38:13.731961"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3121166A": {
+    "key": "/authors/OL3121166A",
+    "name": "Kamon Ayeva",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 09:38:13.731961"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3132157A": {
+    "key": "/authors/OL3132157A",
+    "name": "Donald Norris",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 09:38:13.731961"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL32725A": {
+    "key": "/authors/OL32725A",
+    "name": "Y. Daniel Liang",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-12 02:13:13.659668"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3295558A": {
+    "key": "/authors/OL3295558A",
+    "name": "Zed Shaw",
+    "revision": 4,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-12-04T21:02:41.985959"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3412313A": {
+    "key": "/authors/OL3412313A",
+    "name": "Jürgen Scheible",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 09:38:13.731961"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3420241A": {
+    "key": "/authors/OL3420241A",
+    "name": "Rob Miles",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 09:38:13.731961"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3513839A": {
+    "key": "/authors/OL3513839A",
+    "name": "Chris Roffey",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 09:38:13.731961"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3540829A": {
+    "key": "/authors/OL3540829A",
+    "name": "Kurt Demaagd",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 09:38:13.731961"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3608999A": {
+    "key": "/authors/OL3608999A",
+    "name": "S. Fletcher",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 09:38:13.731961"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3671879A": {
+    "key": "/authors/OL3671879A",
+    "name": "Geoff Potter",
+    "revision": 5,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-04-19T00:54:34.460941"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3696A": {
+    "key": "/authors/OL3696A",
+    "name": "Siddhartha Chatterjee",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2021-10-10T02:05:25.605459"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3702667A": {
+    "key": "/authors/OL3702667A",
+    "name": "Dmitry Zinoviev",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2026-07-06T02:23:37.885935"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3828730A": {
+    "key": "/authors/OL3828730A",
+    "name": "Curtis Miller",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 20:50:18.033121"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL3871440A": {
+    "key": "/authors/OL3871440A",
+    "name": "Sebastian Bassi",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 20:50:18.033121"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL402619A": {
+    "key": "/authors/OL402619A",
+    "name": "Carol Vorderman",
+    "revision": 6,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-07-31T22:04:27.158067"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL4037358A": {
+    "key": "/authors/OL4037358A",
+    "name": "Ruediger-Marcus Flaig",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 20:50:18.033121"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL407886A": {
+    "key": "/authors/OL407886A",
+    "name": "Michael Stueben",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-02 19:48:30.198619"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL4156917A": {
+    "key": "/authors/OL4156917A",
+    "name": "Jun Xu",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 20:50:18.033121"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL4204179A": {
+    "key": "/authors/OL4204179A",
+    "name": "B.M. Harwani",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-04-30 20:50:18.033121"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL4374464A": {
+    "key": "/authors/OL4374464A",
+    "name": "George Perry",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-08-31 16:24:43.636541"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL444794A": {
+    "key": "/authors/OL444794A",
+    "name": "Rubin H. Landau",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-08-31 08:10:01.42462"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL4762654A": {
+    "key": "/authors/OL4762654A",
+    "name": "Eric Chou",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-17 00:39:58.632228"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL4861902A": {
+    "key": "/authors/OL4861902A",
+    "name": "Alan D. Moore",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-19 14:29:13.237735"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL4917335A": {
+    "key": "/authors/OL4917335A",
+    "name": "Jacob Perkins",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-20 16:49:37.060697"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL5024556A": {
+    "key": "/authors/OL5024556A",
+    "name": "Jason M. Kinser",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-24 01:30:22.312848"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL5130331A": {
+    "key": "/authors/OL5130331A",
+    "name": "Luke Dempsey",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-26 05:05:42.612642"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL5180325A": {
+    "key": "/authors/OL5180325A",
+    "name": "Tom Gross",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-27 01:16:58.133807"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL5243960A": {
+    "key": "/authors/OL5243960A",
+    "name": "John Ahlquist",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-28 04:02:38.19503"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL5270908A": {
+    "key": "/authors/OL5270908A",
+    "name": "Yaácov Ravid",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-09-28 12:53:34.039692"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL5445667A": {
+    "key": "/authors/OL5445667A",
+    "name": "John E. Grayson",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-10-15T19:05:00.106805"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL5465970A": {
+    "key": "/authors/OL5465970A",
+    "name": "Wesley Chun",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2020-10-09T05:44:46.181497"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL5746003A": {
+    "key": "/authors/OL5746003A",
+    "name": "Tim Hall",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-10-22T15:30:40.796050"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL5927160A": {
+    "key": "/authors/OL5927160A",
+    "name": "J. M. Hughes",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2023-12-10T16:27:09.903028"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6161344A": {
+    "key": "/authors/OL6161344A",
+    "name": "Michael H Goldwasser",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2020-01-09T20:05:54.704587"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6201322A": {
+    "key": "/authors/OL6201322A",
+    "name": "Jim Knowlton",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-10-31T20:26:50.303196"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL626174A": {
+    "key": "/authors/OL626174A",
+    "name": "Miguel Grinberg",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-08-28 19:26:57.614298"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6390025A": {
+    "key": "/authors/OL6390025A",
+    "name": "Christopher Duffy",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-11-06T09:26:03.361831"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6450930A": {
+    "key": "/authors/OL6450930A",
+    "name": "Lie Hetland, Magnus",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-11-14T04:40:10.444318"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6460037A": {
+    "key": "/authors/OL6460037A",
+    "name": "Jeff Forcier",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-11-15T13:15:54.088389"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6476736A": {
+    "key": "/authors/OL6476736A",
+    "name": "David Love",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-11-16T05:14:11.022908"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6546118A": {
+    "key": "/authors/OL6546118A",
+    "name": "David M. Reed",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2009-01-07T18:08:30.840397"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6596465A": {
+    "key": "/authors/OL6596465A",
+    "name": "Alan Gauld",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2009-03-02T11:37:23.453295"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6605148A": {
+    "key": "/authors/OL6605148A",
+    "name": "Chris Mancini",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2009-05-14T04:20:27.305077"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6608409A": {
+    "key": "/authors/OL6608409A",
+    "name": "Justin Seitz",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2024-03-03T16:07:37.780228"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6624997A": {
+    "key": "/authors/OL6624997A",
+    "name": "Shayne Fletcher",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2009-05-27T17:36:07.823559"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6691858A": {
+    "key": "/authors/OL6691858A",
+    "name": "Toby Donaldson",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2009-07-22T04:53:01.023225"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6751191A": {
+    "key": "/authors/OL6751191A",
+    "name": "Charles R. Severance",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2026-05-07T20:45:53.907798"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6760285A": {
+    "key": "/authors/OL6760285A",
+    "name": "Michael J. Foord",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2009-11-24T04:42:40.324955"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6770736A": {
+    "key": "/authors/OL6770736A",
+    "name": "Edward Loper",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2009-12-22T17:43:59.417378"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6772731A": {
+    "key": "/authors/OL6772731A",
+    "name": "W. F. Punch",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2009-12-31T01:23:35.997765"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6776710A": {
+    "key": "/authors/OL6776710A",
+    "name": "Shai Vaingast",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2010-01-21T13:37:27.317322"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6780171A": {
+    "key": "/authors/OL6780171A",
+    "name": "Warren Sande",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2010-02-02T22:41:28.949517"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6815485A": {
+    "key": "/authors/OL6815485A",
+    "name": "Allen B. Downey",
+    "revision": 4,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2022-10-19T05:24:47.037637"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6820573A": {
+    "key": "/authors/OL6820573A",
+    "name": "Peter C Norton",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2010-07-01T06:26:34.681755"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6830101A": {
+    "key": "/authors/OL6830101A",
+    "name": "Paul McGuire",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2010-10-07T21:39:23.869301"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6842967A": {
+    "key": "/authors/OL6842967A",
+    "name": "Marty Alchin",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2010-11-11T04:38:52.454142"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6867889A": {
+    "key": "/authors/OL6867889A",
+    "name": "Paul Barry",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2023-12-08T19:55:11.946886"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6868508A": {
+    "key": "/authors/OL6868508A",
+    "name": "Noah Gift",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2010-12-09T03:32:57.911089"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6868536A": {
+    "key": "/authors/OL6868536A",
+    "name": "Jennifer Campbell",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2010-12-09T04:15:24.535775"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6887918A": {
+    "key": "/authors/OL6887918A",
+    "name": "Matthew A. Russell",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2021-10-10T02:03:46.269168"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6891352A": {
+    "key": "/authors/OL6891352A",
+    "name": "SPSS Inc",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-03-15T18:05:48.826689"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6899248A": {
+    "key": "/authors/OL6899248A",
+    "name": "James Bennett",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-06-19T19:54:33.391800"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6935032A": {
+    "key": "/authors/OL6935032A",
+    "name": "Simon Monk",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-07-23T01:33:01.275895"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6945026A": {
+    "key": "/authors/OL6945026A",
+    "name": "Jason Andress",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-07-26T22:33:04.760508"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6988126A": {
+    "key": "/authors/OL6988126A",
+    "name": "Adam Mechtley",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-10-21T20:27:35.576264"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL6995475A": {
+    "key": "/authors/OL6995475A",
+    "name": "Doug Hellmann",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-10-22T04:04:54.510447"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7017980A": {
+    "key": "/authors/OL7017980A",
+    "name": "Rance D. Necaise",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-10-23T18:35:45.572278"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7032700A": {
+    "key": "/authors/OL7032700A",
+    "name": "Josh Juneau",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-11-04T09:57:14.672158"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7040436A": {
+    "key": "/authors/OL7040436A",
+    "name": "Mark C. Chu-Carroll",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-11-23T09:36:29.159153"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7045075A": {
+    "key": "/authors/OL7045075A",
+    "name": "Zack Handlen",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-12-07T10:05:31.280803"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7051046A": {
+    "key": "/authors/OL7051046A",
+    "name": "B. M. Harwani",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-12-28T09:59:00.029940"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7057078A": {
+    "key": "/authors/OL7057078A",
+    "name": "Mark J. Johnson",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2011-12-29T09:28:27.438757"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7084528A": {
+    "key": "/authors/OL7084528A",
+    "name": "Paul Ferrill",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2012-02-22T13:39:26.453707"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7092399A": {
+    "key": "/authors/OL7092399A",
+    "name": "Simon-Pierre Castanié",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2012-03-15T21:20:58.669250"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7092400A": {
+    "key": "/authors/OL7092400A",
+    "name": "Simon-Pierre Castanié",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2012-03-15T21:20:58.910711"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7106587A": {
+    "key": "/authors/OL7106587A",
+    "name": "Shane Torbert",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2012-04-13T06:25:51.692632"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7107112A": {
+    "key": "/authors/OL7107112A",
+    "name": "Gautam Puri",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2012-04-13T07:23:21.122055"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7112199A": {
+    "key": "/authors/OL7112199A",
+    "name": "Kevin Harvey",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2012-04-18T10:04:44.851877"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7114071A": {
+    "key": "/authors/OL7114071A",
+    "name": "Anthony D. Briggs",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2012-04-25T08:15:37.196594"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7144376A": {
+    "key": "/authors/OL7144376A",
+    "name": "Brandon Rhodes",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2012-06-20T10:03:20.489775"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7155739A": {
+    "key": "/authors/OL7155739A",
+    "name": "Paul A. Zandbergen",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-08-05T03:47:45.545892"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL718824A": {
+    "key": "/authors/OL718824A",
+    "name": "Mitchell L. Model",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-08-27 09:36:45.126583"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7200428A": {
+    "key": "/authors/OL7200428A",
+    "name": "Kent D. Lee",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-28T09:50:13.811190"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7200639A": {
+    "key": "/authors/OL7200639A",
+    "name": "Dusty Phillips",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-28T10:44:17.550805"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7200745A": {
+    "key": "/authors/OL7200745A",
+    "name": "Rytis Sileika",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-28T11:03:51.879756"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7201218A": {
+    "key": "/authors/OL7201218A",
+    "name": "Eelco Plugge",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-28T13:13:30.050050"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7201318A": {
+    "key": "/authors/OL7201318A",
+    "name": "Jim McGaw",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-28T14:24:37.684792"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7202063A": {
+    "key": "/authors/OL7202063A",
+    "name": "Cody Precord",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-28T17:23:39.638323"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7202395A": {
+    "key": "/authors/OL7202395A",
+    "name": "Ayman Hourieh",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-28T18:14:26.957666"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7202444A": {
+    "key": "/authors/OL7202444A",
+    "name": "Carlos de la Guardia",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-28T18:21:48.627259"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7202464A": {
+    "key": "/authors/OL7202464A",
+    "name": "Chaur Wu",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-28T18:23:53.978246"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7202661A": {
+    "key": "/authors/OL7202661A",
+    "name": "Kyle Roche",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-28T18:58:51.446941"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7204560A": {
+    "key": "/authors/OL7204560A",
+    "name": "Dan Sanderson",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-29T00:17:37.488341"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7205235A": {
+    "key": "/authors/OL7205235A",
+    "name": "Julian Harty",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-29T01:54:42.305573"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7205816A": {
+    "key": "/authors/OL7205816A",
+    "name": "Vernon L. Ceder",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-29T03:19:42.452170"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7208141A": {
+    "key": "/authors/OL7208141A",
+    "name": "Daniel Arbuckle",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-29T11:30:13.371651"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7208482A": {
+    "key": "/authors/OL7208482A",
+    "name": "Erik Westra",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-29T12:23:50.639891"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7208488A": {
+    "key": "/authors/OL7208488A",
+    "name": "Ivan Idris",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-29T12:24:55.056318"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7208868A": {
+    "key": "/authors/OL7208868A",
+    "name": "Daniel Rubio",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-29T13:31:32.229904"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7210495A": {
+    "key": "/authors/OL7210495A",
+    "name": "Albert Lukaszewski",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-29T18:25:40.721988"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7210500A": {
+    "key": "/authors/OL7210500A",
+    "name": "Jesse Legg",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-29T18:26:45.806300"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7212219A": {
+    "key": "/authors/OL7212219A",
+    "name": "Ninad Sathaye",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-30T01:20:49.063814"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7212848A": {
+    "key": "/authors/OL7212848A",
+    "name": "Craig Finch",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-30T03:17:48.613165"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7213418A": {
+    "key": "/authors/OL7213418A",
+    "name": "Mitch Garnaat",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-07-30T04:55:28.570306"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7230297A": {
+    "key": "/authors/OL7230297A",
+    "name": "Mark Williams",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2014-11-17T02:23:44.645388"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL723489A": {
+    "key": "/authors/OL723489A",
+    "name": "Keith Curtis",
+    "revision": 6,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2010-11-29T21:58:16.255729"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7244402A": {
+    "key": "/authors/OL7244402A",
+    "name": "Martino Sabia",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2015-08-28T22:07:30.257682"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7244458A": {
+    "key": "/authors/OL7244458A",
+    "name": "Al Sweigart",
+    "revision": 8,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2026-02-01T21:10:41.088204"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7244490A": {
+    "key": "/authors/OL7244490A",
+    "name": "Brett Slatkin",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2015-08-31T17:15:12.744406"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7246580A": {
+    "key": "/authors/OL7246580A",
+    "name": "Sebastian Raschka",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2015-10-21T01:55:11.273004"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7274104A": {
+    "key": "/authors/OL7274104A",
+    "name": "Victor Stinner",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2015-11-25T17:24:45.658628"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7290414A": {
+    "key": "/authors/OL7290414A",
+    "name": "Andreas C. Mueller",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-07-24T13:16:36.789530"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7293630A": {
+    "key": "/authors/OL7293630A",
+    "name": "Lentin Joseph",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-09-15T05:40:25.672244"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7298319A": {
+    "key": "/authors/OL7298319A",
+    "name": "Sinan Kalkan",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-14T02:05:09.056754"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7309633A": {
+    "key": "/authors/OL7309633A",
+    "name": "Wes McKinney",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2026-06-13T10:00:00.111592"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7310414A": {
+    "key": "/authors/OL7310414A",
+    "name": "John M. Stewart",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-14T06:25:39.858447"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7317684A": {
+    "key": "/authors/OL7317684A",
+    "name": "Karen M. Tracey",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-14T09:05:34.532602"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7318005A": {
+    "key": "/authors/OL7318005A",
+    "name": "Eben Upton",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2022-12-10T17:40:02.147305"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7322859A": {
+    "key": "/authors/OL7322859A",
+    "name": "Adam Parrish",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-14T10:56:59.235452"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7323272A": {
+    "key": "/authors/OL7323272A",
+    "name": "Tj O'Connor",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-14T11:05:56.937969"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7331117A": {
+    "key": "/authors/OL7331117A",
+    "name": "Avinash C. Kak",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-14T14:05:28.815761"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7331278A": {
+    "key": "/authors/OL7331278A",
+    "name": "Cody Jackson",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-14T14:09:18.028158"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7336403A": {
+    "key": "/authors/OL7336403A",
+    "name": "John M. Stewart",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-14T16:16:55.292583"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7340477A": {
+    "key": "/authors/OL7340477A",
+    "name": "Jason R. Briggs",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-11-16T19:17:46.464861"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7340801A": {
+    "key": "/authors/OL7340801A",
+    "name": "Bruno Oliveira",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-14T18:05:53.109989"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7348056A": {
+    "key": "/authors/OL7348056A",
+    "name": "Sridevi Pudipeddi",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-14T21:27:13.239212"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7354686A": {
+    "key": "/authors/OL7354686A",
+    "name": "Allegra Via",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-19T05:25:57.453897"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7354897A": {
+    "key": "/authors/OL7354897A",
+    "name": "Jan Erik",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-19T05:59:28.410343"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7354914A": {
+    "key": "/authors/OL7354914A",
+    "name": "Andrew Collette",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-19T06:02:26.619594"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7355136A": {
+    "key": "/authors/OL7355136A",
+    "name": "Ted Herman",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-19T06:35:00.689161"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7355829A": {
+    "key": "/authors/OL7355829A",
+    "name": "Cyrille Rossant",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2016-10-19T08:39:49.061191"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7394815A": {
+    "key": "/authors/OL7394815A",
+    "name": "Richardson, Matt (Technologist)",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2017-07-20T05:37:51.297819"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7400842A": {
+    "key": "/authors/OL7400842A",
+    "name": "Andrés Marzal Varó",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2017-10-06T17:00:15.079324"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7400922A": {
+    "key": "/authors/OL7400922A",
+    "name": "David Evans",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2017-10-08T11:53:06.281282"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7402071A": {
+    "key": "/authors/OL7402071A",
+    "name": "Daniel Greenfeld",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2017-10-26T18:56:59.291308"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7408930A": {
+    "key": "/authors/OL7408930A",
+    "name": "Raúl González Duque",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2018-02-18T19:09:55.806846"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7408931A": {
+    "key": "/authors/OL7408931A",
+    "name": "Kenneth Reitz",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2018-02-18T19:34:40.981605"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7410826A": {
+    "key": "/authors/OL7410826A",
+    "name": "Sergio Rojas",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2018-04-05T15:40:12.902850"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7414380A": {
+    "key": "/authors/OL7414380A",
+    "name": "Eugenia Bahit",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2018-05-30T12:04:51.385215"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7422726A": {
+    "key": "/authors/OL7422726A",
+    "name": "Fabrizio Romano",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2018-10-03T08:52:46.089370"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7422901A": {
+    "key": "/authors/OL7422901A",
+    "name": "Harry J.W. Percival",
+    "revision": 5,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2023-12-11T14:33:02.168586"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7423013A": {
+    "key": "/authors/OL7423013A",
+    "name": "Antti Salonen",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2018-10-22T20:20:16.104090"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL744982A": {
+    "key": "/authors/OL744982A",
+    "name": "Parkinson, Michael",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-08-01T01:47:57.113489"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7468440A": {
+    "key": "/authors/OL7468440A",
+    "name": "Volodymyr Kopei",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-03-05T00:35:53.643010"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7482211A": {
+    "key": "/authors/OL7482211A",
+    "name": "Massimo DiPierro",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-03-18T12:02:20.676710"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7482367A": {
+    "key": "/authors/OL7482367A",
+    "name": "Hywel Carver",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-03-18T23:01:14.836183"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7485225A": {
+    "key": "/authors/OL7485225A",
+    "name": "Dipanjan Sarkar",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-03-22T08:28:23.895536"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494483A": {
+    "key": "/authors/OL7494483A",
+    "name": "Michael Beyeler",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T14:49:54.182574"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494617A": {
+    "key": "/authors/OL7494617A",
+    "name": "Chet Hosmer",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:19:53.246605"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494620A": {
+    "key": "/authors/OL7494620A",
+    "name": "Koshik Raj",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:20:16.815563"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494640A": {
+    "key": "/authors/OL7494640A",
+    "name": "Ankur A. Patel",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:29:54.511116"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494642A": {
+    "key": "/authors/OL7494642A",
+    "name": "Delip Rao",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:30:08.865726"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494647A": {
+    "key": "/authors/OL7494647A",
+    "name": "Yves Hilpisch",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2026-08-13T04:30:41.941683"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494649A": {
+    "key": "/authors/OL7494649A",
+    "name": "Ganesh Sanjiv Naik",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:33:04.338297"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494653A": {
+    "key": "/authors/OL7494653A",
+    "name": "Jimmy Song",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:33:41.524958"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494654A": {
+    "key": "/authors/OL7494654A",
+    "name": "Gaston C. Hillar",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:33:54.150784"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494656A": {
+    "key": "/authors/OL7494656A",
+    "name": "J. Burton Browning",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:34:17.399978"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494688A": {
+    "key": "/authors/OL7494688A",
+    "name": "Furqan Khan",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:40:36.411340"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494689A": {
+    "key": "/authors/OL7494689A",
+    "name": "Denis Rothman",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:40:48.595687"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494690A": {
+    "key": "/authors/OL7494690A",
+    "name": "Matthew Lamons",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:40:48.595687"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494702A": {
+    "key": "/authors/OL7494702A",
+    "name": "Francois Chollet",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2026-08-27T15:40:19.350954"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494703A": {
+    "key": "/authors/OL7494703A",
+    "name": "Mario Döbler",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:42:02.444177"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494705A": {
+    "key": "/authors/OL7494705A",
+    "name": "Santanu Pattanayak",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:42:15.440286"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494706A": {
+    "key": "/authors/OL7494706A",
+    "name": "Dr. Tirthajyoti Sarkar",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:42:27.312628"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494718A": {
+    "key": "/authors/OL7494718A",
+    "name": "Julien Danjou",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:44:24.180122"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494729A": {
+    "key": "/authors/OL7494729A",
+    "name": "Jalem Raj Rohit",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:48:51.685904"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494747A": {
+    "key": "/authors/OL7494747A",
+    "name": "Max Pumperla",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:54:06.915328"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494749A": {
+    "key": "/authors/OL7494749A",
+    "name": "Alexander Combs",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:54:31.450844"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494750A": {
+    "key": "/authors/OL7494750A",
+    "name": "Abhishek Ratan",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:54:43.548626"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494777A": {
+    "key": "/authors/OL7494777A",
+    "name": "Joshua Eckroth",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T22:59:56.655332"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494789A": {
+    "key": "/authors/OL7494789A",
+    "name": "Prabhanjan Narayanachar Tattar",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:04:03.056196"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494797A": {
+    "key": "/authors/OL7494797A",
+    "name": "Pratap Dangeti",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:05:55.051694"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494800A": {
+    "key": "/authors/OL7494800A",
+    "name": "Aldrin Yim",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:05:55.051694"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494801A": {
+    "key": "/authors/OL7494801A",
+    "name": "Theodore Petrou",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:05:55.051694"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494802A": {
+    "key": "/authors/OL7494802A",
+    "name": "Robert Johansson",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:06:07.201198"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494803A": {
+    "key": "/authors/OL7494803A",
+    "name": "Srinivasa Rao Poladi",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:06:18.842562"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494812A": {
+    "key": "/authors/OL7494812A",
+    "name": "Brian Allbee",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:08:22.524162"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494824A": {
+    "key": "/authors/OL7494824A",
+    "name": "Harish Garg",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:11:51.257811"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494825A": {
+    "key": "/authors/OL7494825A",
+    "name": "Alan Fontaine",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:12:23.760390"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494850A": {
+    "key": "/authors/OL7494850A",
+    "name": "Alex Galea",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:17:50.970454"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494851A": {
+    "key": "/authors/OL7494851A",
+    "name": "Ryan Marvin",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:18:02.717168"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494868A": {
+    "key": "/authors/OL7494868A",
+    "name": "Sean Saito",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:20:58.620134"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494871A": {
+    "key": "/authors/OL7494871A",
+    "name": "Ankur Ankan",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:21:29.329937"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494895A": {
+    "key": "/authors/OL7494895A",
+    "name": "Ahmed Fawzy Gad",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:29:19.038553"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494901A": {
+    "key": "/authors/OL7494901A",
+    "name": "Chris Albon",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:31:22.897725"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494931A": {
+    "key": "/authors/OL7494931A",
+    "name": "Lee Vaughan",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:42:26.872152"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494955A": {
+    "key": "/authors/OL7494955A",
+    "name": "Dr. Ossama Embarak",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:47:33.507406"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494969A": {
+    "key": "/authors/OL7494969A",
+    "name": "Jaime Buelta",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:51:20.442096"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7494990A": {
+    "key": "/authors/OL7494990A",
+    "name": "Manuel Amunategui",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-04T23:57:24.573851"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495016A": {
+    "key": "/authors/OL7495016A",
+    "name": "Ilya Shpigor",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:03:12.516943"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495019A": {
+    "key": "/authors/OL7495019A",
+    "name": "Antonio Gulli",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:05:00.165204"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495029A": {
+    "key": "/authors/OL7495029A",
+    "name": "José Manuel Ortega",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2021-09-18T07:51:48.009045"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495032A": {
+    "key": "/authors/OL7495032A",
+    "name": "Luis Pedro Coelho",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:08:22.148521"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495058A": {
+    "key": "/authors/OL7495058A",
+    "name": "Nick McClure",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:15:31.319384"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495097A": {
+    "key": "/authors/OL7495097A",
+    "name": "Sathyajith Bhat",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:27:41.599714"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495111A": {
+    "key": "/authors/OL7495111A",
+    "name": "Rounak Banik",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:30:31.828707"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495114A": {
+    "key": "/authors/OL7495114A",
+    "name": "Rajesh Arumugam",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:30:56.018819"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495136A": {
+    "key": "/authors/OL7495136A",
+    "name": "Silas Toms",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:35:55.680322"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495160A": {
+    "key": "/authors/OL7495160A",
+    "name": "Ana Bell",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:40:54.928593"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495161A": {
+    "key": "/authors/OL7495161A",
+    "name": "Naomi Ceder",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:41:06.727996"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495164A": {
+    "key": "/authors/OL7495164A",
+    "name": "L. Felipe Martins",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:41:58.804668"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495219A": {
+    "key": "/authors/OL7495219A",
+    "name": "Thushan Ganegedara",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:55:03.033073"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495234A": {
+    "key": "/authors/OL7495234A",
+    "name": "Douwe Osinga",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T00:57:43.186592"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495250A": {
+    "key": "/authors/OL7495250A",
+    "name": "Samuel Bowne",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:02:04.288821"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495256A": {
+    "key": "/authors/OL7495256A",
+    "name": "Bassem Aly",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:03:05.853734"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495258A": {
+    "key": "/authors/OL7495258A",
+    "name": "Umit Mert Cakmak",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:03:30.808133"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495271A": {
+    "key": "/authors/OL7495271A",
+    "name": "Rejah Rehim",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:06:27.615596"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495273A": {
+    "key": "/authors/OL7495273A",
+    "name": "Christian Martorella",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:07:04.754791"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495281A": {
+    "key": "/authors/OL7495281A",
+    "name": "Palash Goyal",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:08:31.330630"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495302A": {
+    "key": "/authors/OL7495302A",
+    "name": "Daniel Furtado",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:12:26.142078"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495304A": {
+    "key": "/authors/OL7495304A",
+    "name": "Jeffrey Aven",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:13:02.251790"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495307A": {
+    "key": "/authors/OL7495307A",
+    "name": "Kevin Jolly",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:13:32.114460"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495312A": {
+    "key": "/authors/OL7495312A",
+    "name": "B.J. Korites",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:15:01.245886"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495314A": {
+    "key": "/authors/OL7495314A",
+    "name": "Mike Driscoll",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:15:26.828361"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495316A": {
+    "key": "/authors/OL7495316A",
+    "name": "Wolfram Donat",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:16:03.273255"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495340A": {
+    "key": "/authors/OL7495340A",
+    "name": "Brian Okken",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:21:25.655386"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495362A": {
+    "key": "/authors/OL7495362A",
+    "name": "Mark J. Johnson",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:26:40.419522"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495367A": {
+    "key": "/authors/OL7495367A",
+    "name": "Antonio Mele",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:27:32.182864"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495370A": {
+    "key": "/authors/OL7495370A",
+    "name": "Ryan Mitchell",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:28:28.320434"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495405A": {
+    "key": "/authors/OL7495405A",
+    "name": "Mark Lassoff",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2024-05-12T13:15:26.455979"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495407A": {
+    "key": "/authors/OL7495407A",
+    "name": "Jalaj Thanaki",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:41:04.049694"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495448A": {
+    "key": "/authors/OL7495448A",
+    "name": "Hussam Khrais",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:51:19.912839"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495456A": {
+    "key": "/authors/OL7495456A",
+    "name": "Mokhtar Ebrahim",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:54:37.668887"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495486A": {
+    "key": "/authors/OL7495486A",
+    "name": "Raul Garreta",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:58:58.283386"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495490A": {
+    "key": "/authors/OL7495490A",
+    "name": "Seppe vanden Broucke",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T01:59:10.913652"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495504A": {
+    "key": "/authors/OL7495504A",
+    "name": "Steven F. Lott",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:03:12.640455"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495517A": {
+    "key": "/authors/OL7495517A",
+    "name": "Giancarlo Zaccone",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:07:12.584770"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495520A": {
+    "key": "/authors/OL7495520A",
+    "name": "Jesus Rogel-Salazar",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:07:49.478234"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495536A": {
+    "key": "/authors/OL7495536A",
+    "name": "Navin Kumar Manaswi",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:12:25.494471"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495546A": {
+    "key": "/authors/OL7495546A",
+    "name": "Bhaskar Chaudhary",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:14:19.091188"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495574A": {
+    "key": "/authors/OL7495574A",
+    "name": "Alexey Spizhevoy",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:18:05.209158"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495583A": {
+    "key": "/authors/OL7495583A",
+    "name": "Michael Heydt",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:19:54.950949"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495615A": {
+    "key": "/authors/OL7495615A",
+    "name": "Sayan Mukhopadhyay",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:24:45.541224"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495655A": {
+    "key": "/authors/OL7495655A",
+    "name": "Robert Smallshire",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:36:44.178404"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495671A": {
+    "key": "/authors/OL7495671A",
+    "name": "Julian Avila",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:41:22.190653"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495684A": {
+    "key": "/authors/OL7495684A",
+    "name": "Vishnu Subramanian",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:43:39.933337"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495687A": {
+    "key": "/authors/OL7495687A",
+    "name": "Serge Kruk",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:45:12.118176"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495698A": {
+    "key": "/authors/OL7495698A",
+    "name": "A.J. Henley",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:48:49.831390"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495700A": {
+    "key": "/authors/OL7495700A",
+    "name": "Clinton W. Brownley",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:49:26.146702"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495718A": {
+    "key": "/authors/OL7495718A",
+    "name": "Saurabh Kapur",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:54:26.691788"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495729A": {
+    "key": "/authors/OL7495729A",
+    "name": "Wessel Badenhorst",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T02:58:24.684087"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495757A": {
+    "key": "/authors/OL7495757A",
+    "name": "Chris Conlan",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T03:12:36.017812"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7495764A": {
+    "key": "/authors/OL7495764A",
+    "name": "Dr. Avishek Pal",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-04-05T03:15:37.205276"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7577754A": {
+    "key": "/authors/OL7577754A",
+    "name": "Tarek Ziadé",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-07-06T15:14:17.368983"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL7634726A": {
+    "key": "/authors/OL7634726A",
+    "name": "Eric Matthes",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2019-10-04T05:26:31.796765"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL829275A": {
+    "key": "/authors/OL829275A",
+    "name": "Alan Gauld",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-08-22 14:05:15.930462"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL839763A": {
+    "key": "/authors/OL839763A",
+    "name": "John Guttag",
+    "revision": 3,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2026-08-20T14:56:41.056510"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL912170A": {
+    "key": "/authors/OL912170A",
+    "name": "John Cleese",
+    "revision": 7,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2025-08-27T03:23:09.432634"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL9500209A": {
+    "key": "/authors/OL9500209A",
+    "name": "Titus A. Beu",
+    "revision": 1,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2021-09-18T16:20:51.442898"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  },
+  "OL953296A": {
+    "key": "/authors/OL953296A",
+    "name": "Elliot Forbes",
+    "revision": 2,
+    "last_modified": {
+      "type": "/type/datetime",
+      "value": "2008-08-22 00:26:46.259199"
+    },
+    "type": {
+      "key": "/type/author"
+    }
+  }
+}

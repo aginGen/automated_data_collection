@@ -1,0 +1,1142 @@
+{
+  "rows": 404,
+  "tables": {
+    "quotes": {
+      "rows": 100,
+      "unique_keys": 100,
+      "duplicates": 0,
+      "required_empty_rows": 0,
+      "completeness_percent": {
+        "key": 100.0,
+        "quote": 100.0,
+        "author": 100.0,
+        "tags": 100.0,
+        "author_url": 100.0,
+        "birth_date": 100.0,
+        "birth_place": 100.0,
+        "biography": 100.0,
+        "url": 100.0
+      },
+      "sql_types": {
+        "key": "TEXT",
+        "quote": "TEXT",
+        "author": "TEXT",
+        "tags": "TEXT",
+        "author_url": "TEXT",
+        "birth_date": "TEXT",
+        "birth_place": "TEXT",
+        "biography": "TEXT",
+        "url": "TEXT"
+      }
+    },
+    "books": {
+      "rows": 304,
+      "unique_keys": 304,
+      "duplicates": 0,
+      "required_empty_rows": 0,
+      "completeness_percent": {
+        "key": 100.0,
+        "upc": 100.0,
+        "title": 100.0,
+        "price": 100.0,
+        "stock": 100.0,
+        "reviews": 100.0,
+        "category": 100.0,
+        "description": 100.0,
+        "rating": 100.0,
+        "url": 100.0
+      },
+      "sql_types": {
+        "key": "TEXT",
+        "upc": "TEXT",
+        "title": "TEXT",
+        "price": "REAL",
+        "stock": "INTEGER",
+        "reviews": "INTEGER",
+        "category": "TEXT",
+        "description": "TEXT",
+        "rating": "INTEGER",
+        "url": "TEXT"
+      }
+    }
+  },
+  "required_empty_share": 0.0,
+  "aggregates": {
+    "quotes_by_author": [
+      {
+        "author": "Albert Einstein",
+        "quotes": 10
+      },
+      {
+        "author": "J.K. Rowling",
+        "quotes": 9
+      },
+      {
+        "author": "Marilyn Monroe",
+        "quotes": 7
+      },
+      {
+        "author": "Dr. Seuss",
+        "quotes": 6
+      },
+      {
+        "author": "Mark Twain",
+        "quotes": 6
+      },
+      {
+        "author": "C.S. Lewis",
+        "quotes": 5
+      },
+      {
+        "author": "Jane Austen",
+        "quotes": 5
+      },
+      {
+        "author": "Bob Marley",
+        "quotes": 3
+      },
+      {
+        "author": "Charles Bukowski",
+        "quotes": 2
+      },
+      {
+        "author": "Eleanor Roosevelt",
+        "quotes": 2
+      },
+      {
+        "author": "Ernest Hemingway",
+        "quotes": 2
+      },
+      {
+        "author": "George R.R. Martin",
+        "quotes": 2
+      },
+      {
+        "author": "Mother Teresa",
+        "quotes": 2
+      },
+      {
+        "author": "Ralph Waldo Emerson",
+        "quotes": 2
+      },
+      {
+        "author": "Suzanne Collins",
+        "quotes": 2
+      },
+      {
+        "author": "Alexandre Dumas fils",
+        "quotes": 1
+      },
+      {
+        "author": "Alfred Tennyson",
+        "quotes": 1
+      },
+      {
+        "author": "Allen Saunders",
+        "quotes": 1
+      },
+      {
+        "author": "André Gide",
+        "quotes": 1
+      },
+      {
+        "author": "Ayn Rand",
+        "quotes": 1
+      },
+      {
+        "author": "Charles M. Schulz",
+        "quotes": 1
+      },
+      {
+        "author": "Douglas Adams",
+        "quotes": 1
+      },
+      {
+        "author": "E.E. Cummings",
+        "quotes": 1
+      },
+      {
+        "author": "Elie Wiesel",
+        "quotes": 1
+      },
+      {
+        "author": "Friedrich Nietzsche",
+        "quotes": 1
+      },
+      {
+        "author": "Garrison Keillor",
+        "quotes": 1
+      },
+      {
+        "author": "George Bernard Shaw",
+        "quotes": 1
+      },
+      {
+        "author": "George Carlin",
+        "quotes": 1
+      },
+      {
+        "author": "George Eliot",
+        "quotes": 1
+      },
+      {
+        "author": "Harper Lee",
+        "quotes": 1
+      },
+      {
+        "author": "Haruki Murakami",
+        "quotes": 1
+      },
+      {
+        "author": "Helen Keller",
+        "quotes": 1
+      },
+      {
+        "author": "J.D. Salinger",
+        "quotes": 1
+      },
+      {
+        "author": "J.M. Barrie",
+        "quotes": 1
+      },
+      {
+        "author": "J.R.R. Tolkien",
+        "quotes": 1
+      },
+      {
+        "author": "James Baldwin",
+        "quotes": 1
+      },
+      {
+        "author": "Jim Henson",
+        "quotes": 1
+      },
+      {
+        "author": "Jimi Hendrix",
+        "quotes": 1
+      },
+      {
+        "author": "John Lennon",
+        "quotes": 1
+      },
+      {
+        "author": "Jorge Luis Borges",
+        "quotes": 1
+      },
+      {
+        "author": "Khaled Hosseini",
+        "quotes": 1
+      },
+      {
+        "author": "Madeleine L'Engle",
+        "quotes": 1
+      },
+      {
+        "author": "Martin Luther King Jr.",
+        "quotes": 1
+      },
+      {
+        "author": "Pablo Neruda",
+        "quotes": 1
+      },
+      {
+        "author": "Stephenie Meyer",
+        "quotes": 1
+      },
+      {
+        "author": "Steve Martin",
+        "quotes": 1
+      },
+      {
+        "author": "Terry Pratchett",
+        "quotes": 1
+      },
+      {
+        "author": "Thomas A. Edison",
+        "quotes": 1
+      },
+      {
+        "author": "W.C. Fields",
+        "quotes": 1
+      },
+      {
+        "author": "William Nicholson",
+        "quotes": 1
+      }
+    ],
+    "price_by_category": [
+      {
+        "category": "Default",
+        "books": 52,
+        "average_price": 36.74
+      },
+      {
+        "category": "Nonfiction",
+        "books": 33,
+        "average_price": 31.27
+      },
+      {
+        "category": "Fiction",
+        "books": 23,
+        "average_price": 34.97
+      },
+      {
+        "category": "Sequential Art",
+        "books": 21,
+        "average_price": 36.3
+      },
+      {
+        "category": "Add a comment",
+        "books": 20,
+        "average_price": 35.04
+      },
+      {
+        "category": "Young Adult",
+        "books": 18,
+        "average_price": 39.31
+      },
+      {
+        "category": "Mystery",
+        "books": 15,
+        "average_price": 32.86
+      },
+      {
+        "category": "Fantasy",
+        "books": 14,
+        "average_price": 40.36
+      },
+      {
+        "category": "Food and Drink",
+        "books": 13,
+        "average_price": 34.79
+      },
+      {
+        "category": "Romance",
+        "books": 9,
+        "average_price": 37.32
+      },
+      {
+        "category": "Childrens",
+        "books": 8,
+        "average_price": 32.32
+      },
+      {
+        "category": "Horror",
+        "books": 7,
+        "average_price": 31.47
+      },
+      {
+        "category": "Science Fiction",
+        "books": 6,
+        "average_price": 33.68
+      },
+      {
+        "category": "Poetry",
+        "books": 6,
+        "average_price": 35.07
+      },
+      {
+        "category": "Historical Fiction",
+        "books": 6,
+        "average_price": 33.45
+      },
+      {
+        "category": "Business",
+        "books": 6,
+        "average_price": 27.86
+      },
+      {
+        "category": "Thriller",
+        "books": 4,
+        "average_price": 37.22
+      },
+      {
+        "category": "Humor",
+        "books": 4,
+        "average_price": 24.16
+      },
+      {
+        "category": "History",
+        "books": 4,
+        "average_price": 30.18
+      },
+      {
+        "category": "Travel",
+        "books": 3,
+        "average_price": 47.82
+      },
+      {
+        "category": "Politics",
+        "books": 3,
+        "average_price": 53.61
+      },
+      {
+        "category": "Womens Fiction",
+        "books": 2,
+        "average_price": 35.61
+      },
+      {
+        "category": "Science",
+        "books": 2,
+        "average_price": 41.15
+      },
+      {
+        "category": "Religion",
+        "books": 2,
+        "average_price": 25.95
+      },
+      {
+        "category": "Psychology",
+        "books": 2,
+        "average_price": 24.92
+      },
+      {
+        "category": "New Adult",
+        "books": 2,
+        "average_price": 49.57
+      },
+      {
+        "category": "Music",
+        "books": 2,
+        "average_price": 37.64
+      },
+      {
+        "category": "Christian Fiction",
+        "books": 2,
+        "average_price": 34.97
+      },
+      {
+        "category": "Christian",
+        "books": 2,
+        "average_price": 50.86
+      },
+      {
+        "category": "Biography",
+        "books": 2,
+        "average_price": 19.0
+      },
+      {
+        "category": "Spirituality",
+        "books": 1,
+        "average_price": 37.8
+      },
+      {
+        "category": "Self Help",
+        "books": 1,
+        "average_price": 52.15
+      },
+      {
+        "category": "Philosophy",
+        "books": 1,
+        "average_price": 17.44
+      },
+      {
+        "category": "Historical",
+        "books": 1,
+        "average_price": 29.87
+      },
+      {
+        "category": "Health",
+        "books": 1,
+        "average_price": 54.07
+      },
+      {
+        "category": "Erotica",
+        "books": 1,
+        "average_price": 19.19
+      },
+      {
+        "category": "Cultural",
+        "books": 1,
+        "average_price": 36.58
+      },
+      {
+        "category": "Crime",
+        "books": 1,
+        "average_price": 10.97
+      },
+      {
+        "category": "Contemporary",
+        "books": 1,
+        "average_price": 52.79
+      },
+      {
+        "category": "Autobiography",
+        "books": 1,
+        "average_price": 10.93
+      },
+      {
+        "category": "Art",
+        "books": 1,
+        "average_price": 49.05
+      }
+    ],
+    "quotes_by_tag": [
+      {
+        "tag": "love",
+        "quotes": 14
+      },
+      {
+        "tag": "inspirational",
+        "quotes": 13
+      },
+      {
+        "tag": "life",
+        "quotes": 13
+      },
+      {
+        "tag": "humor",
+        "quotes": 12
+      },
+      {
+        "tag": "books",
+        "quotes": 11
+      },
+      {
+        "tag": "reading",
+        "quotes": 7
+      },
+      {
+        "tag": "friendship",
+        "quotes": 5
+      },
+      {
+        "tag": "friends",
+        "quotes": 4
+      },
+      {
+        "tag": "truth",
+        "quotes": 4
+      },
+      {
+        "tag": "simile",
+        "quotes": 3
+      },
+      {
+        "tag": "death",
+        "quotes": 3
+      },
+      {
+        "tag": "writing",
+        "quotes": 3
+      },
+      {
+        "tag": "attributed-no-source",
+        "quotes": 3
+      },
+      {
+        "tag": "paraphrased",
+        "quotes": 2
+      },
+      {
+        "tag": "music",
+        "quotes": 2
+      },
+      {
+        "tag": "library",
+        "quotes": 2
+      },
+      {
+        "tag": "dumbledore",
+        "quotes": 2
+      },
+      {
+        "tag": "hope",
+        "quotes": 2
+      },
+      {
+        "tag": "yourself",
+        "quotes": 2
+      },
+      {
+        "tag": "classic",
+        "quotes": 2
+      },
+      {
+        "tag": "religion",
+        "quotes": 2
+      },
+      {
+        "tag": "children",
+        "quotes": 2
+      },
+      {
+        "tag": "courage",
+        "quotes": 2
+      },
+      {
+        "tag": "philosophy",
+        "quotes": 2
+      },
+      {
+        "tag": "thinking",
+        "quotes": 2
+      },
+      {
+        "tag": "learning",
+        "quotes": 2
+      },
+      {
+        "tag": "obvious",
+        "quotes": 1
+      },
+      {
+        "tag": "misattributed-eleanor-roosevelt",
+        "quotes": 1
+      },
+      {
+        "tag": "edison",
+        "quotes": 1
+      },
+      {
+        "tag": "failure",
+        "quotes": 1
+      },
+      {
+        "tag": "contentment",
+        "quotes": 1
+      },
+      {
+        "tag": "fate",
+        "quotes": 1
+      },
+      {
+        "tag": "misattributed-john-lennon",
+        "quotes": 1
+      },
+      {
+        "tag": "planning",
+        "quotes": 1
+      },
+      {
+        "tag": "plans",
+        "quotes": 1
+      },
+      {
+        "tag": "imagination",
+        "quotes": 1
+      },
+      {
+        "tag": "troubles",
+        "quotes": 1
+      },
+      {
+        "tag": "education",
+        "quotes": 1
+      },
+      {
+        "tag": "regrets",
+        "quotes": 1
+      },
+      {
+        "tag": "christianity",
+        "quotes": 1
+      },
+      {
+        "tag": "faith",
+        "quotes": 1
+      },
+      {
+        "tag": "sun",
+        "quotes": 1
+      },
+      {
+        "tag": "misattributed-mark-twain",
+        "quotes": 1
+      },
+      {
+        "tag": "mind",
+        "quotes": 1
+      },
+      {
+        "tag": "difficult",
+        "quotes": 1
+      },
+      {
+        "tag": "grown-ups",
+        "quotes": 1
+      },
+      {
+        "tag": "write",
+        "quotes": 1
+      },
+      {
+        "tag": "writers",
+        "quotes": 1
+      },
+      {
+        "tag": "better-life-empathy",
+        "quotes": 1
+      },
+      {
+        "tag": "adventure",
+        "quotes": 1
+      },
+      {
+        "tag": "god",
+        "quotes": 1
+      },
+      {
+        "tag": "age",
+        "quotes": 1
+      },
+      {
+        "tag": "fairytales",
+        "quotes": 1
+      },
+      {
+        "tag": "growing-up",
+        "quotes": 1
+      },
+      {
+        "tag": "elizabeth-bennet",
+        "quotes": 1
+      },
+      {
+        "tag": "jane-austen",
+        "quotes": 1
+      },
+      {
+        "tag": "integrity",
+        "quotes": 1
+      },
+      {
+        "tag": "romantic",
+        "quotes": 1
+      },
+      {
+        "tag": "women",
+        "quotes": 1
+      },
+      {
+        "tag": "mistakes",
+        "quotes": 1
+      },
+      {
+        "tag": "sinister",
+        "quotes": 1
+      },
+      {
+        "tag": "beatles",
+        "quotes": 1
+      },
+      {
+        "tag": "connection",
+        "quotes": 1
+      },
+      {
+        "tag": "dreamers",
+        "quotes": 1
+      },
+      {
+        "tag": "dreaming",
+        "quotes": 1
+      },
+      {
+        "tag": "dreams",
+        "quotes": 1
+      },
+      {
+        "tag": "peace",
+        "quotes": 1
+      },
+      {
+        "tag": "insanity",
+        "quotes": 1
+      },
+      {
+        "tag": "lies",
+        "quotes": 1
+      },
+      {
+        "tag": "lying",
+        "quotes": 1
+      },
+      {
+        "tag": "self-indulgence",
+        "quotes": 1
+      },
+      {
+        "tag": "authors",
+        "quotes": 1
+      },
+      {
+        "tag": "literature",
+        "quotes": 1
+      },
+      {
+        "tag": "open-mind",
+        "quotes": 1
+      },
+      {
+        "tag": "good",
+        "quotes": 1
+      },
+      {
+        "tag": "live-death-love",
+        "quotes": 1
+      },
+      {
+        "tag": "bilbo",
+        "quotes": 1
+      },
+      {
+        "tag": "journey",
+        "quotes": 1
+      },
+      {
+        "tag": "lost",
+        "quotes": 1
+      },
+      {
+        "tag": "quest",
+        "quotes": 1
+      },
+      {
+        "tag": "travel",
+        "quotes": 1
+      },
+      {
+        "tag": "wander",
+        "quotes": 1
+      },
+      {
+        "tag": "the-hunger-games",
+        "quotes": 1
+      },
+      {
+        "tag": "alcohol",
+        "quotes": 1
+      },
+      {
+        "tag": "novelist-quotes",
+        "quotes": 1
+      },
+      {
+        "tag": "drug",
+        "quotes": 1
+      },
+      {
+        "tag": "romance",
+        "quotes": 1
+      },
+      {
+        "tag": "misattributed-to-einstein",
+        "quotes": 1
+      },
+      {
+        "tag": "thought",
+        "quotes": 1
+      },
+      {
+        "tag": "attributed",
+        "quotes": 1
+      },
+      {
+        "tag": "fear",
+        "quotes": 1
+      },
+      {
+        "tag": "inspiration",
+        "quotes": 1
+      },
+      {
+        "tag": "girls",
+        "quotes": 1
+      },
+      {
+        "tag": "tea",
+        "quotes": 1
+      },
+      {
+        "tag": "read",
+        "quotes": 1
+      },
+      {
+        "tag": "readers",
+        "quotes": 1
+      },
+      {
+        "tag": "reading-books",
+        "quotes": 1
+      },
+      {
+        "tag": "knowledge",
+        "quotes": 1
+      },
+      {
+        "tag": "understanding",
+        "quotes": 1
+      },
+      {
+        "tag": "wisdom",
+        "quotes": 1
+      },
+      {
+        "tag": "misattributed-to-c-s-lewis",
+        "quotes": 1
+      },
+      {
+        "tag": "chocolate",
+        "quotes": 1
+      },
+      {
+        "tag": "food",
+        "quotes": 1
+      },
+      {
+        "tag": "misattributed-to-mother-teresa",
+        "quotes": 1
+      },
+      {
+        "tag": "seuss",
+        "quotes": 1
+      },
+      {
+        "tag": "fairy-tales",
+        "quotes": 1
+      },
+      {
+        "tag": "comedy",
+        "quotes": 1
+      },
+      {
+        "tag": "happiness",
+        "quotes": 1
+      },
+      {
+        "tag": "poetry",
+        "quotes": 1
+      },
+      {
+        "tag": "lack-of-friendship",
+        "quotes": 1
+      },
+      {
+        "tag": "lack-of-love",
+        "quotes": 1
+      },
+      {
+        "tag": "marriage",
+        "quotes": 1
+      },
+      {
+        "tag": "unhappy-marriage",
+        "quotes": 1
+      },
+      {
+        "tag": "activism",
+        "quotes": 1
+      },
+      {
+        "tag": "apathy",
+        "quotes": 1
+      },
+      {
+        "tag": "hate",
+        "quotes": 1
+      },
+      {
+        "tag": "indifference",
+        "quotes": 1
+      },
+      {
+        "tag": "opposite",
+        "quotes": 1
+      },
+      {
+        "tag": "navigation",
+        "quotes": 1
+      },
+      {
+        "tag": "fantasy",
+        "quotes": 1
+      },
+      {
+        "tag": "simplicity",
+        "quotes": 1
+      },
+      {
+        "tag": "understand",
+        "quotes": 1
+      },
+      {
+        "tag": "heartbreak",
+        "quotes": 1
+      },
+      {
+        "tag": "sisters",
+        "quotes": 1
+      },
+      {
+        "tag": "adulthood",
+        "quotes": 1
+      },
+      {
+        "tag": "success",
+        "quotes": 1
+      },
+      {
+        "tag": "value",
+        "quotes": 1
+      },
+      {
+        "tag": "be-yourself",
+        "quotes": 1
+      },
+      {
+        "tag": "aliteracy",
+        "quotes": 1
+      },
+      {
+        "tag": "live",
+        "quotes": 1
+      },
+      {
+        "tag": "miracle",
+        "quotes": 1
+      },
+      {
+        "tag": "miracles",
+        "quotes": 1
+      },
+      {
+        "tag": "abilities",
+        "quotes": 1
+      },
+      {
+        "tag": "choices",
+        "quotes": 1
+      },
+      {
+        "tag": "change",
+        "quotes": 1
+      },
+      {
+        "tag": "deep-thoughts",
+        "quotes": 1
+      },
+      {
+        "tag": "world",
+        "quotes": 1
+      }
+    ]
+  },
+  "business_rule_violations": {
+    "nonpositive_price": 0,
+    "invalid_rating": 0,
+    "negative_stock_or_reviews": 0,
+    "empty_quotes": 0
+  },
+  "runs": [
+    {
+      "run": "books_full",
+      "items": 304,
+      "written": 304,
+      "list_pages": 20,
+      "duration_s": 10.906,
+      "requests": 0,
+      "response_bytes": 0,
+      "retries": 0,
+      "cache_store": 0,
+      "cache_hit": 326,
+      "dupefilter_filtered": 0,
+      "dropped_missing": 1,
+      "dropped_invalid": 0,
+      "dropped_duplicate": 0,
+      "response_codes": {
+        "404": 1,
+        "200": 325
+      },
+      "errors": 0
+    },
+    {
+      "run": "cache_1",
+      "items": 100,
+      "written": 100,
+      "list_pages": 10,
+      "duration_s": 36.781,
+      "requests": 114,
+      "response_bytes": 111832,
+      "retries": 0,
+      "cache_store": 114,
+      "cache_hit": 97,
+      "dupefilter_filtered": 0,
+      "dropped_missing": 0,
+      "dropped_invalid": 0,
+      "dropped_duplicate": 0,
+      "response_codes": {
+        "404": 1,
+        "200": 110,
+        "308": 100
+      },
+      "errors": 0
+    },
+    {
+      "run": "cache_2",
+      "items": 100,
+      "written": 100,
+      "list_pages": 10,
+      "duration_s": 2.75,
+      "requests": 0,
+      "response_bytes": 0,
+      "retries": 0,
+      "cache_store": 0,
+      "cache_hit": 211,
+      "dupefilter_filtered": 0,
+      "dropped_missing": 0,
+      "dropped_invalid": 0,
+      "dropped_duplicate": 0,
+      "response_codes": {
+        "404": 1,
+        "200": 110,
+        "308": 100
+      },
+      "errors": 0
+    },
+    {
+      "run": "resume_1",
+      "items": 35,
+      "written": 35,
+      "list_pages": 10,
+      "duration_s": 20.078,
+      "requests": 58,
+      "response_bytes": 61998,
+      "retries": 0,
+      "cache_store": 58,
+      "cache_hit": 25,
+      "dupefilter_filtered": 0,
+      "dropped_missing": 0,
+      "dropped_invalid": 0,
+      "dropped_duplicate": 0,
+      "response_codes": {
+        "404": 1,
+        "200": 45,
+        "308": 37
+      },
+      "errors": 0
+    },
+    {
+      "run": "resume_2",
+      "items": 65,
+      "written": 65,
+      "list_pages": 0,
+      "duration_s": 18.516,
+      "requests": 56,
+      "response_bytes": 49692,
+      "retries": 0,
+      "cache_store": 56,
+      "cache_hit": 73,
+      "dupefilter_filtered": 1,
+      "dropped_missing": 0,
+      "dropped_invalid": 0,
+      "dropped_duplicate": 0,
+      "response_codes": {
+        "404": 1,
+        "200": 65,
+        "308": 63
+      },
+      "errors": 0
+    }
+  ]
+}
