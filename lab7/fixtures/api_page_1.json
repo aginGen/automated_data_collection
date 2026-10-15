@@ -1,0 +1,64 @@
+{
+  "records": [
+    {
+      "key": "api:/works/OL10056472W",
+      "title": "Bioinformatics Programming in Python",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL10056472W"
+    },
+    {
+      "key": "api:/works/OL1033722W",
+      "title": "XML Processing with Python",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL1033722W"
+    },
+    {
+      "key": "api:/works/OL10538818W",
+      "title": "The life of Python",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL10538818W"
+    },
+    {
+      "key": "api:/works/OL106747W",
+      "title": "Python scripting for computational science",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL106747W"
+    },
+    {
+      "key": "api:/works/OL11791152W",
+      "title": "Python for bioinformatics",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL11791152W"
+    },
+    {
+      "key": "api:/works/OL12103779W",
+      "title": "Game development essentials",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL12103779W"
+    },
+    {
+      "key": "api:/works/OL12252560W",
+      "title": "The complete Fawlty Towers",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL12252560W"
+    },
+    {
+      "key": "api:/works/OL12381655W",
+      "title": "Python and Tkinter programming",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL12381655W"
+    },
+    {
+      "key": "api:/works/OL12409294W",
+      "title": "Core Python programming",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL12409294W"
+    },
+    {
+      "key": "api:/works/OL13257289W",
+      "title": "Object-oriented programming in Python",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL13257289W"
+    }
+  ]
+}

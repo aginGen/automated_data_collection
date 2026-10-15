@@ -1,0 +1,26 @@
+[
+  {
+    "mechanism": "conditional",
+    "requests_before": 10,
+    "requests_after": 10,
+    "bytes_before": 17826,
+    "bytes_after": 0,
+    "saved_percent": 100.0
+  },
+  {
+    "mechanism": "gzip",
+    "requests_before": 10,
+    "requests_after": 10,
+    "bytes_before": 17826,
+    "bytes_after": 6159,
+    "saved_percent": 65.45
+  },
+  {
+    "mechanism": "incremental",
+    "requests_before": 10,
+    "requests_after": 4,
+    "bytes_before": 17826,
+    "bytes_after": 476,
+    "saved_percent": 97.33
+  }
+]

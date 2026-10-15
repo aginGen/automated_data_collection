@@ -1,0 +1,4 @@
+format,bytes,read_all_ms,read_three_ms,date_dtype,id_dtype,id_example
+CSV,137434,8.3477,6.2272,object,int64,100
+JSONL,209284,20.9737,21.0878,"datetime64[ns, UTC]",int64,100
+Parquet,72574,6.1466,4.2139,"datetime64[ns, UTC]",string,000100

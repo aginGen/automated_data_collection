@@ -1,0 +1,33 @@
+{
+  "requests": 10,
+  "codes": {
+    "200": 10
+  },
+  "error_share": 0.0,
+  "rate_or_block_share": 0.0,
+  "retries": 0,
+  "median_ms": 44.96235,
+  "p95_ms": 50.865395,
+  "wire_bytes": 17826,
+  "decoded_bytes": 17826,
+  "not_modified": 0,
+  "breaker_activations": 0,
+  "blocked_domains": 0,
+  "records": 60,
+  "rejected": 0,
+  "duration_s": 0.2528,
+  "mean_body_bytes": 2891.6666666666665,
+  "volume_drop": 0.0,
+  "body_size_drop": 0.0,
+  "alerts": [],
+  "verdict": "green",
+  "profile": "A",
+  "run_id": "A_01bc710a43",
+  "log": "logs/run_A_01bc710a43.jsonl",
+  "source_records": {
+    "http://127.0.0.1:8797": 30,
+    "http://127.0.0.2:8798": 30
+  },
+  "archived_records": 60,
+  "network_records": 60
+}

@@ -1,0 +1,934 @@
+{
+  "http://127.0.0.1:8798/robots.txt": {
+    "body": "User-agent: *\nAllow: /\nDisallow: /private/\nCrawl-delay: 0\nSitemap: http://127.0.0.1:8798/manifest\n",
+    "records": [],
+    "etag": "\"10707c1feb1f58fd9b1f9b84\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "http://127.0.0.1:8798/manifest": {
+    "body": "{\"version\": 1, \"resources\": [{\"path\": \"/page/1\", \"version\": \"1\"}, {\"path\": \"/page/2\", \"version\": \"1\"}, {\"path\": \"/page/3\", \"version\": \"1\"}]}",
+    "records": [],
+    "etag": "\"b16136cfb4645859459ad9f2\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "http://127.0.0.1:8798/page/1": {
+    "body": "{\r\n  \"records\": [\r\n    {\r\n      \"key\": \"api:/works/OL10056472W\",\r\n      \"title\": \"Bioinformatics Programming in Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL10056472W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL1033722W\",\r\n      \"title\": \"XML Processing with Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL1033722W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL10538818W\",\r\n      \"title\": \"The life of Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL10538818W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL106747W\",\r\n      \"title\": \"Python scripting for computational science\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL106747W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL11791152W\",\r\n      \"title\": \"Python for bioinformatics\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL11791152W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL12103779W\",\r\n      \"title\": \"Game development essentials\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL12103779W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL12252560W\",\r\n      \"title\": \"The complete Fawlty Towers\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL12252560W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL12381655W\",\r\n      \"title\": \"Python and Tkinter programming\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL12381655W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL12409294W\",\r\n      \"title\": \"Core Python programming\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL12409294W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13257289W\",\r\n      \"title\": \"Object-oriented programming in Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13257289W\"\r\n    }\r\n  ]\r\n}",
+    "records": [
+      {
+        "key": "api:/works/OL10056472W",
+        "title": "Bioinformatics Programming in Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL10056472W"
+      },
+      {
+        "key": "api:/works/OL1033722W",
+        "title": "XML Processing with Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL1033722W"
+      },
+      {
+        "key": "api:/works/OL10538818W",
+        "title": "The life of Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL10538818W"
+      },
+      {
+        "key": "api:/works/OL106747W",
+        "title": "Python scripting for computational science",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL106747W"
+      },
+      {
+        "key": "api:/works/OL11791152W",
+        "title": "Python for bioinformatics",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL11791152W"
+      },
+      {
+        "key": "api:/works/OL12103779W",
+        "title": "Game development essentials",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL12103779W"
+      },
+      {
+        "key": "api:/works/OL12252560W",
+        "title": "The complete Fawlty Towers",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL12252560W"
+      },
+      {
+        "key": "api:/works/OL12381655W",
+        "title": "Python and Tkinter programming",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL12381655W"
+      },
+      {
+        "key": "api:/works/OL12409294W",
+        "title": "Core Python programming",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL12409294W"
+      },
+      {
+        "key": "api:/works/OL13257289W",
+        "title": "Object-oriented programming in Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13257289W"
+      }
+    ],
+    "etag": "\"1fa97f5865e40577caf1607f\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "http://127.0.0.1:8798/page/2": {
+    "body": "{\r\n  \"records\": [\r\n    {\r\n      \"key\": \"api:/works/OL13301932W\",\r\n      \"title\": \"Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13301932W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13590691W\",\r\n      \"title\": \"Beginning Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13590691W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13600452W\",\r\n      \"title\": \"Python web development with Django\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13600452W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13691702W\",\r\n      \"title\": \"Data structures and algorithms using Python and C++\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13691702W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13755386W\",\r\n      \"title\": \"Learn to program using Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13755386W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13763256W\",\r\n      \"title\": \"Pacify me\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13763256W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13766685W\",\r\n      \"title\": \"Gray hat Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13766685W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13783928W\",\r\n      \"title\": \"Financial modeling in Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13783928W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13820746W\",\r\n      \"title\": \"Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13820746W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL14873289W\",\r\n      \"title\": \"Python Cookbook\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL14873289W\"\r\n    }\r\n  ]\r\n}",
+    "records": [
+      {
+        "key": "api:/works/OL13301932W",
+        "title": "Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13301932W"
+      },
+      {
+        "key": "api:/works/OL13590691W",
+        "title": "Beginning Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13590691W"
+      },
+      {
+        "key": "api:/works/OL13600452W",
+        "title": "Python web development with Django",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13600452W"
+      },
+      {
+        "key": "api:/works/OL13691702W",
+        "title": "Data structures and algorithms using Python and C++",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13691702W"
+      },
+      {
+        "key": "api:/works/OL13755386W",
+        "title": "Learn to program using Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13755386W"
+      },
+      {
+        "key": "api:/works/OL13763256W",
+        "title": "Pacify me",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13763256W"
+      },
+      {
+        "key": "api:/works/OL13766685W",
+        "title": "Gray hat Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13766685W"
+      },
+      {
+        "key": "api:/works/OL13783928W",
+        "title": "Financial modeling in Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13783928W"
+      },
+      {
+        "key": "api:/works/OL13820746W",
+        "title": "Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13820746W"
+      },
+      {
+        "key": "api:/works/OL14873289W",
+        "title": "Python Cookbook",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL14873289W"
+      }
+    ],
+    "etag": "\"49a0ca9e3b77b513cb68f575\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "http://127.0.0.1:8798/page/3": {
+    "body": "{\r\n  \"records\": [\r\n    {\r\n      \"key\": \"api:/works/OL14940051W\",\r\n      \"title\": \"Natural Language Processing With Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL14940051W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL14947004W\",\r\n      \"title\": \"Pythons' Autobiography by the Pythons\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL14947004W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL14988875W\",\r\n      \"title\": \"Professional Python Frameworks\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL14988875W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15078486W\",\r\n      \"title\": \"The Fairly Incomplete and Rather Badly Illustrated Monty Python Song Book\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15078486W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15120665W\",\r\n      \"title\": \"The Complete Python Training Course\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15120665W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15120680W\",\r\n      \"title\": \"Python How to Program Part A and Part B\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15120680W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15178080W\",\r\n      \"title\": \"Python for Software Design\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15178080W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15181426W\",\r\n      \"title\": \"Beginning Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15181426W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15191590W\",\r\n      \"title\": \"Beginning Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15191590W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15348139W\",\r\n      \"title\": \"Creative Technologies\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15348139W\"\r\n    }\r\n  ]\r\n}",
+    "records": [
+      {
+        "key": "api:/works/OL14940051W",
+        "title": "Natural Language Processing With Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL14940051W"
+      },
+      {
+        "key": "api:/works/OL14947004W",
+        "title": "Pythons' Autobiography by the Pythons",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL14947004W"
+      },
+      {
+        "key": "api:/works/OL14988875W",
+        "title": "Professional Python Frameworks",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL14988875W"
+      },
+      {
+        "key": "api:/works/OL15078486W",
+        "title": "The Fairly Incomplete and Rather Badly Illustrated Monty Python Song Book",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15078486W"
+      },
+      {
+        "key": "api:/works/OL15120665W",
+        "title": "The Complete Python Training Course",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15120665W"
+      },
+      {
+        "key": "api:/works/OL15120680W",
+        "title": "Python How to Program Part A and Part B",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15120680W"
+      },
+      {
+        "key": "api:/works/OL15178080W",
+        "title": "Python for Software Design",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15178080W"
+      },
+      {
+        "key": "api:/works/OL15181426W",
+        "title": "Beginning Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15181426W"
+      },
+      {
+        "key": "api:/works/OL15191590W",
+        "title": "Beginning Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15191590W"
+      },
+      {
+        "key": "api:/works/OL15348139W",
+        "title": "Creative Technologies",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15348139W"
+      }
+    ],
+    "etag": "\"75a71388759e755b222d1231\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "http://localhost:8797/robots.txt": {
+    "body": "User-agent: *\nAllow: /\nDisallow: /private/\nCrawl-delay: 0\nSitemap: http://localhost:8797/manifest\n",
+    "records": [],
+    "etag": "\"0ed3f724e66f537817546c1e\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "http://localhost:8797/manifest": {
+    "body": "{\"version\": 1, \"resources\": [{\"path\": \"/page/1\", \"version\": \"1\"}, {\"path\": \"/page/2\", \"version\": \"1\"}, {\"path\": \"/page/3\", \"version\": \"1\"}]}",
+    "records": [],
+    "etag": "\"b16136cfb4645859459ad9f2\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "http://localhost:8797/page/1": {
+    "body": "<html><body><article class=\"quote\" data-key=\"html:0201691e2399b1ef8a884e1c0d9b9e652c0c7c43be41d5b0d8a2a239b128828f\" data-url=\"https://quotes.toscrape.com/page/5/\"><span class=\"text\">“It matters not what someone is born, but what they grow to be.”</span><span class=\"author\">J.K. Rowling</span></article><article class=\"quote\" data-key=\"html:02ccc2bb54f3748458f671cdc51f1bceb6d9aad01a431c595034e6d21dddea90\" data-url=\"https://quotes.toscrape.com/page/1/\"><span class=\"text\">“It is better to be hated for what you are than to be loved for what you are not.”</span><span class=\"author\">André Gide</span></article><article class=\"quote\" data-key=\"html:06e6070e57700694cd2ae2493078e50ee05671028c24145b36234ffe1e7f6112\" data-url=\"https://quotes.toscrape.com/page/6/\"><span class=\"text\">“He&#x27;s like a drug for you, Bella.”</span><span class=\"author\">Stephenie Meyer</span></article><article class=\"quote\" data-key=\"html:07d81a883d4eeb29f56bb141eeddee85f556e56bb6812ff5f0d3fb7c3d822766\" data-url=\"https://quotes.toscrape.com/page/4/\"><span class=\"text\">“The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.”</span><span class=\"author\">Bob Marley</span></article><article class=\"quote\" data-key=\"html:07e6a739a033ccc47acf97ee5bee1ebe7ad4422b68d22821a534ba7e3bba5cdf\" data-url=\"https://quotes.toscrape.com/page/4/\"><span class=\"text\">“We read to know we&#x27;re not alone.”</span><span class=\"author\">William Nicholson</span></article><article class=\"quote\" data-key=\"html:0934118fd179f7197e1ff09b51c36347bf0cbbe536baa30fb03d037f79801a0b\" data-url=\"https://quotes.toscrape.com/page/2/\"><span class=\"text\">“This life is what you make it. No matter what, you&#x27;re going to mess up sometimes, it&#x27;s a universal truth. But the good part is you get to decide how you&#x27;re going to mess it up. Girls will be your friends - they&#x27;ll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they&#x27;re your true best friends. Don&#x27;t let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they&#x27;ll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can&#x27;t give up because if you give up, you&#x27;ll never find your soulmate. You&#x27;ll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn&#x27;t mean you&#x27;re gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don&#x27;t, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life&#x27;s a beautiful thing and there&#x27;s so much to smile about.”</span><span class=\"author\">Marilyn Monroe</span></article><article class=\"quote\" data-key=\"html:0d527931b56000e65e93863ed18d6c28b54f9b66bf7ddd23ef0355b1ace9b145\" data-url=\"https://quotes.toscrape.com/page/10/\"><span class=\"text\">“You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.”</span><span class=\"author\">Harper Lee</span></article><article class=\"quote\" data-key=\"html:1066a505f94514b39d3587cd02c8511ccd6ee17ff4e7ebaae896545ce6ef9f9b\" data-url=\"https://quotes.toscrape.com/page/8/\"><span class=\"text\">“You may say I&#x27;m a dreamer, but I&#x27;m not the only one. I hope someday you&#x27;ll join us. And the world will live as one.”</span><span class=\"author\">John Lennon</span></article><article class=\"quote\" data-key=\"html:10f8e30c77b1a0cdafff43fdb2957de3096dc41e48c2f20af8e7b388e75a026b\" data-url=\"https://quotes.toscrape.com/page/9/\"><span class=\"text\">“Remember, if the time should come when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory.”</span><span class=\"author\">J.K. Rowling</span></article><article class=\"quote\" data-key=\"html:11fece28d5da090bca24278d78438d0fa1e1a71999106b04a5716c91c2f572a3\" data-url=\"https://quotes.toscrape.com/page/7/\"><span class=\"text\">“That&#x27;s the problem with drinking, I thought, as I poured myself a drink. If something bad happens you drink in an attempt to forget; if something good happens you drink in order to celebrate; and if nothing happens you drink to make something happen.”</span><span class=\"author\">Charles Bukowski</span></article></body></html>",
+    "records": [
+      {
+        "key": "html:0201691e2399b1ef8a884e1c0d9b9e652c0c7c43be41d5b0d8a2a239b128828f",
+        "title": "“It matters not what someone is born, but what they grow to be.”",
+        "author": "J.K. Rowling",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/5/"
+      },
+      {
+        "key": "html:02ccc2bb54f3748458f671cdc51f1bceb6d9aad01a431c595034e6d21dddea90",
+        "title": "“It is better to be hated for what you are than to be loved for what you are not.”",
+        "author": "André Gide",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/1/"
+      },
+      {
+        "key": "html:06e6070e57700694cd2ae2493078e50ee05671028c24145b36234ffe1e7f6112",
+        "title": "“He's like a drug for you, Bella.”",
+        "author": "Stephenie Meyer",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/6/"
+      },
+      {
+        "key": "html:07d81a883d4eeb29f56bb141eeddee85f556e56bb6812ff5f0d3fb7c3d822766",
+        "title": "“The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.”",
+        "author": "Bob Marley",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/4/"
+      },
+      {
+        "key": "html:07e6a739a033ccc47acf97ee5bee1ebe7ad4422b68d22821a534ba7e3bba5cdf",
+        "title": "“We read to know we're not alone.”",
+        "author": "William Nicholson",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/4/"
+      },
+      {
+        "key": "html:0934118fd179f7197e1ff09b51c36347bf0cbbe536baa30fb03d037f79801a0b",
+        "title": "“This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.”",
+        "author": "Marilyn Monroe",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/2/"
+      },
+      {
+        "key": "html:0d527931b56000e65e93863ed18d6c28b54f9b66bf7ddd23ef0355b1ace9b145",
+        "title": "“You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.”",
+        "author": "Harper Lee",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/10/"
+      },
+      {
+        "key": "html:1066a505f94514b39d3587cd02c8511ccd6ee17ff4e7ebaae896545ce6ef9f9b",
+        "title": "“You may say I'm a dreamer, but I'm not the only one. I hope someday you'll join us. And the world will live as one.”",
+        "author": "John Lennon",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/8/"
+      },
+      {
+        "key": "html:10f8e30c77b1a0cdafff43fdb2957de3096dc41e48c2f20af8e7b388e75a026b",
+        "title": "“Remember, if the time should come when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory.”",
+        "author": "J.K. Rowling",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/9/"
+      },
+      {
+        "key": "html:11fece28d5da090bca24278d78438d0fa1e1a71999106b04a5716c91c2f572a3",
+        "title": "“That's the problem with drinking, I thought, as I poured myself a drink. If something bad happens you drink in an attempt to forget; if something good happens you drink in order to celebrate; and if nothing happens you drink to make something happen.”",
+        "author": "Charles Bukowski",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/7/"
+      }
+    ],
+    "etag": "\"8510e58926ea878068320b9d\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "http://localhost:8797/page/2": {
+    "body": "<html><body><article class=\"quote\" data-key=\"html:199dad64b0b735f30efb70cfe961dbc50c2f27ee24a2ce38514bb16513cd34af\" data-url=\"https://quotes.toscrape.com/page/6/\"><span class=\"text\">“If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music.”</span><span class=\"author\">Albert Einstein</span></article><article class=\"quote\" data-key=\"html:1df6275ced6818b5114743c6c3933aed7275153e972b37f5a1da21f66077a6a6\" data-url=\"https://quotes.toscrape.com/page/5/\"><span class=\"text\">“The real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.”</span><span class=\"author\">Marilyn Monroe</span></article><article class=\"quote\" data-key=\"html:1e574cb5d5104c4146665eacc2ba4537b98f0a23e14481a7c21894e2dacb09b2\" data-url=\"https://quotes.toscrape.com/page/4/\"><span class=\"text\">“All you need is love. But a little chocolate now and then doesn&#x27;t hurt.”</span><span class=\"author\">Charles M. Schulz</span></article><article class=\"quote\" data-key=\"html:207bfa44e7011792409055c2783d19460b8f403cff1df4b3beb26abb1e315b9a\" data-url=\"https://quotes.toscrape.com/page/3/\"><span class=\"text\">“Logic will get you from A to Z; imagination will get you everywhere.”</span><span class=\"author\">Albert Einstein</span></article><article class=\"quote\" data-key=\"html:253ace2bd9f69fda047c9ba97b5f9b90f3b9e7180be6189b825e372e71db9eaf\" data-url=\"https://quotes.toscrape.com/page/7/\"><span class=\"text\">“Do not pity the dead, Harry. Pity the living, and, above all those who live without love.”</span><span class=\"author\">J.K. Rowling</span></article><article class=\"quote\" data-key=\"html:263d1ebbaf3785ca1ab2aefa64b02a825a41a9d1a786b8b20e98cc2088d8204e\" data-url=\"https://quotes.toscrape.com/page/1/\"><span class=\"text\">“I have not failed. I&#x27;ve just found 10,000 ways that won&#x27;t work.”</span><span class=\"author\">Thomas A. Edison</span></article><article class=\"quote\" data-key=\"html:2672a0dc1537d71be7a27c3ae96c56cfa66ede760134f96a67dbf729abff6168\" data-url=\"https://quotes.toscrape.com/page/1/\"><span class=\"text\">“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”</span><span class=\"author\">Albert Einstein</span></article><article class=\"quote\" data-key=\"html:2812bb34e9e7e147a48382cf8f1af14d8be5e1a411df28344a12c341c15a524c\" data-url=\"https://quotes.toscrape.com/page/9/\"><span class=\"text\">“A lady&#x27;s imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.”</span><span class=\"author\">Jane Austen</span></article><article class=\"quote\" data-key=\"html:2855f330fc447b4a99bdd7f155295f01f739d3ec8bdc6edbd4c753c97f4b3287\" data-url=\"https://quotes.toscrape.com/page/6/\"><span class=\"text\">“Life isn&#x27;t about finding yourself. Life is about creating yourself.”</span><span class=\"author\">George Bernard Shaw</span></article><article class=\"quote\" data-key=\"html:286d3636d7f2cffd12bdc595222227f961b2f56ebce4508cdca55741c7466bfb\" data-url=\"https://quotes.toscrape.com/page/9/\"><span class=\"text\">“I believe in Christianity as I believe that the sun has risen: not only because I see it, but because by it I see everything else.”</span><span class=\"author\">C.S. Lewis</span></article></body></html>",
+    "records": [
+      {
+        "key": "html:199dad64b0b735f30efb70cfe961dbc50c2f27ee24a2ce38514bb16513cd34af",
+        "title": "“If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music.”",
+        "author": "Albert Einstein",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/6/"
+      },
+      {
+        "key": "html:1df6275ced6818b5114743c6c3933aed7275153e972b37f5a1da21f66077a6a6",
+        "title": "“The real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.”",
+        "author": "Marilyn Monroe",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/5/"
+      },
+      {
+        "key": "html:1e574cb5d5104c4146665eacc2ba4537b98f0a23e14481a7c21894e2dacb09b2",
+        "title": "“All you need is love. But a little chocolate now and then doesn't hurt.”",
+        "author": "Charles M. Schulz",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/4/"
+      },
+      {
+        "key": "html:207bfa44e7011792409055c2783d19460b8f403cff1df4b3beb26abb1e315b9a",
+        "title": "“Logic will get you from A to Z; imagination will get you everywhere.”",
+        "author": "Albert Einstein",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/3/"
+      },
+      {
+        "key": "html:253ace2bd9f69fda047c9ba97b5f9b90f3b9e7180be6189b825e372e71db9eaf",
+        "title": "“Do not pity the dead, Harry. Pity the living, and, above all those who live without love.”",
+        "author": "J.K. Rowling",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/7/"
+      },
+      {
+        "key": "html:263d1ebbaf3785ca1ab2aefa64b02a825a41a9d1a786b8b20e98cc2088d8204e",
+        "title": "“I have not failed. I've just found 10,000 ways that won't work.”",
+        "author": "Thomas A. Edison",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/1/"
+      },
+      {
+        "key": "html:2672a0dc1537d71be7a27c3ae96c56cfa66ede760134f96a67dbf729abff6168",
+        "title": "“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”",
+        "author": "Albert Einstein",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/1/"
+      },
+      {
+        "key": "html:2812bb34e9e7e147a48382cf8f1af14d8be5e1a411df28344a12c341c15a524c",
+        "title": "“A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.”",
+        "author": "Jane Austen",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/9/"
+      },
+      {
+        "key": "html:2855f330fc447b4a99bdd7f155295f01f739d3ec8bdc6edbd4c753c97f4b3287",
+        "title": "“Life isn't about finding yourself. Life is about creating yourself.”",
+        "author": "George Bernard Shaw",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/6/"
+      },
+      {
+        "key": "html:286d3636d7f2cffd12bdc595222227f961b2f56ebce4508cdca55741c7466bfb",
+        "title": "“I believe in Christianity as I believe that the sun has risen: not only because I see it, but because by it I see everything else.”",
+        "author": "C.S. Lewis",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/9/"
+      }
+    ],
+    "etag": "\"b09e17f02b28e6c294d1d890\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "http://localhost:8797/page/3": {
+    "body": "<html><body><article class=\"quote\" data-key=\"html:2d48ebef1b0946cf63aef3ef87038f78652bd93e7f56946fac1194d764d63ef8\" data-url=\"https://quotes.toscrape.com/page/10/\"><span class=\"text\">“It takes courage to grow up and become who you really are.”</span><span class=\"author\">E.E. Cummings</span></article><article class=\"quote\" data-key=\"html:2f9212be7da1f91ced2560af1ca3856cbde27125123e0d97f126e787bcc2341f\" data-url=\"https://quotes.toscrape.com/page/10/\"><span class=\"text\">“You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children.”</span><span class=\"author\">Madeleine L&#x27;Engle</span></article><article class=\"quote\" data-key=\"html:32517c926e1fc48fe79a454c941ada00eb25ae7df3b9ff78d8ec997a05bd7fb1\" data-url=\"https://quotes.toscrape.com/page/3/\"><span class=\"text\">“If you judge people, you have no time to love them.”</span><span class=\"author\">Mother Teresa</span></article><article class=\"quote\" data-key=\"html:334e3744a76583d094d77cfb2b2aaf7c2d0cd224f072d63acc7323307e49aed8\" data-url=\"https://quotes.toscrape.com/page/7/\"><span class=\"text\">“Finish each day and be done with it. You have done what you could. Some blunders and absurdities no doubt crept in; forget them as soon as you can. Tomorrow is a new day. You shall begin it serenely and with too high a spirit to be encumbered with your old nonsense.”</span><span class=\"author\">Ralph Waldo Emerson</span></article><article class=\"quote\" data-key=\"html:3397e7814a25dbcb8b371b194792177b73282593b29957568f1ec8803a27f247\" data-url=\"https://quotes.toscrape.com/page/8/\"><span class=\"text\">“I am free of all prejudice. I hate everyone equally. ”</span><span class=\"author\">W.C. Fields</span></article><article class=\"quote\" data-key=\"html:33cf440e2e9549acd217fd552ecb27db961cecb1b416ce5a0fd3c2a9a19b346c\" data-url=\"https://quotes.toscrape.com/page/8/\"><span class=\"text\">“Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!”</span><span class=\"author\">Dr. Seuss</span></article><article class=\"quote\" data-key=\"html:3575498e8ccc99930ec4f3513067dedbd1b8f6aad1c7cc23357d0ef7b6296bfc\" data-url=\"https://quotes.toscrape.com/page/5/\"><span class=\"text\">“If you can make a woman laugh, you can make her do anything.”</span><span class=\"author\">Marilyn Monroe</span></article><article class=\"quote\" data-key=\"html:361487ee12e9f122c90483e7f5eaa2fa908785dc52c3b0624aa7af44f03feb7f\" data-url=\"https://quotes.toscrape.com/page/8/\"><span class=\"text\">“The reason I talk to myself is because I’m the only one whose answers I accept.”</span><span class=\"author\">George Carlin</span></article><article class=\"quote\" data-key=\"html:36619c340fdadac3afa0a66c457220324f76f95c1ca6b4c62857707eef1a5bb5\" data-url=\"https://quotes.toscrape.com/page/2/\"><span class=\"text\">“The opposite of love is not hate, it&#x27;s indifference. The opposite of art is not ugliness, it&#x27;s indifference. The opposite of faith is not heresy, it&#x27;s indifference. And the opposite of life is not death, it&#x27;s indifference.”</span><span class=\"author\">Elie Wiesel</span></article><article class=\"quote\" data-key=\"html:3f3975edd7547f81aba7c7945543660a6942750bc3a224ce5be644f17b41f467\" data-url=\"https://quotes.toscrape.com/page/4/\"><span class=\"text\">“To the well-organized mind, death is but the next great adventure.”</span><span class=\"author\">J.K. Rowling</span></article></body></html>",
+    "records": [
+      {
+        "key": "html:2d48ebef1b0946cf63aef3ef87038f78652bd93e7f56946fac1194d764d63ef8",
+        "title": "“It takes courage to grow up and become who you really are.”",
+        "author": "E.E. Cummings",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/10/"
+      },
+      {
+        "key": "html:2f9212be7da1f91ced2560af1ca3856cbde27125123e0d97f126e787bcc2341f",
+        "title": "“You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children.”",
+        "author": "Madeleine L'Engle",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/10/"
+      },
+      {
+        "key": "html:32517c926e1fc48fe79a454c941ada00eb25ae7df3b9ff78d8ec997a05bd7fb1",
+        "title": "“If you judge people, you have no time to love them.”",
+        "author": "Mother Teresa",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/3/"
+      },
+      {
+        "key": "html:334e3744a76583d094d77cfb2b2aaf7c2d0cd224f072d63acc7323307e49aed8",
+        "title": "“Finish each day and be done with it. You have done what you could. Some blunders and absurdities no doubt crept in; forget them as soon as you can. Tomorrow is a new day. You shall begin it serenely and with too high a spirit to be encumbered with your old nonsense.”",
+        "author": "Ralph Waldo Emerson",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/7/"
+      },
+      {
+        "key": "html:3397e7814a25dbcb8b371b194792177b73282593b29957568f1ec8803a27f247",
+        "title": "“I am free of all prejudice. I hate everyone equally. ”",
+        "author": "W.C. Fields",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/8/"
+      },
+      {
+        "key": "html:33cf440e2e9549acd217fd552ecb27db961cecb1b416ce5a0fd3c2a9a19b346c",
+        "title": "“Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!”",
+        "author": "Dr. Seuss",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/8/"
+      },
+      {
+        "key": "html:3575498e8ccc99930ec4f3513067dedbd1b8f6aad1c7cc23357d0ef7b6296bfc",
+        "title": "“If you can make a woman laugh, you can make her do anything.”",
+        "author": "Marilyn Monroe",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/5/"
+      },
+      {
+        "key": "html:361487ee12e9f122c90483e7f5eaa2fa908785dc52c3b0624aa7af44f03feb7f",
+        "title": "“The reason I talk to myself is because I’m the only one whose answers I accept.”",
+        "author": "George Carlin",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/8/"
+      },
+      {
+        "key": "html:36619c340fdadac3afa0a66c457220324f76f95c1ca6b4c62857707eef1a5bb5",
+        "title": "“The opposite of love is not hate, it's indifference. The opposite of art is not ugliness, it's indifference. The opposite of faith is not heresy, it's indifference. And the opposite of life is not death, it's indifference.”",
+        "author": "Elie Wiesel",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/2/"
+      },
+      {
+        "key": "html:3f3975edd7547f81aba7c7945543660a6942750bc3a224ce5be644f17b41f467",
+        "title": "“To the well-organized mind, death is but the next great adventure.”",
+        "author": "J.K. Rowling",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/4/"
+      }
+    ],
+    "etag": "\"f87608630c53b2647644e20b\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "http://127.0.0.1:8797/robots.txt": {
+    "body": "User-agent: *\nAllow: /\nDisallow: /private/\nCrawl-delay: 0\nSitemap: http://127.0.0.1:8797/manifest\n",
+    "records": [],
+    "etag": "W/\"6ed0be1afa54447480af9805\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "http://127.0.0.2:8798/robots.txt": {
+    "body": "User-agent: *\nAllow: /\nDisallow: /private/\nCrawl-delay: 0\nSitemap: http://127.0.0.2:8798/manifest\n",
+    "records": [],
+    "etag": "W/\"71def5458c7eea3d773ceaf8\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "http://127.0.0.1:8797/manifest": {
+    "body": "{\"version\": 1, \"resources\": [{\"path\": \"/page/1\", \"version\": \"1\"}, {\"path\": \"/page/2\", \"version\": \"1\"}, {\"path\": \"/page/3\", \"version\": \"1\"}]}",
+    "records": [],
+    "etag": "W/\"b16136cfb4645859459ad9f2\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "http://127.0.0.2:8798/manifest": {
+    "body": "{\"version\": 1, \"resources\": [{\"path\": \"/page/1\", \"version\": \"1\"}, {\"path\": \"/page/2\", \"version\": \"1\"}, {\"path\": \"/page/3\", \"version\": \"1\"}]}",
+    "records": [],
+    "etag": "W/\"b16136cfb4645859459ad9f2\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "http://127.0.0.1:8797/page/1": {
+    "body": "<html><body><article class=\"quote\" data-key=\"html:0201691e2399b1ef8a884e1c0d9b9e652c0c7c43be41d5b0d8a2a239b128828f\" data-url=\"https://quotes.toscrape.com/page/5/\"><span class=\"text\">“It matters not what someone is born, but what they grow to be.”</span><span class=\"author\">J.K. Rowling</span></article><article class=\"quote\" data-key=\"html:02ccc2bb54f3748458f671cdc51f1bceb6d9aad01a431c595034e6d21dddea90\" data-url=\"https://quotes.toscrape.com/page/1/\"><span class=\"text\">“It is better to be hated for what you are than to be loved for what you are not.”</span><span class=\"author\">André Gide</span></article><article class=\"quote\" data-key=\"html:06e6070e57700694cd2ae2493078e50ee05671028c24145b36234ffe1e7f6112\" data-url=\"https://quotes.toscrape.com/page/6/\"><span class=\"text\">“He&#x27;s like a drug for you, Bella.”</span><span class=\"author\">Stephenie Meyer</span></article><article class=\"quote\" data-key=\"html:07d81a883d4eeb29f56bb141eeddee85f556e56bb6812ff5f0d3fb7c3d822766\" data-url=\"https://quotes.toscrape.com/page/4/\"><span class=\"text\">“The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.”</span><span class=\"author\">Bob Marley</span></article><article class=\"quote\" data-key=\"html:07e6a739a033ccc47acf97ee5bee1ebe7ad4422b68d22821a534ba7e3bba5cdf\" data-url=\"https://quotes.toscrape.com/page/4/\"><span class=\"text\">“We read to know we&#x27;re not alone.”</span><span class=\"author\">William Nicholson</span></article><article class=\"quote\" data-key=\"html:0934118fd179f7197e1ff09b51c36347bf0cbbe536baa30fb03d037f79801a0b\" data-url=\"https://quotes.toscrape.com/page/2/\"><span class=\"text\">“This life is what you make it. No matter what, you&#x27;re going to mess up sometimes, it&#x27;s a universal truth. But the good part is you get to decide how you&#x27;re going to mess it up. Girls will be your friends - they&#x27;ll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they&#x27;re your true best friends. Don&#x27;t let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they&#x27;ll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can&#x27;t give up because if you give up, you&#x27;ll never find your soulmate. You&#x27;ll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn&#x27;t mean you&#x27;re gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don&#x27;t, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life&#x27;s a beautiful thing and there&#x27;s so much to smile about.”</span><span class=\"author\">Marilyn Monroe</span></article><article class=\"quote\" data-key=\"html:0d527931b56000e65e93863ed18d6c28b54f9b66bf7ddd23ef0355b1ace9b145\" data-url=\"https://quotes.toscrape.com/page/10/\"><span class=\"text\">“You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.”</span><span class=\"author\">Harper Lee</span></article><article class=\"quote\" data-key=\"html:1066a505f94514b39d3587cd02c8511ccd6ee17ff4e7ebaae896545ce6ef9f9b\" data-url=\"https://quotes.toscrape.com/page/8/\"><span class=\"text\">“You may say I&#x27;m a dreamer, but I&#x27;m not the only one. I hope someday you&#x27;ll join us. And the world will live as one.”</span><span class=\"author\">John Lennon</span></article><article class=\"quote\" data-key=\"html:10f8e30c77b1a0cdafff43fdb2957de3096dc41e48c2f20af8e7b388e75a026b\" data-url=\"https://quotes.toscrape.com/page/9/\"><span class=\"text\">“Remember, if the time should come when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory.”</span><span class=\"author\">J.K. Rowling</span></article><article class=\"quote\" data-key=\"html:11fece28d5da090bca24278d78438d0fa1e1a71999106b04a5716c91c2f572a3\" data-url=\"https://quotes.toscrape.com/page/7/\"><span class=\"text\">“That&#x27;s the problem with drinking, I thought, as I poured myself a drink. If something bad happens you drink in an attempt to forget; if something good happens you drink in order to celebrate; and if nothing happens you drink to make something happen.”</span><span class=\"author\">Charles Bukowski</span></article></body></html>",
+    "records": [
+      {
+        "key": "html:0201691e2399b1ef8a884e1c0d9b9e652c0c7c43be41d5b0d8a2a239b128828f",
+        "title": "“It matters not what someone is born, but what they grow to be.”",
+        "author": "J.K. Rowling",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/5/"
+      },
+      {
+        "key": "html:02ccc2bb54f3748458f671cdc51f1bceb6d9aad01a431c595034e6d21dddea90",
+        "title": "“It is better to be hated for what you are than to be loved for what you are not.”",
+        "author": "André Gide",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/1/"
+      },
+      {
+        "key": "html:06e6070e57700694cd2ae2493078e50ee05671028c24145b36234ffe1e7f6112",
+        "title": "“He's like a drug for you, Bella.”",
+        "author": "Stephenie Meyer",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/6/"
+      },
+      {
+        "key": "html:07d81a883d4eeb29f56bb141eeddee85f556e56bb6812ff5f0d3fb7c3d822766",
+        "title": "“The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.”",
+        "author": "Bob Marley",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/4/"
+      },
+      {
+        "key": "html:07e6a739a033ccc47acf97ee5bee1ebe7ad4422b68d22821a534ba7e3bba5cdf",
+        "title": "“We read to know we're not alone.”",
+        "author": "William Nicholson",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/4/"
+      },
+      {
+        "key": "html:0934118fd179f7197e1ff09b51c36347bf0cbbe536baa30fb03d037f79801a0b",
+        "title": "“This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.”",
+        "author": "Marilyn Monroe",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/2/"
+      },
+      {
+        "key": "html:0d527931b56000e65e93863ed18d6c28b54f9b66bf7ddd23ef0355b1ace9b145",
+        "title": "“You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.”",
+        "author": "Harper Lee",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/10/"
+      },
+      {
+        "key": "html:1066a505f94514b39d3587cd02c8511ccd6ee17ff4e7ebaae896545ce6ef9f9b",
+        "title": "“You may say I'm a dreamer, but I'm not the only one. I hope someday you'll join us. And the world will live as one.”",
+        "author": "John Lennon",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/8/"
+      },
+      {
+        "key": "html:10f8e30c77b1a0cdafff43fdb2957de3096dc41e48c2f20af8e7b388e75a026b",
+        "title": "“Remember, if the time should come when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory.”",
+        "author": "J.K. Rowling",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/9/"
+      },
+      {
+        "key": "html:11fece28d5da090bca24278d78438d0fa1e1a71999106b04a5716c91c2f572a3",
+        "title": "“That's the problem with drinking, I thought, as I poured myself a drink. If something bad happens you drink in an attempt to forget; if something good happens you drink in order to celebrate; and if nothing happens you drink to make something happen.”",
+        "author": "Charles Bukowski",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/7/"
+      }
+    ],
+    "etag": "W/\"8510e58926ea878068320b9d\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "http://127.0.0.2:8798/page/1": {
+    "body": "{\r\n  \"records\": [\r\n    {\r\n      \"key\": \"api:/works/OL10056472W\",\r\n      \"title\": \"Bioinformatics Programming in Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL10056472W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL1033722W\",\r\n      \"title\": \"XML Processing with Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL1033722W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL10538818W\",\r\n      \"title\": \"The life of Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL10538818W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL106747W\",\r\n      \"title\": \"Python scripting for computational science\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL106747W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL11791152W\",\r\n      \"title\": \"Python for bioinformatics\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL11791152W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL12103779W\",\r\n      \"title\": \"Game development essentials\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL12103779W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL12252560W\",\r\n      \"title\": \"The complete Fawlty Towers\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL12252560W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL12381655W\",\r\n      \"title\": \"Python and Tkinter programming\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL12381655W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL12409294W\",\r\n      \"title\": \"Core Python programming\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL12409294W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13257289W\",\r\n      \"title\": \"Object-oriented programming in Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13257289W\"\r\n    }\r\n  ]\r\n}",
+    "records": [
+      {
+        "key": "api:/works/OL10056472W",
+        "title": "Bioinformatics Programming in Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL10056472W"
+      },
+      {
+        "key": "api:/works/OL1033722W",
+        "title": "XML Processing with Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL1033722W"
+      },
+      {
+        "key": "api:/works/OL10538818W",
+        "title": "The life of Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL10538818W"
+      },
+      {
+        "key": "api:/works/OL106747W",
+        "title": "Python scripting for computational science",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL106747W"
+      },
+      {
+        "key": "api:/works/OL11791152W",
+        "title": "Python for bioinformatics",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL11791152W"
+      },
+      {
+        "key": "api:/works/OL12103779W",
+        "title": "Game development essentials",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL12103779W"
+      },
+      {
+        "key": "api:/works/OL12252560W",
+        "title": "The complete Fawlty Towers",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL12252560W"
+      },
+      {
+        "key": "api:/works/OL12381655W",
+        "title": "Python and Tkinter programming",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL12381655W"
+      },
+      {
+        "key": "api:/works/OL12409294W",
+        "title": "Core Python programming",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL12409294W"
+      },
+      {
+        "key": "api:/works/OL13257289W",
+        "title": "Object-oriented programming in Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13257289W"
+      }
+    ],
+    "etag": "W/\"1fa97f5865e40577caf1607f\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "http://127.0.0.1:8797/page/2": {
+    "body": "<html><body><article class=\"quote\" data-key=\"html:199dad64b0b735f30efb70cfe961dbc50c2f27ee24a2ce38514bb16513cd34af\" data-url=\"https://quotes.toscrape.com/page/6/\"><span class=\"text\">“If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music.”</span><span class=\"author\">Albert Einstein</span></article><article class=\"quote\" data-key=\"html:1df6275ced6818b5114743c6c3933aed7275153e972b37f5a1da21f66077a6a6\" data-url=\"https://quotes.toscrape.com/page/5/\"><span class=\"text\">“The real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.”</span><span class=\"author\">Marilyn Monroe</span></article><article class=\"quote\" data-key=\"html:1e574cb5d5104c4146665eacc2ba4537b98f0a23e14481a7c21894e2dacb09b2\" data-url=\"https://quotes.toscrape.com/page/4/\"><span class=\"text\">“All you need is love. But a little chocolate now and then doesn&#x27;t hurt.”</span><span class=\"author\">Charles M. Schulz</span></article><article class=\"quote\" data-key=\"html:207bfa44e7011792409055c2783d19460b8f403cff1df4b3beb26abb1e315b9a\" data-url=\"https://quotes.toscrape.com/page/3/\"><span class=\"text\">“Logic will get you from A to Z; imagination will get you everywhere.”</span><span class=\"author\">Albert Einstein</span></article><article class=\"quote\" data-key=\"html:253ace2bd9f69fda047c9ba97b5f9b90f3b9e7180be6189b825e372e71db9eaf\" data-url=\"https://quotes.toscrape.com/page/7/\"><span class=\"text\">“Do not pity the dead, Harry. Pity the living, and, above all those who live without love.”</span><span class=\"author\">J.K. Rowling</span></article><article class=\"quote\" data-key=\"html:263d1ebbaf3785ca1ab2aefa64b02a825a41a9d1a786b8b20e98cc2088d8204e\" data-url=\"https://quotes.toscrape.com/page/1/\"><span class=\"text\">“I have not failed. I&#x27;ve just found 10,000 ways that won&#x27;t work.”</span><span class=\"author\">Thomas A. Edison</span></article><article class=\"quote\" data-key=\"html:2672a0dc1537d71be7a27c3ae96c56cfa66ede760134f96a67dbf729abff6168\" data-url=\"https://quotes.toscrape.com/page/1/\"><span class=\"text\">“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”</span><span class=\"author\">Albert Einstein</span></article><article class=\"quote\" data-key=\"html:2812bb34e9e7e147a48382cf8f1af14d8be5e1a411df28344a12c341c15a524c\" data-url=\"https://quotes.toscrape.com/page/9/\"><span class=\"text\">“A lady&#x27;s imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.”</span><span class=\"author\">Jane Austen</span></article><article class=\"quote\" data-key=\"html:2855f330fc447b4a99bdd7f155295f01f739d3ec8bdc6edbd4c753c97f4b3287\" data-url=\"https://quotes.toscrape.com/page/6/\"><span class=\"text\">“Life isn&#x27;t about finding yourself. Life is about creating yourself.”</span><span class=\"author\">George Bernard Shaw</span></article><article class=\"quote\" data-key=\"html:286d3636d7f2cffd12bdc595222227f961b2f56ebce4508cdca55741c7466bfb\" data-url=\"https://quotes.toscrape.com/page/9/\"><span class=\"text\">“I believe in Christianity as I believe that the sun has risen: not only because I see it, but because by it I see everything else.”</span><span class=\"author\">C.S. Lewis</span></article></body></html>",
+    "records": [
+      {
+        "key": "html:199dad64b0b735f30efb70cfe961dbc50c2f27ee24a2ce38514bb16513cd34af",
+        "title": "“If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music.”",
+        "author": "Albert Einstein",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/6/"
+      },
+      {
+        "key": "html:1df6275ced6818b5114743c6c3933aed7275153e972b37f5a1da21f66077a6a6",
+        "title": "“The real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.”",
+        "author": "Marilyn Monroe",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/5/"
+      },
+      {
+        "key": "html:1e574cb5d5104c4146665eacc2ba4537b98f0a23e14481a7c21894e2dacb09b2",
+        "title": "“All you need is love. But a little chocolate now and then doesn't hurt.”",
+        "author": "Charles M. Schulz",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/4/"
+      },
+      {
+        "key": "html:207bfa44e7011792409055c2783d19460b8f403cff1df4b3beb26abb1e315b9a",
+        "title": "“Logic will get you from A to Z; imagination will get you everywhere.”",
+        "author": "Albert Einstein",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/3/"
+      },
+      {
+        "key": "html:253ace2bd9f69fda047c9ba97b5f9b90f3b9e7180be6189b825e372e71db9eaf",
+        "title": "“Do not pity the dead, Harry. Pity the living, and, above all those who live without love.”",
+        "author": "J.K. Rowling",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/7/"
+      },
+      {
+        "key": "html:263d1ebbaf3785ca1ab2aefa64b02a825a41a9d1a786b8b20e98cc2088d8204e",
+        "title": "“I have not failed. I've just found 10,000 ways that won't work.”",
+        "author": "Thomas A. Edison",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/1/"
+      },
+      {
+        "key": "html:2672a0dc1537d71be7a27c3ae96c56cfa66ede760134f96a67dbf729abff6168",
+        "title": "“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”",
+        "author": "Albert Einstein",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/1/"
+      },
+      {
+        "key": "html:2812bb34e9e7e147a48382cf8f1af14d8be5e1a411df28344a12c341c15a524c",
+        "title": "“A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.”",
+        "author": "Jane Austen",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/9/"
+      },
+      {
+        "key": "html:2855f330fc447b4a99bdd7f155295f01f739d3ec8bdc6edbd4c753c97f4b3287",
+        "title": "“Life isn't about finding yourself. Life is about creating yourself.”",
+        "author": "George Bernard Shaw",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/6/"
+      },
+      {
+        "key": "html:286d3636d7f2cffd12bdc595222227f961b2f56ebce4508cdca55741c7466bfb",
+        "title": "“I believe in Christianity as I believe that the sun has risen: not only because I see it, but because by it I see everything else.”",
+        "author": "C.S. Lewis",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/9/"
+      }
+    ],
+    "etag": "W/\"b09e17f02b28e6c294d1d890\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "http://127.0.0.2:8798/page/2": {
+    "body": "{\r\n  \"records\": [\r\n    {\r\n      \"key\": \"api:/works/OL13301932W\",\r\n      \"title\": \"Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13301932W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13590691W\",\r\n      \"title\": \"Beginning Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13590691W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13600452W\",\r\n      \"title\": \"Python web development with Django\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13600452W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13691702W\",\r\n      \"title\": \"Data structures and algorithms using Python and C++\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13691702W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13755386W\",\r\n      \"title\": \"Learn to program using Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13755386W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13763256W\",\r\n      \"title\": \"Pacify me\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13763256W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13766685W\",\r\n      \"title\": \"Gray hat Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13766685W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13783928W\",\r\n      \"title\": \"Financial modeling in Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13783928W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL13820746W\",\r\n      \"title\": \"Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL13820746W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL14873289W\",\r\n      \"title\": \"Python Cookbook\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL14873289W\"\r\n    }\r\n  ]\r\n}",
+    "records": [
+      {
+        "key": "api:/works/OL13301932W",
+        "title": "Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13301932W"
+      },
+      {
+        "key": "api:/works/OL13590691W",
+        "title": "Beginning Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13590691W"
+      },
+      {
+        "key": "api:/works/OL13600452W",
+        "title": "Python web development with Django",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13600452W"
+      },
+      {
+        "key": "api:/works/OL13691702W",
+        "title": "Data structures and algorithms using Python and C++",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13691702W"
+      },
+      {
+        "key": "api:/works/OL13755386W",
+        "title": "Learn to program using Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13755386W"
+      },
+      {
+        "key": "api:/works/OL13763256W",
+        "title": "Pacify me",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13763256W"
+      },
+      {
+        "key": "api:/works/OL13766685W",
+        "title": "Gray hat Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13766685W"
+      },
+      {
+        "key": "api:/works/OL13783928W",
+        "title": "Financial modeling in Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13783928W"
+      },
+      {
+        "key": "api:/works/OL13820746W",
+        "title": "Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL13820746W"
+      },
+      {
+        "key": "api:/works/OL14873289W",
+        "title": "Python Cookbook",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL14873289W"
+      }
+    ],
+    "etag": "W/\"49a0ca9e3b77b513cb68f575\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "http://127.0.0.1:8797/page/3": {
+    "body": "<html><body><article class=\"quote\" data-key=\"html:2d48ebef1b0946cf63aef3ef87038f78652bd93e7f56946fac1194d764d63ef8\" data-url=\"https://quotes.toscrape.com/page/10/\"><span class=\"text\">“It takes courage to grow up and become who you really are.”</span><span class=\"author\">E.E. Cummings</span></article><article class=\"quote\" data-key=\"html:2f9212be7da1f91ced2560af1ca3856cbde27125123e0d97f126e787bcc2341f\" data-url=\"https://quotes.toscrape.com/page/10/\"><span class=\"text\">“You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children.”</span><span class=\"author\">Madeleine L&#x27;Engle</span></article><article class=\"quote\" data-key=\"html:32517c926e1fc48fe79a454c941ada00eb25ae7df3b9ff78d8ec997a05bd7fb1\" data-url=\"https://quotes.toscrape.com/page/3/\"><span class=\"text\">“If you judge people, you have no time to love them.”</span><span class=\"author\">Mother Teresa</span></article><article class=\"quote\" data-key=\"html:334e3744a76583d094d77cfb2b2aaf7c2d0cd224f072d63acc7323307e49aed8\" data-url=\"https://quotes.toscrape.com/page/7/\"><span class=\"text\">“Finish each day and be done with it. You have done what you could. Some blunders and absurdities no doubt crept in; forget them as soon as you can. Tomorrow is a new day. You shall begin it serenely and with too high a spirit to be encumbered with your old nonsense.”</span><span class=\"author\">Ralph Waldo Emerson</span></article><article class=\"quote\" data-key=\"html:3397e7814a25dbcb8b371b194792177b73282593b29957568f1ec8803a27f247\" data-url=\"https://quotes.toscrape.com/page/8/\"><span class=\"text\">“I am free of all prejudice. I hate everyone equally. ”</span><span class=\"author\">W.C. Fields</span></article><article class=\"quote\" data-key=\"html:33cf440e2e9549acd217fd552ecb27db961cecb1b416ce5a0fd3c2a9a19b346c\" data-url=\"https://quotes.toscrape.com/page/8/\"><span class=\"text\">“Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!”</span><span class=\"author\">Dr. Seuss</span></article><article class=\"quote\" data-key=\"html:3575498e8ccc99930ec4f3513067dedbd1b8f6aad1c7cc23357d0ef7b6296bfc\" data-url=\"https://quotes.toscrape.com/page/5/\"><span class=\"text\">“If you can make a woman laugh, you can make her do anything.”</span><span class=\"author\">Marilyn Monroe</span></article><article class=\"quote\" data-key=\"html:361487ee12e9f122c90483e7f5eaa2fa908785dc52c3b0624aa7af44f03feb7f\" data-url=\"https://quotes.toscrape.com/page/8/\"><span class=\"text\">“The reason I talk to myself is because I’m the only one whose answers I accept.”</span><span class=\"author\">George Carlin</span></article><article class=\"quote\" data-key=\"html:36619c340fdadac3afa0a66c457220324f76f95c1ca6b4c62857707eef1a5bb5\" data-url=\"https://quotes.toscrape.com/page/2/\"><span class=\"text\">“The opposite of love is not hate, it&#x27;s indifference. The opposite of art is not ugliness, it&#x27;s indifference. The opposite of faith is not heresy, it&#x27;s indifference. And the opposite of life is not death, it&#x27;s indifference.”</span><span class=\"author\">Elie Wiesel</span></article><article class=\"quote\" data-key=\"html:3f3975edd7547f81aba7c7945543660a6942750bc3a224ce5be644f17b41f467\" data-url=\"https://quotes.toscrape.com/page/4/\"><span class=\"text\">“To the well-organized mind, death is but the next great adventure.”</span><span class=\"author\">J.K. Rowling</span></article></body></html>",
+    "records": [
+      {
+        "key": "html:2d48ebef1b0946cf63aef3ef87038f78652bd93e7f56946fac1194d764d63ef8",
+        "title": "“It takes courage to grow up and become who you really are.”",
+        "author": "E.E. Cummings",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/10/"
+      },
+      {
+        "key": "html:2f9212be7da1f91ced2560af1ca3856cbde27125123e0d97f126e787bcc2341f",
+        "title": "“You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children.”",
+        "author": "Madeleine L'Engle",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/10/"
+      },
+      {
+        "key": "html:32517c926e1fc48fe79a454c941ada00eb25ae7df3b9ff78d8ec997a05bd7fb1",
+        "title": "“If you judge people, you have no time to love them.”",
+        "author": "Mother Teresa",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/3/"
+      },
+      {
+        "key": "html:334e3744a76583d094d77cfb2b2aaf7c2d0cd224f072d63acc7323307e49aed8",
+        "title": "“Finish each day and be done with it. You have done what you could. Some blunders and absurdities no doubt crept in; forget them as soon as you can. Tomorrow is a new day. You shall begin it serenely and with too high a spirit to be encumbered with your old nonsense.”",
+        "author": "Ralph Waldo Emerson",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/7/"
+      },
+      {
+        "key": "html:3397e7814a25dbcb8b371b194792177b73282593b29957568f1ec8803a27f247",
+        "title": "“I am free of all prejudice. I hate everyone equally. ”",
+        "author": "W.C. Fields",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/8/"
+      },
+      {
+        "key": "html:33cf440e2e9549acd217fd552ecb27db961cecb1b416ce5a0fd3c2a9a19b346c",
+        "title": "“Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!”",
+        "author": "Dr. Seuss",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/8/"
+      },
+      {
+        "key": "html:3575498e8ccc99930ec4f3513067dedbd1b8f6aad1c7cc23357d0ef7b6296bfc",
+        "title": "“If you can make a woman laugh, you can make her do anything.”",
+        "author": "Marilyn Monroe",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/5/"
+      },
+      {
+        "key": "html:361487ee12e9f122c90483e7f5eaa2fa908785dc52c3b0624aa7af44f03feb7f",
+        "title": "“The reason I talk to myself is because I’m the only one whose answers I accept.”",
+        "author": "George Carlin",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/8/"
+      },
+      {
+        "key": "html:36619c340fdadac3afa0a66c457220324f76f95c1ca6b4c62857707eef1a5bb5",
+        "title": "“The opposite of love is not hate, it's indifference. The opposite of art is not ugliness, it's indifference. The opposite of faith is not heresy, it's indifference. And the opposite of life is not death, it's indifference.”",
+        "author": "Elie Wiesel",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/2/"
+      },
+      {
+        "key": "html:3f3975edd7547f81aba7c7945543660a6942750bc3a224ce5be644f17b41f467",
+        "title": "“To the well-organized mind, death is but the next great adventure.”",
+        "author": "J.K. Rowling",
+        "source": "quotes_html",
+        "url": "https://quotes.toscrape.com/page/4/"
+      }
+    ],
+    "etag": "W/\"f87608630c53b2647644e20b\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "http://127.0.0.2:8798/page/3": {
+    "body": "{\r\n  \"records\": [\r\n    {\r\n      \"key\": \"api:/works/OL14940051W\",\r\n      \"title\": \"Natural Language Processing With Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL14940051W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL14947004W\",\r\n      \"title\": \"Pythons' Autobiography by the Pythons\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL14947004W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL14988875W\",\r\n      \"title\": \"Professional Python Frameworks\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL14988875W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15078486W\",\r\n      \"title\": \"The Fairly Incomplete and Rather Badly Illustrated Monty Python Song Book\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15078486W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15120665W\",\r\n      \"title\": \"The Complete Python Training Course\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15120665W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15120680W\",\r\n      \"title\": \"Python How to Program Part A and Part B\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15120680W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15178080W\",\r\n      \"title\": \"Python for Software Design\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15178080W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15181426W\",\r\n      \"title\": \"Beginning Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15181426W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15191590W\",\r\n      \"title\": \"Beginning Python\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15191590W\"\r\n    },\r\n    {\r\n      \"key\": \"api:/works/OL15348139W\",\r\n      \"title\": \"Creative Technologies\",\r\n      \"source\": \"openlibrary\",\r\n      \"url\": \"https://openlibrary.org/works/OL15348139W\"\r\n    }\r\n  ]\r\n}",
+    "records": [
+      {
+        "key": "api:/works/OL14940051W",
+        "title": "Natural Language Processing With Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL14940051W"
+      },
+      {
+        "key": "api:/works/OL14947004W",
+        "title": "Pythons' Autobiography by the Pythons",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL14947004W"
+      },
+      {
+        "key": "api:/works/OL14988875W",
+        "title": "Professional Python Frameworks",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL14988875W"
+      },
+      {
+        "key": "api:/works/OL15078486W",
+        "title": "The Fairly Incomplete and Rather Badly Illustrated Monty Python Song Book",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15078486W"
+      },
+      {
+        "key": "api:/works/OL15120665W",
+        "title": "The Complete Python Training Course",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15120665W"
+      },
+      {
+        "key": "api:/works/OL15120680W",
+        "title": "Python How to Program Part A and Part B",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15120680W"
+      },
+      {
+        "key": "api:/works/OL15178080W",
+        "title": "Python for Software Design",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15178080W"
+      },
+      {
+        "key": "api:/works/OL15181426W",
+        "title": "Beginning Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15181426W"
+      },
+      {
+        "key": "api:/works/OL15191590W",
+        "title": "Beginning Python",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15191590W"
+      },
+      {
+        "key": "api:/works/OL15348139W",
+        "title": "Creative Technologies",
+        "source": "openlibrary",
+        "url": "https://openlibrary.org/works/OL15348139W"
+      }
+    ],
+    "etag": "W/\"75a71388759e755b222d1231\"",
+    "last_modified": "Wed, 01 Jan 2025 00:00:00 GMT",
+    "content_type": "application/json; charset=utf-8"
+  }
+}

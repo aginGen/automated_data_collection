@@ -1,0 +1,64 @@
+{
+  "records": [
+    {
+      "key": "api:/works/OL13301932W",
+      "title": "Python",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL13301932W"
+    },
+    {
+      "key": "api:/works/OL13590691W",
+      "title": "Beginning Python",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL13590691W"
+    },
+    {
+      "key": "api:/works/OL13600452W",
+      "title": "Python web development with Django",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL13600452W"
+    },
+    {
+      "key": "api:/works/OL13691702W",
+      "title": "Data structures and algorithms using Python and C++",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL13691702W"
+    },
+    {
+      "key": "api:/works/OL13755386W",
+      "title": "Learn to program using Python",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL13755386W"
+    },
+    {
+      "key": "api:/works/OL13763256W",
+      "title": "Pacify me",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL13763256W"
+    },
+    {
+      "key": "api:/works/OL13766685W",
+      "title": "Gray hat Python",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL13766685W"
+    },
+    {
+      "key": "api:/works/OL13783928W",
+      "title": "Financial modeling in Python",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL13783928W"
+    },
+    {
+      "key": "api:/works/OL13820746W",
+      "title": "Python",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL13820746W"
+    },
+    {
+      "key": "api:/works/OL14873289W",
+      "title": "Python Cookbook",
+      "source": "openlibrary",
+      "url": "https://openlibrary.org/works/OL14873289W"
+    }
+  ]
+}

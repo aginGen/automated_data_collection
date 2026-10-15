@@ -1,0 +1,22 @@
+{
+  "127.0.0.1": {
+    "url": "http://127.0.0.1:8797/robots.txt",
+    "can_fetch": true,
+    "crawl_delay": 0,
+    "request_rate": "None",
+    "sitemaps": [
+      "http://127.0.0.1:8797/manifest"
+    ],
+    "missing_policy": "404: запрета нет; лимит сборщика сохраняется"
+  },
+  "127.0.0.2": {
+    "url": "http://127.0.0.2:8798/robots.txt",
+    "can_fetch": true,
+    "crawl_delay": 0,
+    "request_rate": "None",
+    "sitemaps": [
+      "http://127.0.0.2:8798/manifest"
+    ],
+    "missing_policy": "404: запрета нет; лимит сборщика сохраняется"
+  }
+}

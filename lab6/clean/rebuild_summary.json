@@ -1,0 +1,17 @@
+{
+  "raw_rows": 452,
+  "clean_rows": 414,
+  "authors": 98,
+  "tag_links": 205,
+  "rejected_rows": 24,
+  "quality": "green",
+  "raw_unchanged": true,
+  "load": {
+    "rows": 414,
+    "inserted": 0,
+    "updated": 0,
+    "unchanged": 414,
+    "history": 414
+  },
+  "duration_s": 1.5432
+}

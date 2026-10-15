@@ -1,0 +1,24 @@
+[
+  {
+    "source": "openlibrary",
+    "url": "https://openlibrary.org/robots.txt",
+    "status": 200,
+    "target": "https://openlibrary.org/search.json?q=python&limit=3",
+    "can_fetch": false,
+    "crawl_delay": null,
+    "sitemaps": [
+      "https://openlibrary.org/static/sitemaps/siteindex.xml.gz"
+    ],
+    "rules_file": "robots_openlibrary.txt"
+  },
+  {
+    "source": "quotes",
+    "url": "https://quotes.toscrape.com/robots.txt",
+    "status": 404,
+    "target": "https://quotes.toscrape.com/page/1/",
+    "can_fetch": true,
+    "crawl_delay": null,
+    "sitemaps": null,
+    "policy": "robots отсутствует; собственный лимит сохраняется"
+  }
+]
