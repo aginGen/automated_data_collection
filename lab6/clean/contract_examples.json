@@ -1,0 +1,37 @@
+[
+  {
+    "check": "Пустой текст",
+    "result": "rejected",
+    "message": "String should have at least 8 characters"
+  },
+  {
+    "check": "Короткое имя",
+    "result": "rejected",
+    "message": "String should have at least 2 characters"
+  },
+  {
+    "check": "Неверный тег",
+    "result": "rejected",
+    "message": "Value error, Тег должен быть непустым slug в нижнем регистре"
+  },
+  {
+    "check": "Дата без зоны",
+    "result": "rejected",
+    "message": "Value error, Нужен часовой пояс UTC"
+  },
+  {
+    "check": "Неверный ключ",
+    "result": "rejected",
+    "message": "Value error, Бизнес-ключ не соответствует тексту и автору"
+  },
+  {
+    "check": "Неверная длина",
+    "result": "rejected",
+    "message": "Input should be greater than 7"
+  },
+  {
+    "check": "Неверный источник URL",
+    "result": "rejected",
+    "message": "Value error, URL не соответствует источнику"
+  }
+]

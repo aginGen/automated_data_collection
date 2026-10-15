@@ -1,0 +1,47 @@
+{
+  "requests": 12,
+  "codes": {
+    "500": 2,
+    "200": 5,
+    "404": 2,
+    "429": 3
+  },
+  "error_share": 0.5833333333333334,
+  "rate_or_block_share": 0.25,
+  "retries": 5,
+  "median_ms": 47.48665,
+  "p95_ms": 48.373644999999996,
+  "wire_bytes": 12673,
+  "decoded_bytes": 12673,
+  "not_modified": 0,
+  "breaker_activations": 1,
+  "blocked_domains": 0,
+  "records": 20,
+  "rejected": 0,
+  "duration_s": 7.8005,
+  "mean_body_bytes": 2489.2,
+  "volume_drop": 0.0,
+  "body_size_drop": 0.0,
+  "alerts": [
+    {
+      "metric": "error_share",
+      "value": 0.5833333333333334,
+      "threshold": 0.2,
+      "reason": "Не более 20% неуспешных HTTP-ответов"
+    },
+    {
+      "metric": "rate_or_block_share",
+      "value": 0.25,
+      "threshold": 0.1,
+      "reason": "Не более 10% ответов 429/403"
+    }
+  ],
+  "verdict": "red",
+  "notes": {
+    "initial_html_failed": true,
+    "api_continues": true,
+    "html_recovered": true,
+    "final_breaker_state": "closed"
+  },
+  "log": "logs/run_faults_bba3c954.jsonl"
+}

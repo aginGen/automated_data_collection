@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://quotes.toscrape.com/page/1/",
+    "robots": {
+      "url": "https://quotes.toscrape.com/robots.txt",
+      "can_fetch": true,
+      "crawl_delay": null,
+      "request_rate": "None",
+      "sitemaps": null,
+      "missing_policy": "404: запрета нет; лимит сборщика сохраняется"
+    },
+    "records": 10,
+    "blocked": false
+  },
+  {
+    "url": "https://openlibrary.org/search.json?q=python&limit=3",
+    "robots": {
+      "url": "https://openlibrary.org/robots.txt",
+      "can_fetch": false,
+      "crawl_delay": null,
+      "request_rate": "None",
+      "sitemaps": [
+        "https://openlibrary.org/static/sitemaps/siteindex.xml.gz"
+      ],
+      "missing_policy": "404: запрета нет; лимит сборщика сохраняется"
+    },
+    "records": 0,
+    "blocked": false
+  }
+]

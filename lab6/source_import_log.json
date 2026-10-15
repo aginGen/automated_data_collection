@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "status": 200,
+    "rows": 80,
+    "duration_s": 0.2510486000101082
+  },
+  {
+    "url": "https://dummyjson.com/quotes?limit=80&skip=80",
+    "status": 200,
+    "rows": 80,
+    "duration_s": 0.12310170001001097
+  },
+  {
+    "url": "https://dummyjson.com/quotes?limit=80&skip=160",
+    "status": 200,
+    "rows": 80,
+    "duration_s": 0.11290499998722225
+  },
+  {
+    "url": "https://dummyjson.com/quotes?limit=80&skip=240",
+    "status": 200,
+    "rows": 80,
+    "duration_s": 0.12115170000470243
+  }
+]

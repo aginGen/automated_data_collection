@@ -1,0 +1,22 @@
+{
+  "runs": [
+    {
+      "rows": 414,
+      "unique_keys": 414,
+      "files": [
+        "snapshots/dt=2026-10-07/part-0.parquet",
+        "snapshots/dt=2026-10-14/part-0.parquet"
+      ]
+    },
+    {
+      "rows": 414,
+      "unique_keys": 414,
+      "files": [
+        "snapshots/dt=2026-10-07/part-0.parquet",
+        "snapshots/dt=2026-10-14/part-0.parquet"
+      ]
+    }
+  ],
+  "same_partition_files": true,
+  "raw_unchanged": true
+}
