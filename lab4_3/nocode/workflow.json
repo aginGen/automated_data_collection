@@ -1,0 +1,377 @@
+{
+  "name": "Lab 4 variant 3 JS scroll",
+  "id": "Lab4Variant03",
+  "nodes": [
+    {
+      "id": "c0d9168c-fc62-4a24-a246-f7252cfa4510",
+      "name": "Manual start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -720,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "b79e9d33-63d6-4b19-818f-a92a83cd6f9b",
+      "name": "Daily schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -720,
+        220
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "f71fa8ca-fcc2-4aa6-860c-46fafa68f0ee",
+      "name": "Render JS",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -480,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8894/render",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\"url\": \"https://www.scrapingcourse.com/infinite-scrolling\", \"render_js\": true, \"wait_for\": \"[data-testid='product-grid'] .product-item\", \"max_items\": 200}",
+        "options": {
+          "timeout": 90000
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "04de43f7-16df-4c88-b846-5ad1aea2cb82",
+      "name": "Extract cards",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        -240,
+        0
+      ],
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "sourceData": "json",
+        "dataPropertyName": "html",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "cards",
+              "cssSelector": ".product-item",
+              "returnValue": "html",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "a1f40cf6-f18b-4da8-b7cd-a4a34427a97d",
+      "name": "Split cards",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "fieldToSplitOut": "cards",
+        "options": {}
+      }
+    },
+    {
+      "id": "90957041-43e3-4469-ab8e-ea42b7ebb0b7",
+      "name": "Extract fields",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        240,
+        0
+      ],
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "sourceData": "json",
+        "dataPropertyName": "cards",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "name",
+              "cssSelector": ".product-name",
+              "returnValue": "text"
+            },
+            {
+              "key": "price",
+              "cssSelector": ".product-price",
+              "returnValue": "text"
+            },
+            {
+              "key": "url",
+              "cssSelector": "a[href]",
+              "returnValue": "attribute",
+              "attribute": "href"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "962683b0-e10f-4bca-99ff-d6e6a977d75e",
+      "name": "Normalize and deduplicate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const seen = new Set();\nconst out = [];\nfor (const item of $input.all()) {\n const r = item.json;\n const url = String(r.url).trim().replace(/\\/$/, '');\n const id = url.split('/').pop();\n const price = Number(String(r.price).replace(/[$,]/g, '').trim());\n if (!r.name || !id || !Number.isFinite(price) || price <= 0) throw new Error('Missing required field');\n if (!seen.has(id)) {\n  seen.add(id);\n  out.push({json:{snapshot_id:1,product_id:id,name:String(r.name).trim().replace(/\\s+/g, ' '),price:price.toFixed(2),currency:'USD',url,observed_at:new Date().toISOString()}});\n }\n if (out.length === 200) break;\n}\nif (out.length < 20) throw new Error('Fewer than 20 records');\nconst expected = $('Render JS').first().json.metrics.rows;\nif (out.length !== expected) throw new Error('Rendered and extracted catalogue sizes differ');\nreturn out;"
+      }
+    },
+    {
+      "id": "df6cb4e6-681d-4f0e-87ea-2a093ef491be",
+      "name": "CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        720,
+        0
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "nocode_result.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "694a0e52-8ff4-42dc-8233-e5f9af4992ef",
+      "name": "Save CSV",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        960,
+        0
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "nocode/nocode_result.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "96c089a4-89a5-4ff1-bf9a-29647eaffead",
+      "name": "Error details",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -240,
+        360
+      ],
+      "parameters": {
+        "jsCode": "return [{json:{stage:'Render JS',message:JSON.stringify($json.error || $json),timestamp:new Date().toISOString()}}];"
+      }
+    },
+    {
+      "id": "2305fa53-418e-4198-b8c7-e8d5e3fe6459",
+      "name": "Error CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        360
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "error_log.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "0862574b-20a4-443a-acc0-b0a1bd9dcbcd",
+      "name": "Save error CSV",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        360
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "nocode/run/error_log.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "c03ccc50-978c-416a-8bf8-acb6f41dbfba",
+      "name": "Fail execution",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        480,
+        360
+      ],
+      "parameters": {
+        "errorMessage": "Rendering API failed; see error_log.csv"
+      }
+    }
+  ],
+  "connections": {
+    "Manual start": {
+      "main": [
+        [
+          {
+            "node": "Render JS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Render JS": {
+      "main": [
+        [
+          {
+            "node": "Extract cards",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Error details",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract cards": {
+      "main": [
+        [
+          {
+            "node": "Split cards",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split cards": {
+      "main": [
+        [
+          {
+            "node": "Extract fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract fields": {
+      "main": [
+        [
+          {
+            "node": "Normalize and deduplicate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize and deduplicate": {
+      "main": [
+        [
+          {
+            "node": "CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "CSV": {
+      "main": [
+        [
+          {
+            "node": "Save CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Daily schedule": {
+      "main": [
+        [
+          {
+            "node": "Render JS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error details": {
+      "main": [
+        [
+          {
+            "node": "Error CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error CSV": {
+      "main": [
+        [
+          {
+            "node": "Save error CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save error CSV": {
+      "main": [
+        [
+          {
+            "node": "Fail execution",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Yekaterinburg",
+    "saveExecutionProgress": true
+  },
+  "versionId": "a50b61f9-1785-4221-9be8-fa438853a435",
+  "pinData": {}
+}
