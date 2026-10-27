@@ -1,0 +1,2209 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infinite Scroll Challenge to Learn Web Scraping - ScrapingCourse.com</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async="" defer=""></script>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NZGD14H87G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NZGD14H87G');
+    </script>
+    <link rel="preload" as="style" href="https://www.scrapingcourse.com/build/assets/app-acbftLJo.css"><link rel="modulepreload" as="script" href="https://www.scrapingcourse.com/build/assets/app-DMsN-rLE.js"><link rel="stylesheet" href="https://www.scrapingcourse.com/build/assets/app-acbftLJo.css"><script type="module" src="https://www.scrapingcourse.com/build/assets/app-DMsN-rLE.js"></script>    
+</head>
+<body data-new-gr-c-s-check-loaded="14.1174.0" data-gr-ext-installed="" itemscope="" itemtype="http://schema.org/WebPage">
+    <header itemscope="" itemtype="http://schema.org/WPHeader">
+        <!-- Navigation bar -->
+        <nav id="main-navigation" class="navbar" data-testid="main-navigation" data-nav="main">
+            <div class="container" id="nav-container" data-testid="nav-container" data-nav="container">
+                <a href="/" class="logo-link flex items-center pt-4 pb-12" id="logo-link" data-testid="logo-link" data-nav="logo-link">
+                    <img width="12" height="18" src="https://www.scrapingcourse.com/assets/images/logo.svg" class="logo-image inline-block" data-testid="logo-image" data-nav="logo-image">
+                    <span class="brand-name font-bold text-lg leading-6 ml-2 highlight" data-testid="brand-name-1" data-nav="brand-name-1">Scraping</span>
+                    <span class="brand-name text-lg leading-6 ml-1 highlight" data-testid="brand-name-2" data-nav="brand-name-2">Course</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-content py-4" id="main-content" data-testid="main-content" data-content="main">
+        <div class="container" id="content-container" data-testid="content-container" data-content="container">
+            <div id="product-catalog" class="catalog product-catalog" data-testid="product-catalog">
+
+    <h1 id="page-title" class="page-title text-4xl font-bold mb-2 text-left gradient-text highlight gradient-text leading-10" data-testid="page-title" data-content="title">
+    Scraping Infinite Scrolling Pages
+</h1>
+
+<div class="challenge-info bg-[#EDF1FD] rounded-md p-4 mb-8 mt-5" id="challenge-info" data-testid="challenge-info" data-content="challenge-info">
+    <div class="info-header flex items-center gap-2 pb-2" id="info-header" data-testid="info-header" data-content="info-header">
+        <img width="25" height="15" src="https://www.scrapingcourse.com/assets/images/challenge.svg" data-testid="challenge-image" data-content="challenge-image">
+        <h2 class="challenge-title text-xl font-bold" id="challenge-title" data-testid="challenge-title" data-content="challenge-title">Challenge</h2>
+    </div>
+    <p class="challenge-description flex" id="challenge-description" data-testid="challenge-description" data-content="challenge-description">
+        Scroll down to load more products
+    </p>
+</div>
+
+<div id="product-grid" class="product-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-8" data-testid="product-grid" data-offset="160">
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/chaz-kangeroo-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh01-gray_main.jpg" alt="Chaz Kangeroo Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Chaz Kangeroo Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$52</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/teton-pullover-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh02-black_main.jpg" alt="Teton Pullover Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Teton Pullover Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$70</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/bruno-compete-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh03-black_main.jpg" alt="Bruno Compete Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Bruno Compete Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$63</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/frankie--sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh04-green_main.jpg" alt="Frankie  Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Frankie  Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$60</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/hollister-backyard-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh05-white_main.jpg" alt="Hollister Backyard Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Hollister Backyard Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$52</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/stark-fundamental-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh06-blue_main.jpg" alt="Stark Fundamental Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Stark Fundamental Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/hero-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh07-gray_main.jpg" alt="Hero Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Hero Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$54</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/oslo-trek-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh08-brown_main.jpg" alt="Oslo Trek Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Oslo Trek Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/abominable-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh09-blue_main.jpg" alt="Abominable Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Abominable Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/mach-street-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh10-blue_main.jpg" alt="Mach Street Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Mach Street Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$62</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/grayson-crewneck-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh11-white_main.jpg" alt="Grayson Crewneck Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Grayson Crewneck Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$64</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ajax-full-zip-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh12-green_main.jpg" alt="Ajax Full-Zip Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ajax Full-Zip Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/chaz-kangeroo-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh01-gray_main.jpg" alt="Chaz Kangeroo Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Chaz Kangeroo Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$52</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/teton-pullover-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh02-black_main.jpg" alt="Teton Pullover Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Teton Pullover Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$70</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/bruno-compete-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh03-black_main.jpg" alt="Bruno Compete Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Bruno Compete Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$63</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/frankie--sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh04-green_main.jpg" alt="Frankie  Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Frankie  Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$60</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/hollister-backyard-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh05-white_main.jpg" alt="Hollister Backyard Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Hollister Backyard Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$52</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/stark-fundamental-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh06-blue_main.jpg" alt="Stark Fundamental Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Stark Fundamental Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/hero-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh07-gray_main.jpg" alt="Hero Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Hero Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$54</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/oslo-trek-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh08-brown_main.jpg" alt="Oslo Trek Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Oslo Trek Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/abominable-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh09-blue_main.jpg" alt="Abominable Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Abominable Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/mach-street-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh10-blue_main.jpg" alt="Mach Street Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Mach Street Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$62</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/grayson-crewneck-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh11-white_main.jpg" alt="Grayson Crewneck Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Grayson Crewneck Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$64</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ajax-full-zip-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh12-green_main.jpg" alt="Ajax Full-Zip Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ajax Full-Zip Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/grayson-crewneck-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh11-white_main.jpg" alt="Grayson Crewneck Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Grayson Crewneck Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$64</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ajax-full-zip-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh12-green_main.jpg" alt="Ajax Full-Zip Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ajax Full-Zip Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/marco-lightweight-active-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mh13-blue_main.jpg" alt="Marco Lightweight Active Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Marco Lightweight Active Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$74</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/beaumont-summit-kit">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj01-yellow_main.jpg" alt="Beaumont Summit Kit">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Beaumont Summit Kit</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/hyperion-elements-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj02-green_main.jpg" alt="Hyperion Elements Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Hyperion Elements Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$51</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/montana-wind-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj03-black_main.jpg" alt="Montana Wind Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Montana Wind Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$49</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/kenobi-trail-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj04-black_main.jpg" alt="Kenobi Trail Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Kenobi Trail Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$47</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/jupiter-all-weather-trainer">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj06-blue_main.jpg" alt="Jupiter All-Weather Trainer">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Jupiter All-Weather Trainer</span>
+                <br>
+                <span class="product-price text-slate-600">$56.99</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/orion-two-tone-fitted-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj07-red_main.jpg" alt="Orion Two-Tone Fitted Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Orion Two-Tone Fitted Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$72</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/lando-gym-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj08-gray_main.jpg" alt="Lando Gym Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Lando Gym Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$99</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/taurus-elements-shell">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj09-yellow_main.jpg" alt="Taurus Elements Shell">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Taurus Elements Shell</span>
+                <br>
+                <span class="product-price text-slate-600">$65</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/mars-heattech&amp;trade;-pullover">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj10-red_main.jpg" alt="Mars HeatTech&amp;trade; Pullover">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Mars HeatTech&amp;trade; Pullover</span>
+                <br>
+                <span class="product-price text-slate-600">$66</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/taurus-elements-shell">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj09-yellow_main.jpg" alt="Taurus Elements Shell">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Taurus Elements Shell</span>
+                <br>
+                <span class="product-price text-slate-600">$65</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/mars-heattech&amp;trade;-pullover">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj10-red_main.jpg" alt="Mars HeatTech&amp;trade; Pullover">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Mars HeatTech&amp;trade; Pullover</span>
+                <br>
+                <span class="product-price text-slate-600">$66</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/typhon-performance-fleece-lined-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj11-black_main.jpg" alt="Typhon Performance Fleece-lined Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Typhon Performance Fleece-lined Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$60</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/proteus-fitness-jackshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mj12-orange_main.jpg" alt="Proteus Fitness Jackshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Proteus Fitness Jackshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$45</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/caesar-warm-up-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp01-gray_main.jpg" alt="Caesar Warm-Up Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Caesar Warm-Up Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$35</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/viktor-lumatech&amp;trade;-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp02-gray_main.jpg" alt="Viktor LumaTech&amp;trade; Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Viktor LumaTech&amp;trade; Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$46</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/geo-insulated-jogging-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp03-black_main.jpg" alt="Geo Insulated Jogging Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Geo Insulated Jogging Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$51</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/supernova-sport-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp04-gray_main.jpg" alt="Supernova Sport Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Supernova Sport Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$45</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/kratos-gym-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp05-blue_main.jpg" alt="Kratos Gym Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Kratos Gym Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$57</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/mithra-warmup-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp06-gray_main.jpg" alt="Mithra Warmup Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Mithra Warmup Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$28</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/thorpe-track-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp07-blue_main.jpg" alt="Thorpe Track Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Thorpe Track Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$68</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/zeppelin-yoga-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp08-green_main.jpg" alt="Zeppelin Yoga Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Zeppelin Yoga Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$82</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/thorpe-track-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp07-blue_main.jpg" alt="Thorpe Track Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Thorpe Track Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$68</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/zeppelin-yoga-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp08-green_main.jpg" alt="Zeppelin Yoga Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Zeppelin Yoga Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$82</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/livingston-all-purpose-tight">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp09-blue_main.jpg" alt="Livingston All-Purpose Tight">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Livingston All-Purpose Tight</span>
+                <br>
+                <span class="product-price text-slate-600">$75</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/orestes-yoga-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp10-black_main.jpg" alt="Orestes Yoga Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Orestes Yoga Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$66</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/aether-gym-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp11-brown_main.jpg" alt="Aether Gym Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Aether Gym Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$74</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/cronus-yoga-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mp12-black_main.jpg" alt="Cronus Yoga Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Cronus Yoga Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$48</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/aero-daily-fitness-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms01-blue_main.jpg" alt="Aero Daily Fitness Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Aero Daily Fitness Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$24</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ryker-lumatech&amp;trade;-tee-(v-neck)">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms02-gray_main.jpg" alt="Ryker LumaTech&amp;trade; Tee (V-neck)">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ryker LumaTech&amp;trade; Tee (V-neck)</span>
+                <br>
+                <span class="product-price text-slate-600">$28</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/balboa-persistence-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms03-black_main.jpg" alt="Balboa Persistence Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Balboa Persistence Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/gobi-heattec&amp;reg;-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms04-orange_main.jpg" alt="Gobi HeatTec&amp;reg; Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Gobi HeatTec&amp;reg; Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/helios-evercool&amp;trade;-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms05-blue_main.jpg" alt="Helios EverCool&amp;trade; Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Helios EverCool&amp;trade; Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$24</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/zoltan-gym-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms06-blue_main.jpg" alt="Zoltan Gym Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Zoltan Gym Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/helios-evercool&amp;trade;-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms05-blue_main.jpg" alt="Helios EverCool&amp;trade; Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Helios EverCool&amp;trade; Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$24</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/zoltan-gym-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms06-blue_main.jpg" alt="Zoltan Gym Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Zoltan Gym Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/deion-long-sleeve-evercool&amp;trade;-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms07-green_main.jpg" alt="Deion Long-Sleeve EverCool&amp;trade; Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Deion Long-Sleeve EverCool&amp;trade; Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/strike-endurance-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms08-black_main.jpg" alt="Strike Endurance Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Strike Endurance Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ryker-lumatech&amp;trade;-tee-(crew-neck)">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms09-blue_main.jpg" alt="Ryker LumaTech&amp;trade; Tee (Crew-neck)">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ryker LumaTech&amp;trade; Tee (Crew-neck)</span>
+                <br>
+                <span class="product-price text-slate-600">$32</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/logan--heattec&amp;reg;-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms10-blue_main.jpg" alt="Logan  HeatTec&amp;reg; Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Logan  HeatTec&amp;reg; Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$24</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/atomic-endurance-running-tee-(v-neck)">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms11-green_main.jpg" alt="Atomic Endurance Running Tee (V-neck)">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Atomic Endurance Running Tee (V-neck)</span>
+                <br>
+                <span class="product-price text-slate-600">$28</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/atomic-endurance-running-tee-(crew-neck)">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ms12-red_main.jpg" alt="Atomic Endurance Running Tee (Crew-Neck)">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Atomic Endurance Running Tee (Crew-Neck)</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/cobalt-cooltech&amp;trade;-fitness-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh01-blue_main.jpg" alt="Cobalt CoolTech&amp;trade; Fitness Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Cobalt CoolTech&amp;trade; Fitness Short</span>
+                <br>
+                <span class="product-price text-slate-600">$44</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/apollo-running-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh02-black_main.jpg" alt="Apollo Running Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Apollo Running Short</span>
+                <br>
+                <span class="product-price text-slate-600">$32.5</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/meteor-workout-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh03-blue_main.jpg" alt="Meteor Workout Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Meteor Workout Short</span>
+                <br>
+                <span class="product-price text-slate-600">$32.5</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/torque-power-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh04-gray_main.jpg" alt="Torque Power Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Torque Power Short</span>
+                <br>
+                <span class="product-price text-slate-600">$32.5</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/meteor-workout-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh03-blue_main.jpg" alt="Meteor Workout Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Meteor Workout Short</span>
+                <br>
+                <span class="product-price text-slate-600">$32.5</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/torque-power-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh04-gray_main.jpg" alt="Torque Power Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Torque Power Short</span>
+                <br>
+                <span class="product-price text-slate-600">$32.5</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/hawkeye-yoga-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh05-gray_main.jpg" alt="Hawkeye Yoga Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Hawkeye Yoga Short</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/lono-yoga-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh06-gray_main.jpg" alt="Lono Yoga Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Lono Yoga Short</span>
+                <br>
+                <span class="product-price text-slate-600">$32</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/rapha--sports-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh07-black_main.jpg" alt="Rapha  Sports Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Rapha  Sports Short</span>
+                <br>
+                <span class="product-price text-slate-600">$35</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/orestes-fitness-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh08-black_main.jpg" alt="Orestes Fitness Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Orestes Fitness Short</span>
+                <br>
+                <span class="product-price text-slate-600">$35</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/troy-yoga-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh09-blue_main.jpg" alt="Troy Yoga Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Troy Yoga Short</span>
+                <br>
+                <span class="product-price text-slate-600">$24</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/sol-active-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh10-blue_main.jpg" alt="Sol Active Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Sol Active Short</span>
+                <br>
+                <span class="product-price text-slate-600">$32</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/arcadio-gym-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh11-blue_main.jpg" alt="Arcadio Gym Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Arcadio Gym Short</span>
+                <br>
+                <span class="product-price text-slate-600">$20</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/pierce-gym-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/msh12-red_main.jpg" alt="Pierce Gym Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Pierce Gym Short</span>
+                <br>
+                <span class="product-price text-slate-600">$27</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/erikssen-cooltech&amp;trade;-fitness-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt01-red_main.jpg" alt="Erikssen CoolTech&amp;trade; Fitness Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Erikssen CoolTech&amp;trade; Fitness Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/tristan-endurance-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt02-white_main.jpg" alt="Tristan Endurance Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Tristan Endurance Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/erikssen-cooltech&amp;trade;-fitness-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt01-red_main.jpg" alt="Erikssen CoolTech&amp;trade; Fitness Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Erikssen CoolTech&amp;trade; Fitness Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/tristan-endurance-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt02-white_main.jpg" alt="Tristan Endurance Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Tristan Endurance Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/primo-endurance-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt03-red_main.jpg" alt="Primo Endurance Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Primo Endurance Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/helios-endurance-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt04-blue_main.jpg" alt="Helios Endurance Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Helios Endurance Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$32</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/rocco-gym-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt05-blue_main.jpg" alt="Rocco Gym Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Rocco Gym Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$24</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/vulcan-weightlifting-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt06-black_main.jpg" alt="Vulcan Weightlifting Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Vulcan Weightlifting Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$28</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/argus-all-weather-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt07-gray_main.jpg" alt="Argus All-Weather Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Argus All-Weather Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$22</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/sparta-gym-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt08-green_main.jpg" alt="Sparta Gym Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Sparta Gym Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/sinbad-fitness-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt09-blue_main.jpg" alt="Sinbad Fitness Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Sinbad Fitness Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/tiberius-gym-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt10-yellow_main.jpg" alt="Tiberius Gym Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Tiberius Gym Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$18</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/atlas-fitness-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt11-blue_main.jpg" alt="Atlas Fitness Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Atlas Fitness Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$18</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/cassius-sparring-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt12-blue_main.jpg" alt="Cassius Sparring Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Cassius Sparring Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$18</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/atlas-fitness-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt11-blue_main.jpg" alt="Atlas Fitness Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Atlas Fitness Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$18</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/cassius-sparring-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/mt12-blue_main.jpg" alt="Cassius Sparring Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Cassius Sparring Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$18</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/electra-bra-top">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wb01-gray_main.jpg" alt="Electra Bra Top">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Electra Bra Top</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/erica-evercool-sports-bra">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wb02-blue_main.jpg" alt="Erica Evercool Sports Bra">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Erica Evercool Sports Bra</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/celeste-sports-bra">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wb03-green_main.jpg" alt="Celeste Sports Bra">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Celeste Sports Bra</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/prima-compete-bra-top">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wb04-blue_main.jpg" alt="Prima Compete Bra Top">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Prima Compete Bra Top</span>
+                <br>
+                <span class="product-price text-slate-600">$24</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/lucia-cross-fit-bra">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wb05-black_main.jpg" alt="Lucia Cross-Fit Bra">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Lucia Cross-Fit Bra</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/mona-pullover-hoodlie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh01-green_main.jpg" alt="Mona Pullover Hoodlie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Mona Pullover Hoodlie</span>
+                <br>
+                <span class="product-price text-slate-600">$57</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/hera-pullover-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh02-blue_main.jpg" alt="Hera Pullover Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Hera Pullover Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$48</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/autumn-pullie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh03-red_main.jpg" alt="Autumn Pullie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Autumn Pullie</span>
+                <br>
+                <span class="product-price text-slate-600">$57</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/miko-pullover-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh04-blue_main.jpg" alt="Miko Pullover Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Miko Pullover Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/selene-yoga-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh05-white_main.jpg" alt="Selene Yoga Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Selene Yoga Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/miko-pullover-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh04-blue_main.jpg" alt="Miko Pullover Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Miko Pullover Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/selene-yoga-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh05-white_main.jpg" alt="Selene Yoga Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Selene Yoga Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/daphne-full-zip-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh06-purple_main.jpg" alt="Daphne Full-Zip Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Daphne Full-Zip Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$59</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/phoebe-zipper-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh07-gray_main.jpg" alt="Phoebe Zipper Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Phoebe Zipper Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$59</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/cassia-funnel-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh08-white_main.jpg" alt="Cassia Funnel Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Cassia Funnel Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$48</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ariel-roll-sleeve-sweatshirt">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh09-purple_main.jpg" alt="Ariel Roll Sleeve Sweatshirt">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ariel Roll Sleeve Sweatshirt</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/helena-hooded-fleece">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh10-gray_main.jpg" alt="Helena Hooded Fleece">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Helena Hooded Fleece</span>
+                <br>
+                <span class="product-price text-slate-600">$55</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/eos-v-neck-hoodie">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh11-blue_main.jpg" alt="Eos V-Neck Hoodie">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Eos V-Neck Hoodie</span>
+                <br>
+                <span class="product-price text-slate-600">$54</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/circe-hooded-ice-fleece">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wh12-gray_main.jpg" alt="Circe Hooded Ice Fleece">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Circe Hooded Ice Fleece</span>
+                <br>
+                <span class="product-price text-slate-600">$68</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/stellar-solar-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj01-red_main.jpg" alt="Stellar Solar Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Stellar Solar Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$75</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/josie-yoga-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj02-gray_main.jpg" alt="Josie Yoga Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Josie Yoga Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$56.25</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/augusta-pullover-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj03-red_main.jpg" alt="Augusta Pullover Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Augusta Pullover Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$57</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/josie-yoga-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj02-gray_main.jpg" alt="Josie Yoga Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Josie Yoga Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$56.25</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/augusta-pullover-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj03-red_main.jpg" alt="Augusta Pullover Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Augusta Pullover Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$57</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ingrid-running-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj04-white_main.jpg" alt="Ingrid Running Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ingrid Running Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$84</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/riona-full-zip-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj05-brown_main.jpg" alt="Riona Full Zip Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Riona Full Zip Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$60</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/juno-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj06-purple_main.jpg" alt="Juno Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Juno Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$77</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/inez-full-zip-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj07-purple_main.jpg" alt="Inez Full Zip Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Inez Full Zip Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$59</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/adrienne-trek-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj08-gray_main.jpg" alt="Adrienne Trek Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Adrienne Trek Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$57</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/jade-yoga-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj09-green_main.jpg" alt="Jade Yoga Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Jade Yoga Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$32</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/nadia-elements-shell">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj10-yellow_main.jpg" alt="Nadia Elements Shell">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Nadia Elements Shell</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/neve-studio-dance-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj11-blue_main.jpg" alt="Neve Studio Dance Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Neve Studio Dance Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$69</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/olivia-1/4-zip-light-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj12-blue_main.jpg" alt="Olivia 1/4 Zip Light Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Olivia 1/4 Zip Light Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$77</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/karmen-yoga-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp01-gray_main.jpg" alt="Karmen Yoga Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Karmen Yoga Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/olivia-1/4-zip-light-jacket">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wj12-blue_main.jpg" alt="Olivia 1/4 Zip Light Jacket">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Olivia 1/4 Zip Light Jacket</span>
+                <br>
+                <span class="product-price text-slate-600">$77</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/karmen-yoga-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp01-gray_main.jpg" alt="Karmen Yoga Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Karmen Yoga Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/emma-leggings">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp02-blue_main.jpg" alt="Emma Leggings">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Emma Leggings</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ida-workout-parachute-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp03-blue_main.jpg" alt="Ida Workout Parachute Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ida Workout Parachute Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$48</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/cora-parachute-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp04-blue_main.jpg" alt="Cora Parachute Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Cora Parachute Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$75</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/sahara-leggings">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp05-gray_main.jpg" alt="Sahara Leggings">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Sahara Leggings</span>
+                <br>
+                <span class="product-price text-slate-600">$75</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/diana-tights">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp06-black_main.jpg" alt="Diana Tights">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Diana Tights</span>
+                <br>
+                <span class="product-price text-slate-600">$59</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/aeon-capri">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp07-black_main.jpg" alt="Aeon Capri">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Aeon Capri</span>
+                <br>
+                <span class="product-price text-slate-600">$48</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/bardot-capri">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp08-black_main.jpg" alt="Bardot Capri">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Bardot Capri</span>
+                <br>
+                <span class="product-price text-slate-600">$48</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/carina-basic-capri">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp09-black_main.jpg" alt="Carina Basic Capri">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Carina Basic Capri</span>
+                <br>
+                <span class="product-price text-slate-600">$51</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/daria-bikram-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp10-gray_main.jpg" alt="Daria Bikram Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Daria Bikram Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$51</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/sylvia-capri">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp11-green_main.jpg" alt="Sylvia Capri">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Sylvia Capri</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/daria-bikram-pant">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp10-gray_main.jpg" alt="Daria Bikram Pant">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Daria Bikram Pant</span>
+                <br>
+                <span class="product-price text-slate-600">$51</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/sylvia-capri">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp11-green_main.jpg" alt="Sylvia Capri">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Sylvia Capri</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/deirdre-relaxed-fit-capri">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp12-gray_main.jpg" alt="Deirdre Relaxed-Fit Capri">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Deirdre Relaxed-Fit Capri</span>
+                <br>
+                <span class="product-price text-slate-600">$63</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/portia-capri">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wp13-orange_main.jpg" alt="Portia Capri">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Portia Capri</span>
+                <br>
+                <span class="product-price text-slate-600">$49</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/gwyn-endurance-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws01-black_main.jpg" alt="Gwyn Endurance Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Gwyn Endurance Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$24</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/gabrielle-micro-sleeve-top">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws02-green_main.jpg" alt="Gabrielle Micro Sleeve Top">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Gabrielle Micro Sleeve Top</span>
+                <br>
+                <span class="product-price text-slate-600">$28</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/iris-workout-top">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws03-red_main.jpg" alt="Iris Workout Top">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Iris Workout Top</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/layla-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws04-green_main.jpg" alt="Layla Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Layla Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/desiree-fitness-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws05-black_main.jpg" alt="Desiree Fitness Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Desiree Fitness Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$24</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/elisa-evercool&amp;trade;-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws06-purple_main.jpg" alt="Elisa EverCool&amp;trade; Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Elisa EverCool&amp;trade; Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/juliana-short-sleeve-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws07-black_main.jpg" alt="Juliana Short-Sleeve Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Juliana Short-Sleeve Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/minerva-lumatech&amp;trade;-v-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws08-blue_main.jpg" alt="Minerva LumaTech&amp;trade; V-Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Minerva LumaTech&amp;trade; V-Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$32</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/juliana-short-sleeve-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws07-black_main.jpg" alt="Juliana Short-Sleeve Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Juliana Short-Sleeve Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/minerva-lumatech&amp;trade;-v-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws08-blue_main.jpg" alt="Minerva LumaTech&amp;trade; V-Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Minerva LumaTech&amp;trade; V-Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$32</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/tiffany-fitness-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws09-blue_main.jpg" alt="Tiffany Fitness Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Tiffany Fitness Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$28</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/karissa-v-neck-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws10-red_main.jpg" alt="Karissa V-Neck Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Karissa V-Neck Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$32</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/diva-gym-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws11-yellow_main.jpg" alt="Diva Gym Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Diva Gym Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$32</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/radiant-tee">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/ws12-orange_main.jpg" alt="Radiant Tee">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Radiant Tee</span>
+                <br>
+                <span class="product-price text-slate-600">$22</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/fiona-fitness-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh01-black_main.jpg" alt="Fiona Fitness Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Fiona Fitness Short</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/maxima-drawstring-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh02-gray_main.jpg" alt="Maxima Drawstring Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Maxima Drawstring Short</span>
+                <br>
+                <span class="product-price text-slate-600">$28</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/gwen-drawstring-bike-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh03-gray_main.jpg" alt="Gwen Drawstring Bike Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Gwen Drawstring Bike Short</span>
+                <br>
+                <span class="product-price text-slate-600">$50</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/artemis-running-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh04-black_main.jpg" alt="Artemis Running Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Artemis Running Short</span>
+                <br>
+                <span class="product-price text-slate-600">$45</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/bess-yoga-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh05-blue_main.jpg" alt="Bess Yoga Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Bess Yoga Short</span>
+                <br>
+                <span class="product-price text-slate-600">$28</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/angel-light-running-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh06-gray_main.jpg" alt="Angel Light Running Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Angel Light Running Short</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/bess-yoga-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh05-blue_main.jpg" alt="Bess Yoga Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Bess Yoga Short</span>
+                <br>
+                <span class="product-price text-slate-600">$28</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/angel-light-running-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh06-gray_main.jpg" alt="Angel Light Running Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Angel Light Running Short</span>
+                <br>
+                <span class="product-price text-slate-600">$42</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/echo-fit-compression-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh07-black_main.jpg" alt="Echo Fit Compression Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Echo Fit Compression Short</span>
+                <br>
+                <span class="product-price text-slate-600">$24</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/sybil-running-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh08-purple_main.jpg" alt="Sybil Running Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Sybil Running Short</span>
+                <br>
+                <span class="product-price text-slate-600">$44</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/mimi-all-purpose-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh09-gray_main.jpg" alt="Mimi All-Purpose Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Mimi All-Purpose Short</span>
+                <br>
+                <span class="product-price text-slate-600">$44</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ana-running-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh10-black_main.jpg" alt="Ana Running Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ana Running Short</span>
+                <br>
+                <span class="product-price text-slate-600">$40</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/ina-compression-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh11-blue_main.jpg" alt="Ina Compression Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Ina Compression Short</span>
+                <br>
+                <span class="product-price text-slate-600">$49</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/erika-running-short">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wsh12-green_main.jpg" alt="Erika Running Short">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Erika Running Short</span>
+                <br>
+                <span class="product-price text-slate-600">$49</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/bella-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt01-blue_main.jpg" alt="Bella Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Bella Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/zoe-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt02-orange_main.jpg" alt="Zoe Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Zoe Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/nora-practice-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt03-red_main.jpg" alt="Nora Practice Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Nora Practice Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/nona-fitness-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt04-blue_main.jpg" alt="Nona Fitness Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Nona Fitness Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+<div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/nora-practice-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt03-red_main.jpg" alt="Nora Practice Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Nora Practice Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/nona-fitness-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt04-blue_main.jpg" alt="Nona Fitness Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Nona Fitness Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/leah-yoga-top">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt05-purple_main.jpg" alt="Leah Yoga Top">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Leah Yoga Top</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/chloe-compete-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt06-blue_main.jpg" alt="Chloe Compete Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Chloe Compete Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$39</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/maya-tunic">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt07-green_main.jpg" alt="Maya Tunic">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Maya Tunic</span>
+                <br>
+                <span class="product-price text-slate-600">$29</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/antonia-racer-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt08-black_main.jpg" alt="Antonia Racer Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Antonia Racer Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$34</span>
+            </div>
+        </a>
+    </div>
+    <div class="product-item flex flex-col items-center rounded-lg">
+        
+        <a href="https://scrapingcourse.com/ecommerce/product/breathe-easy-tank">
+                        <img class="product-image rounded-lg" width="200" height="240" decoding="async" fetchpriority="high" src="https://scrapingcourse.com/ecommerce/wp-content/uploads/2024/03/wt09-white_main.jpg" alt="Breathe-Easy Tank">
+            <div class="product-info self-start text-left w-full">
+                <span class="product-name">Breathe-Easy Tank</span>
+                <br>
+                <span class="product-price text-slate-600">$34</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+    <div id="sentinel" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-8" style="display: none;">
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+                    <div class="flex flex-col items-center rounded-lg p-4 shadow">
+            <div class="w-full h-48 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-5/6 h-4 bg-gray-300 rounded mb-2 animate-pulse"></div>
+            <div class="w-4/6 h-4 bg-gray-300 rounded animate-pulse"></div>
+            </div>
+            </div>
+</div>
+
+<div id="end-of-page">
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var observer = new IntersectionObserver(function(entries) {
+            // If intersectionRatio is 0, the sentinel is out of view and we don't need to do anything
+            if (entries[0].intersectionRatio <= 0) return;
+
+            loadMoreItems();
+        });
+
+        observer.observe(document.getElementById('end-of-page'));
+
+        // Start observing the sentinel
+        observer.observe(document.getElementById('sentinel'));
+
+        function loadMoreItems() {
+            document.getElementById('sentinel').style.display = 'grid';
+            var container = document.getElementById('product-grid');
+            var offset = container.getAttribute('data-offset') || "0";
+
+            fetch(`/ajax/products?offset=${offset}`)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('sentinel').style.display = 'none';
+                    container.insertAdjacentHTML('beforeend', html);
+                    container.setAttribute('data-offset', parseInt(offset) + 10);
+
+                    // Stop observer if there's no data to load from backend
+                    if (!html.trim() || html.length < 0) {
+                        observer.unobserve(document.getElementById('sentinel'));
+                        observer.unobserve(document.getElementById('end-of-page'));
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading more items:', error);
+                    document.getElementById('sentinel').style.display = 'none';
+                });
+        }
+    });
+
+</script>
+    
+        </div>
+    </main>
+
+    <!-- Bootstrap and jQuery libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body></html>

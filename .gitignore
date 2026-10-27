@@ -33,3 +33,23 @@ node_modules/
 !/lab3_3/nocode/workflow.json
 !/lab3_3/nocode/nocode_result.csv
 !/lab3_3/nocode/screenshot_*.png
+
+# Lab 4 submission follows the assignment layout; code and metrics live in the notebook.
+/lab4_3/*
+!/lab4_3/lab4.ipynb
+!/lab4_3/data_browser.csv
+!/lab4_3/data_light.csv
+!/lab4_3/collection_log.csv
+!/lab4_3/report.md
+!/lab4_3/requirements.txt
+!/lab4_3/README.md
+!/lab4_3/artifacts/
+/lab4_3/artifacts/*
+!/lab4_3/artifacts/*.html
+!/lab4_3/artifacts/*.png
+!/lab4_3/artifacts/trace.zip
+!/lab4_3/nocode/
+/lab4_3/nocode/*
+!/lab4_3/nocode/workflow.json
+!/lab4_3/nocode/nocode_result.csv
+!/lab4_3/nocode/screenshot_*.png
