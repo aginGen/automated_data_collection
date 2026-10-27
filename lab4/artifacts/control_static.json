@@ -1,9 +1,0 @@
-{
-  "url": "https://www.scrapingcourse.com/ecommerce",
-  "robots_status": 200,
-  "can_fetch": true,
-  "status": 200,
-  "bytes": 82409,
-  "cards_in_html": 16,
-  "card_selector": "li.product"
-}

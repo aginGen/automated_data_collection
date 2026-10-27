@@ -14,3 +14,22 @@ venv/
 /.lab-work/
 node_modules/
 **/.scrapy/
+
+# Previous local lab files.
+/lab3/
+
+# Only the required submission files belong in lab 3.
+/lab3_3/*
+!/lab3_3/lab3.ipynb
+!/lab3_3/data_raw.jsonl
+!/lab3_3/data_clean.csv
+!/lab3_3/collection_log.csv
+!/lab3_3/state.json
+!/lab3_3/report.md
+!/lab3_3/requirements.txt
+!/lab3_3/README.md
+!/lab3_3/nocode/
+/lab3_3/nocode/*
+!/lab3_3/nocode/workflow.json
+!/lab3_3/nocode/nocode_result.csv
+!/lab3_3/nocode/screenshot_*.png
