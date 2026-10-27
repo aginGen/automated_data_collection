@@ -3,3 +3,6 @@ lab2/octoparse_raw.csv -text -diff
 lab4/artifacts/static_*.html -text -diff
 
 *.pdf binary
+
+# Preserve the exact bytes of the submitted files and measured artifacts.
+lab3_3/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
