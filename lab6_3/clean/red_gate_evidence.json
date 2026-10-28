@@ -1,0 +1,6 @@
+{
+  "exit_code": 2,
+  "message": "Mart не обновлён: красные метрики: mandatory_completeness",
+  "mart_files": 6,
+  "mart_hashes_unchanged": true
+}

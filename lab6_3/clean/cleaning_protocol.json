@@ -1,0 +1,50 @@
+[
+  {
+    "step": "1. Нормализация текста",
+    "before": 452,
+    "after": 452,
+    "changed": 17,
+    "removed": 0,
+    "note": "NFKC, NBSP, zero-width, пробелы"
+  },
+  {
+    "step": "2. Бизнес-ключ и URL",
+    "before": 452,
+    "after": 452,
+    "changed": 452,
+    "removed": 0,
+    "note": "SHA(source|source_id); tracking-URL: 8"
+  },
+  {
+    "step": "3. Типизация",
+    "before": 452,
+    "after": 446,
+    "changed": 446,
+    "removed": 6,
+    "note": "UTC, числовой год, строковый ID; ошибки в rejects"
+  },
+  {
+    "step": "4. Пропуски",
+    "before": 446,
+    "after": 434,
+    "changed": 0,
+    "removed": 12,
+    "note": "Текст, автор и URL обязательны; неизвестный год = NULL"
+  },
+  {
+    "step": "5. Полные, ключевые и почти-дубли",
+    "before": 434,
+    "after": 420,
+    "changed": 0,
+    "removed": 14,
+    "note": "Сформированы группы; альтернативы отложены до контракта"
+  },
+  {
+    "step": "6. Бизнес-правила и контракт",
+    "before": 420,
+    "after": 420,
+    "changed": 420,
+    "removed": 0,
+    "note": "Контракт всех кандидатов; fallback=6; невалидных альтернатив=6; всего rejects=24"
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "previous_rows": null,
+  "rows": 420,
+  "raw_rows": 452,
+  "contract_valid_raw": 428,
+  "rejected_rows": 24,
+  "reject_reasons": {
+    "Invalid isoformat string: 'invalid-date'": 6,
+    "Отсутствует обязательное поле": 12,
+    "Value error, Тег должен быть непустым slug в нижнем регистре": 6
+  },
+  "metrics": [
+    {
+      "metric": "mandatory_completeness",
+      "value": 1.0,
+      "green": 1.0,
+      "yellow": 0.99,
+      "direction": "min",
+      "status": "green",
+      "reason": "Обязательные поля нужны для загрузки"
+    },
+    {
+      "metric": "optional_completeness",
+      "value": 0.238095,
+      "green": 0.1,
+      "yellow": 0.05,
+      "direction": "min",
+      "status": "green",
+      "reason": "Год рождения доступен у части HTML-авторов"
+    },
+    {
+      "metric": "unique_keys",
+      "value": 1.0,
+      "green": 1.0,
+      "yellow": 0.99,
+      "direction": "min",
+      "status": "green",
+      "reason": "Уникальный бизнес-ключ"
+    },
+    {
+      "metric": "validity",
+      "value": 0.946903,
+      "green": 0.9,
+      "yellow": 0.8,
+      "direction": "min",
+      "status": "green",
+      "reason": "До 10% явно внесённых дефектов"
+    },
+    {
+      "metric": "reject_share",
+      "value": 0.053097,
+      "green": 0.1,
+      "yellow": 0.2,
+      "direction": "max",
+      "status": "green",
+      "reason": "До 10% учебной отбраковки"
+    },
+    {
+      "metric": "business_consistency",
+      "value": 1.0,
+      "green": 1.0,
+      "yellow": 0.99,
+      "direction": "min",
+      "status": "green",
+      "reason": "Полный контракт и согласованность полей"
+    },
+    {
+      "metric": "median_age_days",
+      "value": 12.830484,
+      "green": 30.0,
+      "yellow": 60.0,
+      "direction": "max",
+      "status": "green",
+      "reason": "Для учебных метаданных допустим возраст до месяца"
+    },
+    {
+      "metric": "volume_change",
+      "value": null,
+      "green": 0.1,
+      "yellow": 0.2,
+      "direction": "max",
+      "status": "bootstrap",
+      "reason": "Первый запуск: предыдущего объёма нет"
+    }
+  ],
+  "verdict": "green"
+}
