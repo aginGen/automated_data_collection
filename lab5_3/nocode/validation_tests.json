@@ -1,0 +1,41 @@
+{
+  "method": "Execute exported Code-node JavaScript with mock n8n inputs; real n8n workflow also exercised separately",
+  "tests": [
+    {
+      "name": "tagless quote accepted",
+      "pass": true
+    },
+    {
+      "name": "missing author path rejected",
+      "pass": true
+    },
+    {
+      "name": "missing quote rejected",
+      "pass": true
+    },
+    {
+      "name": "bad tag type rejected",
+      "pass": true
+    },
+    {
+      "name": "leap date accepted",
+      "pass": true
+    },
+    {
+      "name": "February 31 rejected",
+      "pass": true
+    },
+    {
+      "name": "non-leap February 29 rejected",
+      "pass": true
+    },
+    {
+      "name": "missing biography rejected",
+      "pass": true
+    },
+    {
+      "name": "missing birthplace rejected",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "delivery_test": {
+    "execution_id": 9,
+    "status": "error",
+    "description": "Copy of final workflow points list request to unavailable local 127.0.0.1:9; list failure URL adjusted for the test.",
+    "http_response": 201,
+    "notification_log": "notifications.jsonl",
+    "notification_screenshot": "screenshot_notification.png",
+    "n8n_screenshot": "screenshot_error_execution.png",
+    "stop_message": "Collection stopped; local notification delivered; details in error_log.csv."
+  },
+  "fallback_test": {
+    "execution_id": 10,
+    "status": "error",
+    "description": "Same controlled request while notification receiver stopped.",
+    "stop_message": "Collection stopped; local notification FAILED; check dashboard receiver and error_log.csv."
+  },
+  "csv_freshness": "Previous successful CSV remains after failed run; check execution status and timestamp.",
+  "csv_sha256_after_tests": "cce26345fcda2c2c4aa50f2ec337e3fd04fa7a9f9966632cc709bb36036b16b4"
+}

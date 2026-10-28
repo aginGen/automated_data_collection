@@ -53,3 +53,16 @@ node_modules/
 !/lab4_3/nocode/workflow.json
 !/lab4_3/nocode/nocode_result.csv
 !/lab4_3/nocode/screenshot_*.png
+
+# Lab 5 follows the assignment layout; local runtimes and caches stay outside the submission.
+/lab5_3/*
+!/lab5_3/scrapy.cfg
+!/lab5_3/quotes_crawler/
+!/lab5_3/data/
+!/lab5_3/jobstate/
+!/lab5_3/quality/
+!/lab5_3/nocode/
+!/lab5_3/report.md
+!/lab5_3/report.pdf
+!/lab5_3/requirements.txt
+!/lab5_3/README.md

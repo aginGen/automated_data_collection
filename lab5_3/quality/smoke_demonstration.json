@@ -1,0 +1,90 @@
+{
+  "synthetic_cases_only": true,
+  "cases": [
+    {
+      "case": "unchanged",
+      "input": {
+        "scope": "test:equal-window",
+        "rows": 100,
+        "required_empty_share": 0
+      },
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "case": "exactly_20_percent_fewer",
+      "input": {
+        "scope": "test:equal-window",
+        "rows": 80,
+        "required_empty_share": 0
+      },
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "case": "more_than_20_percent_fewer",
+      "input": {
+        "scope": "test:equal-window",
+        "rows": 79,
+        "required_empty_share": 0
+      },
+      "warnings": [
+        "Число записей упало более чем на 20%: 100 -> 79"
+      ],
+      "passed": true
+    },
+    {
+      "case": "exactly_5_percent_missing",
+      "input": {
+        "scope": "test:equal-window",
+        "rows": 100,
+        "required_empty_share": 0.05
+      },
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "case": "more_than_5_percent_missing",
+      "input": {
+        "scope": "test:equal-window",
+        "rows": 100,
+        "required_empty_share": 0.0501
+      },
+      "warnings": [
+        "Пустые обязательные поля: 5.01% (>5%)"
+      ],
+      "passed": true
+    },
+    {
+      "case": "empty_dataset",
+      "input": {
+        "scope": "test:equal-window",
+        "rows": 0,
+        "required_empty_share": 0
+      },
+      "warnings": [
+        "Число записей упало более чем на 20%: 100 -> 0"
+      ],
+      "passed": true
+    },
+    {
+      "case": "both_failures",
+      "input": {
+        "scope": "test:equal-window",
+        "rows": 79,
+        "required_empty_share": 0.06
+      },
+      "warnings": [
+        "Число записей упало более чем на 20%: 100 -> 79",
+        "Пустые обязательные поля: 6.00% (>5%)"
+      ],
+      "passed": true
+    },
+    {
+      "case": "missing_fields_analyzed",
+      "share": 0.8,
+      "passed": true
+    }
+  ],
+  "invalid_snapshot_checks": 3
+}

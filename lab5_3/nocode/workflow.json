@@ -1,0 +1,1090 @@
+{
+  "name": "Lab 5 quotes - two-level collection",
+  "nodes": [
+    {
+      "id": "5a42de7d-5a4f-4e19-8354-fcfd837476dd",
+      "name": "Manual start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -800,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "2294e108-7c88-404e-8e8f-0f90b4ca6bfc",
+      "name": "Daily schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -800,
+        220
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "c528bf76-6455-4c00-b42f-3788d98cc4df",
+      "name": "Fetch quote pages",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -580,
+        0
+      ],
+      "parameters": {
+        "url": "https://quotes.toscrape.com/page/1/",
+        "options": {
+          "timeout": 25000,
+          "pagination": {
+            "pagination": {
+              "paginationMode": "responseContainsNextURL",
+              "nextURL": "={{ 'https://quotes.toscrape.com/page/' + ($pageCount + 1) + '/' }}",
+              "paginationCompleteWhen": "other",
+              "completeExpression": "={{ false }}",
+              "limitPagesFetched": true,
+              "maxRequests": 3,
+              "requestInterval": 500
+            }
+          },
+          "response": {
+            "response": {
+              "responseFormat": "text"
+            }
+          }
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "university-data-collection-n8n/1.0"
+            }
+          ]
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 1000,
+      "onError": "continueErrorOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "id": "99db575f-4386-47ba-9460-1914c52d0f26",
+      "name": "Extract quote cards",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        -120,
+        0
+      ],
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "sourceData": "json",
+        "dataPropertyName": "data",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "cards",
+              "cssSelector": ".quote",
+              "returnValue": "html",
+              "returnArray": true
+            },
+            {
+              "key": "next",
+              "cssSelector": "li.next a",
+              "returnValue": "attribute",
+              "attribute": "href",
+              "returnArray": false
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "29d91517-2c30-47f9-97eb-2f3513dd3785",
+      "name": "Split cards",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        110,
+        0
+      ],
+      "parameters": {
+        "fieldToSplitOut": "cards",
+        "include": "allOtherFields",
+        "options": {}
+      }
+    },
+    {
+      "id": "7345473e-2c7d-4e8c-a983-f25bc5831bd9",
+      "name": "Extract quote fields",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        340,
+        0
+      ],
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "sourceData": "json",
+        "dataPropertyName": "cards",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "quote",
+              "cssSelector": ".text",
+              "returnValue": "text",
+              "returnArray": false
+            },
+            {
+              "key": "author",
+              "cssSelector": ".author",
+              "returnValue": "text",
+              "returnArray": false
+            },
+            {
+              "key": "author_path",
+              "cssSelector": "a[href*='/author/']",
+              "returnValue": "attribute",
+              "returnArray": false,
+              "attribute": "href"
+            },
+            {
+              "key": "tags",
+              "cssSelector": ".tags .tag",
+              "returnValue": "text",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "c91cb905-548a-48e0-93fd-e9e21d9f1f9f",
+      "name": "Prepare quote",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        570,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const clean=s=>String(s ?? '').trim().replace(/\\s+/g,' ');\nreturn $input.all().map((item,index)=>{ const q=item.json; const next=$('Split cards').all()[index].json.next; const m=String(next).match(/page\\/(\\d+)/); const quote=clean(q.quote), author=clean(q.author), path=String(q.author_path ?? '').trim();\nif(!m || !quote || !author || !/^\\/author\\/[A-Za-z0-9-]+\\/?$/.test(path) || !Array.isArray(q.tags) || q.tags.some(t=>!clean(t))) throw new Error('Missing or invalid quote, author, tags, author path, or pagination link');\nconst page=Number(m[1])-1;if(page<1 || page>3) throw new Error('Unexpected list page'); return {json:{quote,author,author_key:author.toLowerCase(),author_url:'https://quotes.toscrape.com'+path+(path.endsWith('/')?'':'/'),tags:q.tags,source_url:`https://quotes.toscrape.com/page/${page}/`,list_page:page},pairedItem:{item:index}}; });"
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "68bc2ed4-9482-4761-ac5b-de8a86b29a11",
+      "name": "Loop over quotes",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        800,
+        0
+      ],
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      }
+    },
+    {
+      "id": "626f9880-aad6-4777-a393-19e1a4f7e7bc",
+      "name": "Fetch author",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        800,
+        320
+      ],
+      "parameters": {
+        "url": "={{ $json.author_url }}",
+        "options": {
+          "timeout": 25000,
+          "response": {
+            "response": {
+              "responseFormat": "text"
+            }
+          }
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "university-data-collection-n8n/1.0"
+            }
+          ]
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 1000,
+      "onError": "continueErrorOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "id": "59bcdaee-1d0f-483c-a840-ba5c9f85f63c",
+      "name": "Extract author fields",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        1260,
+        320
+      ],
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "sourceData": "json",
+        "dataPropertyName": "data",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "birth_date",
+              "cssSelector": ".author-born-date",
+              "returnValue": "text",
+              "returnArray": false
+            },
+            {
+              "key": "birth_place",
+              "cssSelector": ".author-born-location",
+              "returnValue": "text",
+              "returnArray": false
+            },
+            {
+              "key": "biography",
+              "cssSelector": ".author-description",
+              "returnValue": "text",
+              "returnArray": false
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "26f675a9-7fd9-4671-ac56-441da406556e",
+      "name": "Normalize fields",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1260,
+        0
+      ],
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const crypto=require('crypto'); const clean=s=>String(s ?? '').trim().replace(/\\s+/g,' '); const q=$json; const m=q.birth_date.match(/^([A-Za-z]+)\\s+(\\d{1,2}),\\s+(\\d{4})$/); const months=['January','February','March','April','May','June','July','August','September','October','November','December']; if(!m || !months.includes(m[1])) throw new Error('Invalid birth date'); const y=Number(m[3]), mo=months.indexOf(m[1]), d=Number(m[2]), date=new Date(Date.UTC(y,mo,d)); if(y<100 || date.getUTCFullYear()!==y || date.getUTCMonth()!==mo || date.getUTCDate()!==d) throw new Error('Invalid calendar date'); return {json:{quote:q.quote,author:q.author,tags:JSON.stringify(q.tags.map(t=>clean(t).toLowerCase())),author_url:q.author_url,born_date:date.toISOString().slice(0,10),born_location:q.birth_place,biography:q.biography,source_url:q.source_url,list_page:Number(q.list_page),collected_at:new Date().toISOString(),business_key:crypto.createHash('sha256').update(q.author_key+'\\n'+q.quote,'utf8').digest('hex')}};"
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "d7ead064-9780-4d55-963b-b771440bfc35",
+      "name": "Polite wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1720,
+        320
+      ],
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 0.5,
+        "unit": "seconds"
+      }
+    },
+    {
+      "id": "8f74e3f9-1aa6-4aa6-83e5-1443d84f2408",
+      "name": "Remove duplicates",
+      "type": "n8n-nodes-base.removeDuplicates",
+      "typeVersion": 2,
+      "position": [
+        1030,
+        0
+      ],
+      "parameters": {
+        "operation": "removeDuplicateInputItems",
+        "compare": "selectedFields",
+        "fieldsToCompare": "quote,author_key",
+        "options": {}
+      }
+    },
+    {
+      "id": "2ca68282-002c-4a1f-89c4-727987309253",
+      "name": "CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1490,
+        0
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "nocode_result.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "d76d7151-de69-481c-a26b-31300cbb8aa6",
+      "name": "Save CSV",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1720,
+        0
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "nocode/nocode_result.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "63de0a7f-5230-4738-9cde-87a582502aad",
+      "name": "Log HTTP error",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        750,
+        700
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "def50eb4-ff77-4ec1-aa06-0d0ffb895ada",
+      "name": "Error CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        980,
+        700
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "error_log.csv"
+        }
+      }
+    },
+    {
+      "id": "767c1765-b0f0-4d59-9253-6b657d4334e5",
+      "name": "Save error log",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1210,
+        700
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "nocode/error_log.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "7be2c1bb-1a17-47c9-9abc-7402dc1413c2",
+      "name": "Check quote pages",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -350,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ typeof $json.data !== 'string' || !$json.data.includes('class=\"quote\"') }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "d0149fa4-bf81-4875-918a-3a691cf27470",
+      "name": "Check author page",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1030,
+        320
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ typeof $json.data !== 'string' || !$json.data.includes('author-born-date') }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "name": "Stop and notify",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "id": "d88b9493-048c-4e2e-b530-71853049d453",
+      "position": [
+        1670,
+        650
+      ],
+      "parameters": {
+        "errorMessage": "Collection stopped; local notification delivered; details in error_log.csv."
+      }
+    },
+    {
+      "id": "645032fc-e635-44fd-9ac8-bd90bf8662db",
+      "name": "Validate author fields",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1490,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const q=$('Loop over quotes').item.json; const clean=s=>String(s ?? '').trim().replace(/\\s+/g,' '); const birth=clean($json.birth_date), place=clean($json.birth_place), bio=clean($json.biography); const m=birth.match(/^([A-Za-z]+)\\s+(\\d{1,2}),\\s+(\\d{4})$/); const months=['January','February','March','April','May','June','July','August','September','October','November','December']; if(!place || !bio || !m || !months.includes(m[1])) throw new Error('Missing author fields or invalid birth date'); const year=Number(m[3]), month=months.indexOf(m[1]), day=Number(m[2]); const d=new Date(Date.UTC(year,month,day)); if(year<100 || d.getUTCFullYear()!==year || d.getUTCMonth()!==month || d.getUTCDate()!==day) throw new Error('Invalid calendar date: '+birth); return {json:{...q,birth_date:birth,birth_place:place,biography:bio}};"
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "517a0291-0ab2-47f6-8767-cd7d7e58a5ed",
+      "name": "List failure",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -500,
+        700
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "746d17e7-77f4-41d8-ace2-aea9456b1b7c",
+              "name": "stage",
+              "value": "quote pages",
+              "type": "string"
+            },
+            {
+              "id": "ae107150-f0d4-4294-90f2-3eec665847e7",
+              "name": "url",
+              "value": "https://quotes.toscrape.com/page/1/",
+              "type": "string"
+            },
+            {
+              "id": "c8e9416a-5bbf-4d46-bddf-e15a870625e7",
+              "name": "message",
+              "value": "={{ typeof $json.error === 'object' ? ($json.error.message || JSON.stringify($json.error)) : ($json.error || 'Missing expected HTML fields or HTTP request failed') }}",
+              "type": "string"
+            },
+            {
+              "id": "763f8d16-31e3-4240-8554-391557fc89e4",
+              "name": "timestamp",
+              "value": "={{ new Date().toISOString() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "624d4272-7b95-498c-b177-90a279a0afc9",
+      "name": "Quote validation failure",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -250,
+        700
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "88e7ec9a-690c-4d04-a256-0fd8116f96e1",
+              "name": "stage",
+              "value": "quote extraction",
+              "type": "string"
+            },
+            {
+              "id": "cbc2abe6-1143-4758-8e06-caceb6a07227",
+              "name": "url",
+              "value": "https://quotes.toscrape.com/page/1/",
+              "type": "string"
+            },
+            {
+              "id": "0f86c9ce-4b78-4d1d-b684-cac9374c5880",
+              "name": "message",
+              "value": "={{ typeof $json.error === 'object' ? ($json.error.message || JSON.stringify($json.error)) : ($json.error || 'Missing expected HTML fields or HTTP request failed') }}",
+              "type": "string"
+            },
+            {
+              "id": "9bf8c4ef-ff75-41e0-b882-aeee74430c6f",
+              "name": "timestamp",
+              "value": "={{ new Date().toISOString() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "d8d92ef5-9df8-4088-9d66-c12c82954198",
+      "name": "Author failure",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        0,
+        700
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "11b42d40-f260-4f26-b1d1-2590c7124701",
+              "name": "stage",
+              "value": "author request",
+              "type": "string"
+            },
+            {
+              "id": "c899b1b1-c6ba-4317-8aed-d5b96f6ce853",
+              "name": "url",
+              "value": "={{ $('Loop over quotes').item.json.author_url }}",
+              "type": "string"
+            },
+            {
+              "id": "c4c2d6d8-fba0-43c9-b8e7-4f3e3e02a14f",
+              "name": "message",
+              "value": "={{ typeof $json.error === 'object' ? ($json.error.message || JSON.stringify($json.error)) : ($json.error || 'Missing expected HTML fields or HTTP request failed') }}",
+              "type": "string"
+            },
+            {
+              "id": "b3ed88e7-f28e-47f4-a33c-fa546a20c62c",
+              "name": "timestamp",
+              "value": "={{ new Date().toISOString() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "2cd6aabb-8b66-47f7-843b-fe38f104fd3d",
+      "name": "Author validation failure",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        250,
+        700
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5a49231e-fbb4-4c92-99bd-39faa2c128a7",
+              "name": "stage",
+              "value": "author validation",
+              "type": "string"
+            },
+            {
+              "id": "e02c825e-ab44-46d9-97ed-d7cf69bd6056",
+              "name": "url",
+              "value": "={{ $('Loop over quotes').item.json.author_url }}",
+              "type": "string"
+            },
+            {
+              "id": "6c0a181d-8568-4265-bb4e-5d86d404bd20",
+              "name": "message",
+              "value": "={{ typeof $json.error === 'object' ? ($json.error.message || JSON.stringify($json.error)) : ($json.error || 'Missing expected HTML fields or HTTP request failed') }}",
+              "type": "string"
+            },
+            {
+              "id": "75154606-6bec-4548-99b0-a0a78e9743bc",
+              "name": "timestamp",
+              "value": "={{ new Date().toISOString() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "c93c9ecb-5c2d-4601-9919-b89cf88668a7",
+      "name": "Normalization failure",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        500,
+        700
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f92dc51f-2b1f-4c0d-a35b-72034c1dbc48",
+              "name": "stage",
+              "value": "normalization",
+              "type": "string"
+            },
+            {
+              "id": "a01d37bc-2940-4dc6-bf3b-7a604dabb664",
+              "name": "url",
+              "value": "={{ $json.author_url || 'https://quotes.toscrape.com/' }}",
+              "type": "string"
+            },
+            {
+              "id": "7a47c467-810c-4c93-9165-0a2d94fb895b",
+              "name": "message",
+              "value": "={{ typeof $json.error === 'object' ? ($json.error.message || JSON.stringify($json.error)) : ($json.error || 'Missing expected HTML fields or HTTP request failed') }}",
+              "type": "string"
+            },
+            {
+              "id": "87845a1a-eb4e-47d8-8230-14620ae23f67",
+              "name": "timestamp",
+              "value": "={{ new Date().toISOString() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "a4c30591-c766-4d9a-879c-545c9c57a253",
+      "name": "Notify local dashboard",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1440,
+        700
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:5686/notify",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($('Log HTTP error').first().json) }}",
+        "options": {
+          "timeout": 3000
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "6adce29c-8852-4643-a09d-9ab6275153d7",
+      "name": "Stop notification failed",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        1670,
+        830
+      ],
+      "parameters": {
+        "errorMessage": "Collection stopped; local notification FAILED; check dashboard receiver and error_log.csv."
+      }
+    }
+  ],
+  "connections": {
+    "Manual start": {
+      "main": [
+        [
+          {
+            "node": "Fetch quote pages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Daily schedule": {
+      "main": [
+        [
+          {
+            "node": "Fetch quote pages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch quote pages": {
+      "main": [
+        [
+          {
+            "node": "Check quote pages",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "List failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract quote cards": {
+      "main": [
+        [
+          {
+            "node": "Split cards",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split cards": {
+      "main": [
+        [
+          {
+            "node": "Extract quote fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract quote fields": {
+      "main": [
+        [
+          {
+            "node": "Prepare quote",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare quote": {
+      "main": [
+        [
+          {
+            "node": "Loop over quotes",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Quote validation failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop over quotes": {
+      "main": [
+        [
+          {
+            "node": "Remove duplicates",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Fetch author",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch author": {
+      "main": [
+        [
+          {
+            "node": "Check author page",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Author failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract author fields": {
+      "main": [
+        [
+          {
+            "node": "Validate author fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize fields": {
+      "main": [
+        [
+          {
+            "node": "CSV",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Normalization failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Polite wait": {
+      "main": [
+        [
+          {
+            "node": "Loop over quotes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remove duplicates": {
+      "main": [
+        [
+          {
+            "node": "Normalize fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "CSV": {
+      "main": [
+        [
+          {
+            "node": "Save CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log HTTP error": {
+      "main": [
+        [
+          {
+            "node": "Error CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error CSV": {
+      "main": [
+        [
+          {
+            "node": "Save error log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check quote pages": {
+      "main": [
+        [
+          {
+            "node": "List failure",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract quote cards",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check author page": {
+      "main": [
+        [
+          {
+            "node": "Author failure",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract author fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save error log": {
+      "main": [
+        [
+          {
+            "node": "Notify local dashboard",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate author fields": {
+      "main": [
+        [
+          {
+            "node": "Polite wait",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Author validation failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "List failure": {
+      "main": [
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Quote validation failure": {
+      "main": [
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Author failure": {
+      "main": [
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Author validation failure": {
+      "main": [
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalization failure": {
+      "main": [
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notify local dashboard": {
+      "main": [
+        [
+          {
+            "node": "Stop and notify",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Stop notification failed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataSuccessExecution": "all",
+    "saveDataErrorExecution": "all",
+    "timezone": "Asia/Yekaterinburg"
+  },
+  "versionId": "18d55edb-9b7b-42cf-aa57-2e16bcd98d34",
+  "id": "lab5Quotes3"
+}

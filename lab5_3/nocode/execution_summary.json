@@ -1,0 +1,35 @@
+{
+  "execution_id": 8,
+  "status": "success",
+  "finished": true,
+  "started_at_utc": "2026-10-27T20:15:03.833Z",
+  "stopped_at_utc": "2026-10-27T20:15:36.933Z",
+  "node_runs": {
+    "Manual start": 1,
+    "Fetch quote pages": 1,
+    "Check quote pages": 1,
+    "Extract quote cards": 1,
+    "Split cards": 1,
+    "Extract quote fields": 1,
+    "Prepare quote": 1,
+    "Loop over quotes": 31,
+    "Fetch author": 30,
+    "Check author page": 30,
+    "Extract author fields": 30,
+    "Validate author fields": 30,
+    "Polite wait": 30,
+    "Remove duplicates": 1,
+    "Normalize fields": 1,
+    "CSV": 1,
+    "Save CSV": 1
+  },
+  "successful_http_responses": {
+    "list": 3,
+    "author": 30
+  },
+  "body_bytes": 149517,
+  "output_records": 30,
+  "empty_tags_records": 1,
+  "csv_sha256": "cce26345fcda2c2c4aa50f2ec337e3fd04fa7a9f9966632cc709bb36036b16b4",
+  "error": null
+}

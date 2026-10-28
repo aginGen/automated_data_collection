@@ -1,0 +1,11 @@
+{
+  "unique_quotes": 100,
+  "quotes_with_tags": 97,
+  "expected_tag_relations_from_primary": 232,
+  "tag_relations_observed": 190,
+  "relations_not_reached": 42,
+  "quotes_in_observed_relations": 69,
+  "tags_in_primary": 137,
+  "tags_observed": 99,
+  "extraneous_relations": 0
+}
