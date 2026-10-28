@@ -1,0 +1,13 @@
+{
+  "development_start_utc": "2026-10-27T18:24:13+00:00",
+  "development_end_utc": "2026-10-27T18:33:26.769872+00:00",
+  "development_minutes": 9.23,
+  "development_scope": "Elapsed wall-clock time including isolated n8n setup, development, UI run, error test and documentation; not active coding time.",
+  "fix_20261028": {
+    "start_utc": "2026-10-27T20:12:24+00:00",
+    "end_utc": "2026-10-27T20:17:04.674540+00:00",
+    "elapsed_minutes": 4.68,
+    "scope": "Elapsed wall clock including implementation, setup, executions, testing, and waiting; not person-time."
+  },
+  "total_disjoint_elapsed_minutes": 13.91
+}

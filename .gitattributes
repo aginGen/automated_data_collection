@@ -7,5 +7,6 @@ lab4/artifacts/static_*.html -text -diff
 # Preserve the exact bytes of the submitted files and measured artifacts.
 lab3_3/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 lab4_3/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+lab5_3/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Captured HTML preserves the site's original whitespace as diagnostic evidence.
 lab4_3/artifacts/*.html whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol

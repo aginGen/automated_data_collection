@@ -1,0 +1,20 @@
+{
+  "start": "2026-10-27T23:23:53.534678+05:00",
+  "end": "2026-10-27T23:30:24.232651+05:00",
+  "elapsed_seconds": 390.697973,
+  "elapsed_minutes": 6.511632883333333,
+  "measurement": "Wall-clock development plus sequential run and verification, not focused person-hours; includes dependency installation and waiting for crawls.",
+  "scope": "Initial implementation and runs including the now-archived books supplement; original wall time includes installation and waits.",
+  "tag_followup": {
+    "first_observed_file_creation": "2026-10-27T23:32:00.478766+05:00",
+    "verification_end": "2026-10-27T23:33:51.690768+05:00",
+    "observed_seconds": 111.212002,
+    "measurement": "Observed wall interval from creation of tags.py through verification; a lower bound because implementation work began before that file was written. Includes crawl wait."
+  },
+  "fix_20261028": {
+    "start": "2026-10-28T01:12:08.712805+05:00",
+    "end": "2026-10-28T01:15:07.422723+05:00",
+    "elapsed_seconds": 178.709918,
+    "measurement": "Observed wall time for corrections, tests and runs, including crawl waits; not focused labor."
+  }
+}
