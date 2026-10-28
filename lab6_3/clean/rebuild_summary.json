@@ -1,0 +1,21 @@
+{
+  "duplicates": 14,
+  "raw_rows": 452,
+  "clean_rows": 420,
+  "authors": 101,
+  "tag_links": 232,
+  "rejected_rows": 24,
+  "quality": "green",
+  "raw_unchanged": true,
+  "load": {
+    "rows": 420,
+    "total_rows": 420,
+    "inactive": 0,
+    "deactivated": 0,
+    "inserted": 0,
+    "updated": 0,
+    "unchanged": 420,
+    "history": 420
+  },
+  "duration_s": 0.8143
+}

@@ -1,0 +1,20 @@
+{
+  "rows": 420,
+  "columns": [
+    "business_key",
+    "text",
+    "author",
+    "author_key",
+    "tags",
+    "source",
+    "source_url",
+    "parser_version",
+    "collected_at",
+    "source_record_id",
+    "text_length",
+    "author_birth_year"
+  ],
+  "all_values_equal_with_explicit_types": true,
+  "leading_zero_example": "000100",
+  "date_example_utc": "2026-10-14T22:29:22.355826+00:00"
+}

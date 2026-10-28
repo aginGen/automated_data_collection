@@ -1,0 +1,60 @@
+{
+  "database": "C:\\Users\\3C8A~1\\AppData\\Local\\Temp\\idempotency_demo_2c2_9667.db",
+  "runs": [
+    {
+      "run": "A",
+      "rows": 420,
+      "total_rows": 420,
+      "inactive": 0,
+      "deactivated": 0,
+      "inserted": 420,
+      "updated": 0,
+      "unchanged": 0,
+      "history": 420
+    },
+    {
+      "run": "B",
+      "rows": 420,
+      "total_rows": 420,
+      "inactive": 0,
+      "deactivated": 0,
+      "inserted": 0,
+      "updated": 0,
+      "unchanged": 420,
+      "history": 420
+    },
+    {
+      "run": "C",
+      "rows": 420,
+      "total_rows": 420,
+      "inactive": 0,
+      "deactivated": 0,
+      "inserted": 0,
+      "updated": 2,
+      "unchanged": 418,
+      "history": 422
+    }
+  ],
+  "updated_at_preserved": true,
+  "changed_keys": [
+    "95191512e7a92c6140fad9eb30abc268859493a813ad7365c69d55fc7ea7b0ee",
+    "4b7fc9a9ea0b21c4f8a34995bdbbf0e9d8f797d17674b9af0ff5a322b615c502"
+  ],
+  "constraints": [
+    {
+      "check": "duplicate_key",
+      "result": "rejected",
+      "message": "UNIQUE constraint failed: quotes.business_key"
+    },
+    {
+      "check": "check",
+      "result": "rejected",
+      "message": "CHECK constraint failed: text_length BETWEEN 8 AND 2000"
+    },
+    {
+      "check": "not_null",
+      "result": "rejected",
+      "message": "NOT NULL constraint failed: quotes.text"
+    }
+  ]
+}
