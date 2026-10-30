@@ -10,3 +10,8 @@ lab4_3/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 lab5_3/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Captured HTML preserves the site's original whitespace as diagnostic evidence.
 lab4_3/artifacts/*.html whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+
+# Preserve measured lab 7 evidence and its workflow hashes.
+lab7_Урбанович_3/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+.gitignore whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+.gitattributes whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
