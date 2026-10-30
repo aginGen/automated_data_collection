@@ -1,0 +1,8 @@
+requests>=2.32.3,<3
+beautifulsoup4>=4.12
+matplotlib>=3.8
+pandas>=2
+numpy>=1.24
+nbformat>=5
+nbclient>=0.10
+ipykernel>=6
