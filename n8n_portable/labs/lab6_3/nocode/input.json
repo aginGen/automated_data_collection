@@ -1,0 +1,662 @@
+[
+  {
+    "text_raw": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+    "author_raw": "Albert Einstein",
+    "tags_raw": [
+      "change",
+      "deep-thoughts",
+      "thinking",
+      "world"
+    ],
+    "source_id_raw": "000100",
+    "author_birth_year_raw": 1879,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Albert Einstein</small>\n<a href=\"/author/Albert-Einstein\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"change,deep-thoughts,thinking,world\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/change/page/1/\">change</a>\n<a class=\"tag\" href=\"/tag/deep-thoughts/page/1/\">deep-thoughts</a>\n<a class=\"tag\" href=\"/tag/thinking/page/1/\">thinking</a>\n<a class=\"tag\" href=\"/tag/world/page/1/\">world</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“It is our choices, Harry, that show what we truly are, far more than our abilities.”",
+    "author_raw": "J.K. Rowling",
+    "tags_raw": [
+      "abilities",
+      "choices"
+    ],
+    "source_id_raw": "000101",
+    "author_birth_year_raw": 1965,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“It is our choices, Harry, that show what we truly are, far more than our abilities.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">J.K. Rowling</small>\n<a href=\"/author/J-K-Rowling\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"abilities,choices\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/abilities/page/1/\">abilities</a>\n<a class=\"tag\" href=\"/tag/choices/page/1/\">choices</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”",
+    "author_raw": "Albert Einstein",
+    "tags_raw": [
+      "inspirational",
+      "life",
+      "live",
+      "miracle",
+      "miracles"
+    ],
+    "source_id_raw": "000102",
+    "author_birth_year_raw": 1879,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Albert Einstein</small>\n<a href=\"/author/Albert-Einstein\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"inspirational,life,live,miracle,miracles\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/inspirational/page/1/\">inspirational</a>\n<a class=\"tag\" href=\"/tag/life/page/1/\">life</a>\n<a class=\"tag\" href=\"/tag/live/page/1/\">live</a>\n<a class=\"tag\" href=\"/tag/miracle/page/1/\">miracle</a>\n<a class=\"tag\" href=\"/tag/miracles/page/1/\">miracles</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”",
+    "author_raw": "Jane Austen",
+    "tags_raw": [
+      "aliteracy",
+      "books",
+      "classic",
+      "humor"
+    ],
+    "source_id_raw": "000103",
+    "author_birth_year_raw": 1775,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Jane Austen</small>\n<a href=\"/author/Jane-Austen\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"aliteracy,books,classic,humor\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/aliteracy/page/1/\">aliteracy</a>\n<a class=\"tag\" href=\"/tag/books/page/1/\">books</a>\n<a class=\"tag\" href=\"/tag/classic/page/1/\">classic</a>\n<a class=\"tag\" href=\"/tag/humor/page/1/\">humor</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.”",
+    "author_raw": "Marilyn Monroe",
+    "tags_raw": [
+      "be-yourself",
+      "inspirational"
+    ],
+    "source_id_raw": "000104",
+    "author_birth_year_raw": 1926,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Marilyn Monroe</small>\n<a href=\"/author/Marilyn-Monroe\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"be-yourself,inspirational\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/be-yourself/page/1/\">be-yourself</a>\n<a class=\"tag\" href=\"/tag/inspirational/page/1/\">inspirational</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“Try not to become a man of success. Rather become a man of value.”",
+    "author_raw": "Albert Einstein",
+    "tags_raw": [
+      "adulthood",
+      "success",
+      "value"
+    ],
+    "source_id_raw": "000105",
+    "author_birth_year_raw": 1879,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“Try not to become a man of success. Rather become a man of value.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Albert Einstein</small>\n<a href=\"/author/Albert-Einstein\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"adulthood,success,value\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/adulthood/page/1/\">adulthood</a>\n<a class=\"tag\" href=\"/tag/success/page/1/\">success</a>\n<a class=\"tag\" href=\"/tag/value/page/1/\">value</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“It is better to be hated for what you are than to be loved for what you are not.”",
+    "author_raw": "André Gide",
+    "tags_raw": [
+      "life",
+      "love"
+    ],
+    "source_id_raw": "000106",
+    "author_birth_year_raw": 1869,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“It is better to be hated for what you are than to be loved for what you are not.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">André Gide</small>\n<a href=\"/author/Andre-Gide\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"life,love\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/life/page/1/\">life</a>\n<a class=\"tag\" href=\"/tag/love/page/1/\">love</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“I have not failed. I've just found 10,000 ways that won't work.”",
+    "author_raw": "Thomas A. Edison",
+    "tags_raw": [
+      "edison",
+      "failure",
+      "inspirational",
+      "paraphrased"
+    ],
+    "source_id_raw": "000107",
+    "author_birth_year_raw": 1847,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“I have not failed. I've just found 10,000 ways that won't work.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Thomas A. Edison</small>\n<a href=\"/author/Thomas-A-Edison\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"edison,failure,inspirational,paraphrased\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/edison/page/1/\">edison</a>\n<a class=\"tag\" href=\"/tag/failure/page/1/\">failure</a>\n<a class=\"tag\" href=\"/tag/inspirational/page/1/\">inspirational</a>\n<a class=\"tag\" href=\"/tag/paraphrased/page/1/\">paraphrased</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“A woman is like a tea bag; you never know how strong it is until it's in hot water.”",
+    "author_raw": "Eleanor Roosevelt",
+    "tags_raw": [
+      "misattributed-eleanor-roosevelt"
+    ],
+    "source_id_raw": "000108",
+    "author_birth_year_raw": 1884,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“A woman is like a tea bag; you never know how strong it is until it's in hot water.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Eleanor Roosevelt</small>\n<a href=\"/author/Eleanor-Roosevelt\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"misattributed-eleanor-roosevelt\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/misattributed-eleanor-roosevelt/page/1/\">misattributed-eleanor-roosevelt</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“A day without sunshine is like, you know, night.”",
+    "author_raw": "Steve Martin",
+    "tags_raw": [
+      "humor",
+      "obvious",
+      "simile"
+    ],
+    "source_id_raw": "000109",
+    "author_birth_year_raw": 1945,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“A day without sunshine is like, you know, night.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Steve Martin</small>\n<a href=\"/author/Steve-Martin\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"humor,obvious,simile\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/humor/page/1/\">humor</a>\n<a class=\"tag\" href=\"/tag/obvious/page/1/\">obvious</a>\n<a class=\"tag\" href=\"/tag/simile/page/1/\">simile</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“The truth.\" Dumbledore sighed. \"It is a beautiful and terrible thing, and should therefore be treated with great caution.”",
+    "author_raw": "J.K. Rowling",
+    "tags_raw": [
+      "truth"
+    ],
+    "source_id_raw": "001000",
+    "author_birth_year_raw": 1965,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“The truth.\" Dumbledore sighed. \"It is a beautiful and terrible thing, and should therefore be treated with great caution.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">J.K. Rowling</small>\n<a href=\"/author/J-K-Rowling\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"truth\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/truth/page/1/\">truth</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/10/",
+    "_collected_at": "2026-10-07T15:19:56.550698+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“I'm the one that's got to die when it's time for me to die, so let me live my life the way I want to.”",
+    "author_raw": "Jimi Hendrix",
+    "tags_raw": [
+      "death",
+      "life"
+    ],
+    "source_id_raw": "001001",
+    "author_birth_year_raw": 1942,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“I'm the one that's got to die when it's time for me to die, so let me live my life the way I want to.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Jimi Hendrix</small>\n<a href=\"/author/Jimi-Hendrix\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"death,life\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/death/page/1/\">death</a>\n<a class=\"tag\" href=\"/tag/life/page/1/\">life</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/10/",
+    "_collected_at": "2026-10-07T15:19:56.550698+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“To die will be an awfully big adventure.”",
+    "author_raw": "J.M. Barrie",
+    "tags_raw": [
+      "adventure",
+      "love"
+    ],
+    "source_id_raw": "001002",
+    "author_birth_year_raw": 1860,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“To die will be an awfully big adventure.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">J.M. Barrie</small>\n<a href=\"/author/J-M-Barrie\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"adventure,love\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/adventure/page/1/\">adventure</a>\n<a class=\"tag\" href=\"/tag/love/page/1/\">love</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/10/",
+    "_collected_at": "2026-10-07T15:19:56.550698+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“It takes courage to grow up and become who you really are.”",
+    "author_raw": "E.E. Cummings",
+    "tags_raw": [
+      "courage"
+    ],
+    "source_id_raw": "001003",
+    "author_birth_year_raw": 1894,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“It takes courage to grow up and become who you really are.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">E.E. Cummings</small>\n<a href=\"/author/E-E-Cummings\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"courage\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/courage/page/1/\">courage</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/10/",
+    "_collected_at": "2026-10-07T15:19:56.550698+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“But better to get hurt by the truth than comforted with a lie.”",
+    "author_raw": "Khaled Hosseini",
+    "tags_raw": [
+      "life"
+    ],
+    "source_id_raw": "001004",
+    "author_birth_year_raw": 1965,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“But better to get hurt by the truth than comforted with a lie.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Khaled Hosseini</small>\n<a href=\"/author/Khaled-Hosseini\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"life\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/life/page/1/\">life</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/10/",
+    "_collected_at": "2026-10-07T15:19:56.550698+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.”",
+    "author_raw": "Harper Lee",
+    "tags_raw": [
+      "better-life-empathy"
+    ],
+    "source_id_raw": "001005",
+    "author_birth_year_raw": 1926,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Harper Lee</small>\n<a href=\"/author/Harper-Lee\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"better-life-empathy\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/better-life-empathy/page/1/\">better-life-empathy</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/10/",
+    "_collected_at": "2026-10-07T15:19:56.550698+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "Your heart is the size of an ocean. Go find yourself in its hidden depths.",
+    "author_raw": "Rumi",
+    "tags_raw": [],
+    "source_id_raw": "000001",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 1,
+      "quote": "Your heart is the size of an ocean. Go find yourself in its hidden depths.",
+      "author": "Rumi"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "The Bay of Bengal is hit frequently by cyclones. The months of November and May, in particular, are dangerous in this regard.",
+    "author_raw": "Abdul Kalam",
+    "tags_raw": [],
+    "source_id_raw": "000002",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 2,
+      "quote": "The Bay of Bengal is hit frequently by cyclones. The months of November and May, in particular, are dangerous in this regard.",
+      "author": "Abdul Kalam"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "Thinking is the capital, Enterprise is the way, Hard Work is the solution.",
+    "author_raw": "Abdul Kalam",
+    "tags_raw": [],
+    "source_id_raw": "000003",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 3,
+      "quote": "Thinking is the capital, Enterprise is the way, Hard Work is the solution.",
+      "author": "Abdul Kalam"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "If You Can'T Make It Good, At Least Make It Look Good.",
+    "author_raw": "Bill Gates",
+    "tags_raw": [],
+    "source_id_raw": "000004",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 4,
+      "quote": "If You Can'T Make It Good, At Least Make It Look Good.",
+      "author": "Bill Gates"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "Heart be brave. If you cannot be brave, just go. Love's glory is not a small thing.",
+    "author_raw": "Rumi",
+    "tags_raw": [],
+    "source_id_raw": "000005",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 5,
+      "quote": "Heart be brave. If you cannot be brave, just go. Love's glory is not a small thing.",
+      "author": "Rumi"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "It is bad for a young man to sin; but it is worse for an old man to sin.",
+    "author_raw": "Abu Bakr (R.A)",
+    "tags_raw": [],
+    "source_id_raw": "000006",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 6,
+      "quote": "It is bad for a young man to sin; but it is worse for an old man to sin.",
+      "author": "Abu Bakr (R.A)"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "If You Are Out To Describe The Truth, Leave Elegance To The Tailor.",
+    "author_raw": "Albert Einstein",
+    "tags_raw": [],
+    "source_id_raw": "000007",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 7,
+      "quote": "If You Are Out To Describe The Truth, Leave Elegance To The Tailor.",
+      "author": "Albert Einstein"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "O man you are busy working for the world, and the world is busy trying to turn you out.",
+    "author_raw": "Abu Bakr (R.A)",
+    "tags_raw": [],
+    "source_id_raw": "000008",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 8,
+      "quote": "O man you are busy working for the world, and the world is busy trying to turn you out.",
+      "author": "Abu Bakr (R.A)"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "While children are struggling to be unique, the world around them is trying all means to make them look like everybody else.",
+    "author_raw": "Abdul Kalam",
+    "tags_raw": [],
+    "source_id_raw": "000009",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 9,
+      "quote": "While children are struggling to be unique, the world around them is trying all means to make them look like everybody else.",
+      "author": "Abdul Kalam"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "These Capitalists Generally Act Harmoniously And In Concert, To Fleece The People.",
+    "author_raw": "Abraham Lincoln",
+    "tags_raw": [],
+    "source_id_raw": "000010",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 10,
+      "quote": "These Capitalists Generally Act Harmoniously And In Concert, To Fleece The People.",
+      "author": "Abraham Lincoln"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "I Don'T Believe In Failure. It Is Not Failure If You Enjoyed The Process.",
+    "author_raw": "Oprah Winfrey",
+    "tags_raw": [],
+    "source_id_raw": "000011",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 11,
+      "quote": "I Don'T Believe In Failure. It Is Not Failure If You Enjoyed The Process.",
+      "author": "Oprah Winfrey"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "Do not get elated at any victory, for all such victory is subject to the will of God.",
+    "author_raw": "Abu Bakr (R.A)",
+    "tags_raw": [],
+    "source_id_raw": "000012",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 12,
+      "quote": "Do not get elated at any victory, for all such victory is subject to the will of God.",
+      "author": "Abu Bakr (R.A)"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "Wear gratitude like a cloak and it will feed every corner of your life.",
+    "author_raw": "Rumi",
+    "tags_raw": [],
+    "source_id_raw": "000013",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 13,
+      "quote": "Wear gratitude like a cloak and it will feed every corner of your life.",
+      "author": "Rumi"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "If you even dream of beating me you'd better wake up and apologize.",
+    "author_raw": "Muhammad Ali",
+    "tags_raw": [],
+    "source_id_raw": "000014",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 14,
+      "quote": "If you even dream of beating me you'd better wake up and apologize.",
+      "author": "Muhammad Ali"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "I Will Praise Any Man That Will Praise Me.",
+    "author_raw": "William Shakespeare",
+    "tags_raw": [],
+    "source_id_raw": "000015",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 15,
+      "quote": "I Will Praise Any Man That Will Praise Me.",
+      "author": "William Shakespeare"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "One Of The Greatest Diseases Is To Be Nobody To Anybody.",
+    "author_raw": "Mother Teresa",
+    "tags_raw": [],
+    "source_id_raw": "000016",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 16,
+      "quote": "One Of The Greatest Diseases Is To Be Nobody To Anybody.",
+      "author": "Mother Teresa"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "I'm so fast that last night I turned off the light switch in my hotel room and was in bed before the room was dark.",
+    "author_raw": "Muhammad Ali",
+    "tags_raw": [],
+    "source_id_raw": "000017",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 17,
+      "quote": "I'm so fast that last night I turned off the light switch in my hotel room and was in bed before the room was dark.",
+      "author": "Muhammad Ali"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "People Must Learn To Hate And If They Can Learn To Hate, They Can Be Taught To Love.",
+    "author_raw": "Nelson Mandela",
+    "tags_raw": [],
+    "source_id_raw": "000018",
+    "author_birth_year_raw": null,
+    "api_raw": {
+      "id": 18,
+      "quote": "People Must Learn To Hate And If They Can Learn To Hate, They Can Be Taught To Love.",
+      "author": "Nelson Mandela"
+    },
+    "_source": "dummyjson_api",
+    "_source_url": "https://dummyjson.com/quotes?limit=80&skip=0",
+    "_collected_at": "2026-10-14T22:29:18.637333+00:00",
+    "_parser_version": "quotes-api-import/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+    "author_raw": "Albert Einstein",
+    "tags_raw": [
+      "change",
+      "deep-thoughts",
+      "thinking",
+      "world"
+    ],
+    "source_id_raw": "000100",
+    "author_birth_year_raw": 1879,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Albert Einstein</small>\n<a href=\"/author/Albert-Einstein\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"change,deep-thoughts,thinking,world\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/change/page/1/\">change</a>\n<a class=\"tag\" href=\"/tag/deep-thoughts/page/1/\">deep-thoughts</a>\n<a class=\"tag\" href=\"/tag/thinking/page/1/\">thinking</a>\n<a class=\"tag\" href=\"/tag/world/page/1/\">world</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "“It is our choices, Harry, that show what we truly are, far more than our abilities.”",
+    "author_raw": "J.K. Rowling",
+    "tags_raw": [
+      "abilities",
+      "choices"
+    ],
+    "source_id_raw": "000101",
+    "author_birth_year_raw": 1965,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“It is our choices, Harry, that show what we truly are, far more than our abilities.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">J.K. Rowling</small>\n<a href=\"/author/J-K-Rowling\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"abilities,choices\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/abilities/page/1/\">abilities</a>\n<a class=\"tag\" href=\"/tag/choices/page/1/\">choices</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200
+  },
+  {
+    "text_raw": "",
+    "author_raw": "Albert Einstein",
+    "tags_raw": [
+      "change",
+      "deep-thoughts",
+      "thinking",
+      "world"
+    ],
+    "source_id_raw": "000100",
+    "author_birth_year_raw": 1879,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Albert Einstein</small>\n<a href=\"/author/Albert-Einstein\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"change,deep-thoughts,thinking,world\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/change/page/1/\">change</a>\n<a class=\"tag\" href=\"/tag/deep-thoughts/page/1/\">deep-thoughts</a>\n<a class=\"tag\" href=\"/tag/thinking/page/1/\">thinking</a>\n<a class=\"tag\" href=\"/tag/world/page/1/\">world</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200,
+    "_synthetic": true
+  },
+  {
+    "text_raw": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+    "author_raw": "",
+    "tags_raw": [
+      "change",
+      "deep-thoughts",
+      "thinking",
+      "world"
+    ],
+    "source_id_raw": "000100",
+    "author_birth_year_raw": 1879,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Albert Einstein</small>\n<a href=\"/author/Albert-Einstein\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"change,deep-thoughts,thinking,world\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/change/page/1/\">change</a>\n<a class=\"tag\" href=\"/tag/deep-thoughts/page/1/\">deep-thoughts</a>\n<a class=\"tag\" href=\"/tag/thinking/page/1/\">thinking</a>\n<a class=\"tag\" href=\"/tag/world/page/1/\">world</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200,
+    "_synthetic": true
+  },
+  {
+    "text_raw": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+    "author_raw": "Albert Einstein",
+    "tags_raw": [
+      "change",
+      "deep-thoughts",
+      "thinking",
+      "world"
+    ],
+    "source_id_raw": "000100",
+    "author_birth_year_raw": 1879,
+    "html_raw": "<div class=\"quote\" itemscope=\"\" itemtype=\"http://schema.org/CreativeWork\">\n<span class=\"text\" itemprop=\"text\">“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”</span>\n<span>by <small class=\"author\" itemprop=\"author\">Albert Einstein</small>\n<a href=\"/author/Albert-Einstein\">(about)</a>\n</span>\n<div class=\"tags\">\n            Tags:\n            <meta class=\"keywords\" content=\"change,deep-thoughts,thinking,world\" itemprop=\"keywords\"/>\n<a class=\"tag\" href=\"/tag/change/page/1/\">change</a>\n<a class=\"tag\" href=\"/tag/deep-thoughts/page/1/\">deep-thoughts</a>\n<a class=\"tag\" href=\"/tag/thinking/page/1/\">thinking</a>\n<a class=\"tag\" href=\"/tag/world/page/1/\">world</a>\n</div>\n</div>",
+    "_source": "quotes_html",
+    "_source_url": "https://quotes.toscrape.com/page/1/",
+    "_collected_at": "2026-10-07T15:19:44.701696+00:00",
+    "_parser_version": "lab5-html-snapshot/1.0",
+    "_status": 200,
+    "collected_at_raw": "invalid-date",
+    "_synthetic": true
+  }
+]

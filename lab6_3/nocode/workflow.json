@@ -36,14 +36,14 @@
       "id": "281a1e93-a0f3-4255-ae93-e80634db3085",
       "name": "Read source snapshot",
       "type": "n8n-nodes-base.readWriteFile",
-      "typeVersion": 1.1,
+      "typeVersion": 1,
       "position": [
         230,
         0
       ],
       "parameters": {
         "operation": "read",
-        "fileSelector": "nocode/input.json",
+        "fileSelector": "labs/lab6_3/nocode/input.json",
         "options": {}
       },
       "onError": "continueErrorOutput"
@@ -191,14 +191,14 @@
       "id": "66ad951c-3a59-4ac8-80fc-5d07292d6f37",
       "name": "Save CSV",
       "type": "n8n-nodes-base.readWriteFile",
-      "typeVersion": 1.1,
+      "typeVersion": 1,
       "position": [
         2300,
         -100
       ],
       "parameters": {
         "operation": "write",
-        "fileName": "nocode/nocode_result.csv",
+        "fileName": "outputs/lab6/nocode_result.csv",
         "dataPropertyName": "data",
         "options": {}
       }
@@ -224,14 +224,14 @@
       "id": "eadd5c1b-4e69-4b1b-ab4b-9635cd332aa6",
       "name": "Save rejects",
       "type": "n8n-nodes-base.readWriteFile",
-      "typeVersion": 1.1,
+      "typeVersion": 1,
       "position": [
         1840,
         180
       ],
       "parameters": {
         "operation": "write",
-        "fileName": "nocode/rejects.csv",
+        "fileName": "outputs/lab6/rejects.csv",
         "dataPropertyName": "data",
         "options": {}
       }
@@ -286,14 +286,14 @@
       "id": "646db7eb-17ed-49c0-a891-a08b4d784a67",
       "name": "Save error log",
       "type": "n8n-nodes-base.readWriteFile",
-      "typeVersion": 1.1,
+      "typeVersion": 1,
       "position": [
         920,
         350
       ],
       "parameters": {
         "operation": "write",
-        "fileName": "nocode/error_log.csv",
+        "fileName": "outputs/lab6/error_log.csv",
         "dataPropertyName": "data",
         "options": {}
       }

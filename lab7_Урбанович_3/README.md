@@ -85,22 +85,18 @@ python -m venv ..\.lab-work\lab7-venv
 
 ## n8n
 
-[workflow.json](nocode/workflow.json) содержит сбор 60 книг и ветку Error Trigger → Telegram в одном workflow. Wait, batch=1, Retry On Fail, проверка IF и ежедневное расписание 08:00 Asia/Yekaterinburg сохранены. Расписание выключено.
+[workflow.json](nocode/workflow.json) содержит сбор 60 книг и ветку Error Trigger → Telegram в одной схеме. Wait, batch=1, Retry On Fail, проверка IF и расписание 08:00 Asia/Yekaterinburg сохранены; расписание выключено.
 
-Для n8n 1.121.3 используется совместимая версия Node.js, например 22. Из папки лабораторной:
+Для переносимого запуска используйте соседний комплект `../n8n_portable`. Из папки лабораторной выполните:
 
 ```powershell
-New-Item -ItemType Directory -Force ..\.lab-work | Out-Null
-npm.cmd install --prefix ..\.lab-runtime n8n@1.121.3
-$env:N8N_USER_FOLDER = Join-Path $env:TEMP 'urbanovich-lab7-n8n'
-$env:N8N_LISTEN_ADDRESS = '127.0.0.1'
-$env:N8N_PORT = '5687'
-node ..\.lab-runtime\node_modules\n8n\bin\n8n start
+python ..\n8n_portable\launch.py --setup --browser
+python ..\n8n_portable\launch.py --port 5679
 ```
 
-Откройте `http://127.0.0.1:5687` и импортируйте единственный `nocode/workflow.json`. Процесс должен работать из папки лабораторной. Результат CSV и журнал ошибки записываются в `../.lab-work/`, за пределами сдаваемой папки. Настройка собственного бота, особенности Error Trigger, результаты испытаний и стоимость приведены в [nocode_notes.md](nocode/nocode_notes.md).
+Первая команда устанавливает зависимости, n8n 1.121.3 и Chromium. Затем откройте указанный launcher адрес и импортируйте `nocode/workflow.json` либо `../n8n_portable/workflows/lab7.json`. Launcher задаёт корень комплекта рабочим каталогом процесса n8n, создаёт необходимые папки `outputs` и размещает данные для лабораторной 6. Пути результата `outputs/lab7/nocode_result.csv` и журнала `outputs/lab7/error_log.csv` отсчитываются от этого рабочего каталога. Запуск n8n из произвольной папки без launcher требует самостоятельно задать нужный рабочий каталог и создать папки.
 
-Переносимый экспорт не содержит токена, Chat ID и учётных данных. Ручная отправка одного тестового сообщения в настроенном локальном экземпляре проверена. Автоматическая обработка ошибки проверена отдельно на локальном HTTP-получателе.
+Экспорт не содержит токена, Chat ID и credentials. Подключение бота и проверка ошибок описаны в [nocode_notes.md](nocode/nocode_notes.md). Тестовое сообщение в прежнем локальном экземпляре было отправлено с разрешения пользователя; автоматическая обработка ошибки проверена отдельно на локальном HTTP-получателе.
 
 ## Суть работы
 

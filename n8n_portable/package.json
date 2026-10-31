@@ -1,0 +1,7 @@
+{
+  "name": "portable-n8n-labs-3-7",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {"node": ">=20.19.0 <25"},
+  "dependencies": {"n8n": "1.121.3"}
+}

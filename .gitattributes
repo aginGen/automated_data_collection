@@ -13,5 +13,6 @@ lab4_3/artifacts/*.html whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
 
 # Preserve measured lab 7 evidence and its workflow hashes.
 lab7_Урбанович_3/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+n8n_portable/workflows/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 .gitignore whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 .gitattributes whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

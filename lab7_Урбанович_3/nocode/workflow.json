@@ -131,7 +131,7 @@
       ],
       "parameters": {
         "operation": "write",
-        "fileName": "../.lab-work/lab7_nocode_result.csv",
+        "fileName": "outputs/lab7/nocode_result.csv",
         "dataPropertyName": "data",
         "options": {}
       }
@@ -192,7 +192,7 @@
       ],
       "parameters": {
         "operation": "write",
-        "fileName": "../.lab-work/lab7_error_log.csv",
+        "fileName": "outputs/lab7/error_log.csv",
         "dataPropertyName": "data",
         "options": {}
       }

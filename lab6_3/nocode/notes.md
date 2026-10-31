@@ -8,15 +8,13 @@ CSV перезаписывается целиком при каждом запу
 
 ## Повторение
 
-В PowerShell из корня `lab6_3` (нужен установленный n8n 1.121.3):
+Из папки этой лабораторной запустите соседний переносимый комплект (Python 3.10+ и Node.js 22 в PATH):
 
 ```powershell
-$env:N8N_USER_FOLDER='D:\ПГУ ПРАКТИКА\Мага2Курс\DataMining\.lab6-work\n8n'
-$env:GENERIC_TIMEZONE='Asia/Yekaterinburg'
-$env:N8N_DIAGNOSTICS_ENABLED='false'
-$n8n='D:\ПГУ ПРАКТИКА\Мага2Курс\DataMining\automated_data_collection\.lab-runtime\node_modules\n8n\bin\n8n'
-node $n8n import:workflow --input=nocode/workflow.json
-node $n8n execute --id=Lab6QuotesVariant3 --rawOutput
+python ..\n8n_portable\launch.py --setup --browser
+python ..\n8n_portable\launch.py --port 5679
 ```
 
-Относительные пути в workflow требуют запуска из корня лабораторной, чтение/запись файлов выполняется на машине n8n. `--file` в данном runtime не сработал, поэтому используется импорт и `--id`. Источники: [Schedule Trigger и часовой пояс](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.scheduletrigger/), [Remove Duplicates](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.removeduplicates/), [Read/Write Files from Disk](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.readwritefile/).
+Первая команда устанавливает зависимости; при последующих запусках достаточно второй. Launcher задаёт рабочий каталог n8n равным корню комплекта `n8n_portable`, создаёт `outputs/lab3`–`outputs/lab7` и запускает локальные вспомогательные сервисы ЛР4 и ЛР5. Откройте `http://127.0.0.1:5679`, импортируйте `nocode/workflow.json` этой лабораторной или соответствующий `../n8n_portable/workflows/labN.json` и выполните **Manual start**. Все относительные пути файлов в workflow отсчитываются от корня комплекта, а не от папки лабораторной. При запуске n8n из другой директории без launcher нужно самостоятельно установить рабочий каталог и создать папки. Расписание в экспорте выключено.
+
+Входной снимок расположен в `../n8n_portable/labs/lab6_3/nocode/input.json`; результаты — `../n8n_portable/outputs/lab6/nocode_result.csv`, `outputs/lab6/rejects.csv` и журнал `outputs/lab6/error_log.csv`. Чтение и запись выполняются на машине n8n. Источники: [Schedule Trigger и часовой пояс](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.scheduletrigger/), [Remove Duplicates](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.removeduplicates/), [Read/Write Files from Disk](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.readwritefile/).
