@@ -4,32 +4,29 @@
 
 ## Запуск ноутбука
 
-Нужны Python 3.10+ и Node.js 22. В PowerShell откройте папку `lab3_3` и создайте окружение:
+Для ноутбука нужен Python 3.10+, для n8n дополнительно нужен Node.js 22. В PowerShell откройте папку `lab3_3` и создайте окружение:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-Откройте [lab3.ipynb](lab3.ipynb) в VS Code или Jupyter и выполните ячейки сверху вниз. По умолчанию ноутбук показывает сохранённые данные без доступа к сети и перезаписи файлов. Для нового сбора включите `RUN_COLLECTION = True`: результат появится во временной папке. `RUN_REPEAT = True` дополнительно запускает проверку повторной загрузки.
+Откройте [lab3.ipynb](lab3.ipynb) в VS Code или Jupyter и выполните ячейки сверху вниз. Локально при выключенных флагах ноутбук анализирует сохранённые данные без сетевых запросов и перезаписи файлов. В Google Colab первая ячейка при необходимости загружает репозиторий с GitHub и устанавливает зависимости из PyPI, поэтому для подготовки нужна сеть. На 31.10.2026 robots.txt Open Library запрещает `/search` для User-Agent этого сборщика. Оставьте `RUN_COLLECTION = False` и используйте исторический результат. Перед новым запросом код проверяет robots.txt и останавливается при запрете или невозможности проверки. При отсутствии robots.txt (404) доступ разрешается, прочие неуспешные ответы обрабатываются как запрет.
 
 Сохранённая таблица книг находится в [data_clean.csv](data_clean.csv), исходные записи поиска — в [data_raw.jsonl](data_raw.jsonl), журнал — в [collection_log.csv](collection_log.csv), состояние — в [state.json](state.json). Код сбора, сведения авторов, проверки качества, графики и сравнение инструментов находятся в ноутбуке.
 
 ## n8n
 
-Установите локальный runtime и запустите n8n из PowerShell в папке проекта:
+Из папки этой лабораторной запустите соседний переносимый комплект (Python 3.10+ и Node.js 22 в PATH):
 
 ```powershell
-npm.cmd install --prefix ..\.lab-runtime n8n@1.121.3
-$env:N8N_USER_FOLDER = Join-Path $PWD '..\.lab-runtime\user'
-$env:N8N_LISTEN_ADDRESS = '127.0.0.1'
-$env:N8N_PORT = '5679'
-node ..\.lab-runtime\node_modules\n8n\bin\n8n start
+python ..\n8n_portable\launch.py --setup --browser
+python ..\n8n_portable\launch.py --port 5679
 ```
 
-Откройте `http://127.0.0.1:5679`, импортируйте [workflow.json](nocode/workflow.json) и укажите абсолютные пути в узлах **Save CSV** и **Save error log**. Для основной выгрузки используйте `nocode\nocode_result.csv`; журнал ошибки можно сохранить во временный каталог вне папки сдачи. Нажмите **Execute workflow**.
+Первая команда устанавливает зависимости; при последующих запусках достаточно второй. Launcher задаёт рабочий каталог n8n равным корню комплекта `n8n_portable`, создаёт `outputs/lab3`–`outputs/lab7` и запускает локальные вспомогательные сервисы ЛР4 и ЛР5. Откройте `http://127.0.0.1:5679`, импортируйте `nocode/workflow.json` этой лабораторной или соответствующий `../n8n_portable/workflows/labN.json` и выполните **Manual start**. Все относительные пути файлов в workflow отсчитываются от корня комплекта, а не от папки лабораторной. При запуске n8n из другой директории без launcher нужно самостоятельно установить рабочий каталог и создать папки. Расписание в экспорте выключено. В n8n перед Fetch books добавлены Fetch robots.txt и Check robots permission. При запрете или неопределённом результате проверка останавливает поиск, сохранённый CSV остаётся историческим результатом.
 
-Файл [nocode_result.csv](nocode/nocode_result.csv) содержит текущие 360 строк. Снимки [workflow](nocode/screenshot_workflow_30.png) и [результата](nocode/screenshot_result_30.png) относятся к прежней версии на 30 строк.
+Новый результат сохраняется в `../n8n_portable/outputs/lab3/nocode_result.csv`, журнал ошибок — в `outputs/lab3/error_log.csv`. Сохранённый [nocode_result.csv](nocode/nocode_result.csv) содержит 360 строк; снимки [workflow](nocode/screenshot_workflow_30.png) и [результата](nocode/screenshot_result_30.png) относятся к прежней версии на 30 строк.
 
 ## Файлы сдачи
 

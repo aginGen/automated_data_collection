@@ -339,14 +339,14 @@
       "id": "d76d7151-de69-481c-a26b-31300cbb8aa6",
       "name": "Save CSV",
       "type": "n8n-nodes-base.readWriteFile",
-      "typeVersion": 1.1,
+      "typeVersion": 1,
       "position": [
         1720,
         0
       ],
       "parameters": {
         "operation": "write",
-        "fileName": "nocode/nocode_result.csv",
+        "fileName": "outputs/lab5/nocode_result.csv",
         "dataPropertyName": "data",
         "options": {}
       }
@@ -382,14 +382,14 @@
       "id": "767c1765-b0f0-4d59-9253-6b657d4334e5",
       "name": "Save error log",
       "type": "n8n-nodes-base.readWriteFile",
-      "typeVersion": 1.1,
+      "typeVersion": 1,
       "position": [
         1210,
         700
       ],
       "parameters": {
         "operation": "write",
-        "fileName": "nocode/error_log.csv",
+        "fileName": "outputs/lab5/error_log.csv",
         "dataPropertyName": "data",
         "options": {}
       }

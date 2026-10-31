@@ -1,0 +1,492 @@
+{
+  "name": "Lab 3 Open Library REST API",
+  "nodes": [
+    {
+      "id": "9d9abe84-8374-4488-bfe5-c8cfbe83e5ff",
+      "name": "Manual start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -500,
+        100
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "30d458b8-331c-4ab9-84b0-045f729dbc27",
+      "name": "Daily schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -500,
+        320
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "39a5278d-c801-4d72-a155-d5f0d59be388",
+      "name": "Fetch books",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -200,
+        100
+      ],
+      "parameters": {
+        "url": "https://openlibrary.org/search.json",
+        "options": {
+          "timeout": 25000,
+          "pagination": {
+            "pagination": {
+              "paginationMode": "updateAParameterInEachRequest",
+              "parameters": {
+                "parameters": [
+                  {
+                    "type": "qs",
+                    "name": "offset",
+                    "value": "={{ $pageCount * 90 }}"
+                  }
+                ]
+              },
+              "paginationCompleteWhen": "other",
+              "completeExpression": "={{ $response.body.docs.length === 0 || $pageCount * 90 >= $response.body.numFound }}",
+              "limitPagesFetched": true,
+              "maxRequests": 4,
+              "requestInterval": 1100
+            }
+          }
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "university-data-collection-n8n/1.0"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "q",
+              "value": "python programming"
+            },
+            {
+              "name": "limit",
+              "value": "90"
+            },
+            {
+              "name": "offset",
+              "value": "0"
+            },
+            {
+              "name": "sort",
+              "value": "key"
+            },
+            {
+              "name": "fields",
+              "value": "key,title,author_key,author_name,first_publish_year,language,edition_count"
+            }
+          ]
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 1100,
+      "onError": "continueErrorOutput",
+      "alwaysOutputData": true
+    },
+    {
+      "id": "e172b8ac-8c60-4efc-a523-dd7c9aa70bdc",
+      "name": "Split records",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        50,
+        100
+      ],
+      "parameters": {
+        "fieldToSplitOut": "docs",
+        "include": "noOtherFields",
+        "options": {}
+      }
+    },
+    {
+      "id": "fe250490-a1fe-4df1-b7b7-c1247210e2e5",
+      "name": "Transform fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        300,
+        100
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "4bbbcaa2-1483-4fa0-b751-3db17e5b71f3",
+              "name": "work_id",
+              "value": "={{ $json.key }}",
+              "type": "string"
+            },
+            {
+              "id": "4fd4b568-bd70-4499-bd0e-555dfec5e041",
+              "name": "title",
+              "value": "={{ String($json.title ?? '').trim().replace(/\\s+/g, ' ') }}",
+              "type": "string"
+            },
+            {
+              "id": "75eb8ab9-d87f-481e-9698-b312d4239646",
+              "name": "first_publish_year",
+              "value": "={{ $json.first_publish_year == null ? null : Number($json.first_publish_year) }}",
+              "type": "number"
+            },
+            {
+              "id": "9c60677e-4760-46e5-ad30-5826b44e0c15",
+              "name": "edition_count",
+              "value": "={{ Number($json.edition_count) }}",
+              "type": "number"
+            },
+            {
+              "id": "bfcd0113-bd32-478f-b9a4-e28d4c7a4bde",
+              "name": "url",
+              "value": "={{ 'https://openlibrary.org' + $json.key }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "4080e018-fe1f-4f4e-863a-30ec188c57ee",
+      "name": "CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        550,
+        100
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "nocode_result.csv",
+          "headerRow": true
+        }
+      }
+    },
+    {
+      "id": "be71aeae-d53e-44c9-9ea8-80f20ea1c1fa",
+      "name": "Save CSV",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        770,
+        100
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "outputs/lab3/nocode_result.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "75f1905d-ca0a-42a5-bdb5-bcefa77f71ca",
+      "name": "Log HTTP error",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        500,
+        550
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "813fa2e8-4738-485e-a3bc-68f742a71048",
+              "name": "message",
+              "value": "={{ $json.error || ('Missing expected response fields: ' + JSON.stringify($json).slice(0,200)) }}",
+              "type": "string"
+            },
+            {
+              "id": "6219e34e-1d0a-4ad5-97e5-b7437dc2ec43",
+              "name": "stage",
+              "value": "HTTP request",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "e79baf5e-7ffd-4231-8a00-90a6e72cac8a",
+      "name": "Error CSV",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        750,
+        550
+      ],
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "error_log.csv"
+        }
+      }
+    },
+    {
+      "id": "acd24dcd-bfe5-4846-90dd-1b49684e9d64",
+      "name": "Save error log",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        550
+      ],
+      "parameters": {
+        "operation": "write",
+        "fileName": "outputs/lab3/error_log.csv",
+        "dataPropertyName": "data",
+        "options": {}
+      }
+    },
+    {
+      "id": "4019e4be-804d-4ee7-9a96-e574fe6b212a",
+      "name": "Check books response",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -75,
+        100
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ !Array.isArray($json.docs) }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "3eacbe36-d640-467d-b1c9-40556bd297b1",
+      "name": "Fetch robots.txt",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -680,
+        -80
+      ],
+      "parameters": {
+        "url": "https://openlibrary.org/robots.txt",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "university-data-collection-n8n/1.0"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 10000,
+          "response": {
+            "response": {
+              "responseFormat": "text",
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "3054a6d0-1fb1-495a-b6d0-8b21bbc0e108",
+      "name": "Check robots permission",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -440,
+        -80
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const r = $input.first().json;\nconst status = Number(r.statusCode);\nif (status === 404) return [{json: {robots_status: 404, robots_allowed: true}}];\nif (status !== 200 || typeof r.data !== 'string') {\n  throw new Error('robots.txt недоступен или вернул неподдерживаемый HTTP-статус; поиск остановлен');\n}\nconst text = r.data.replace(/^\\uFEFF/, '');\nif (!text.trim() || text.length > 512000 || /^\\s*<(?:!doctype|html)/i.test(text)) {\n  throw new Error('robots.txt пуст, слишком велик или похож на HTML; поиск остановлен');\n}\nconst groups = []; let group = null; let agentsSeen = 0;\nfor (const raw of text.split(/\\r?\\n/)) {\n  const line = raw.split('#', 1)[0].trim();\n  if (!line) continue;\n  const cut = line.indexOf(':');\n  if (cut < 0) throw new Error('Некорректный robots.txt; поиск остановлен');\n  const key = line.slice(0, cut).trim().toLowerCase();\n  const val = line.slice(cut + 1).trim();\n  if (key === 'user-agent') {\n    if (!val) throw new Error('Пустой User-agent в robots.txt; поиск остановлен');\n    if (!group || group.hasRules) { group = {agents: [], rules: [], hasRules: false}; groups.push(group); }\n    group.agents.push(val.toLowerCase()); agentsSeen++;\n  } else if (key === 'crawl-delay' || key === 'request-rate') {\n    if (!group || !group.agents.length) throw new Error('Ограничение без User-agent; поиск остановлен');\n    group.hasRules = true;\n    group.rules.push({limit: key});\n  } else if (key === 'allow' || key === 'disallow') {\n    if (!group || !group.agents.length) throw new Error('Правило без User-agent; поиск остановлен');\n    group.hasRules = true;\n    if (val) group.rules.push({allow: key === 'allow', pattern: val});\n  }\n}\nif (!agentsSeen) throw new Error('В robots.txt не найден User-agent; поиск остановлен');\nconst agent = 'university-data-collection-n8n';\nlet best = -1; let rules = [];\nfor (const g of groups) {\n  const lengths = g.agents.filter(a => a === '*' || agent.includes(a)).map(a => a === '*' ? 0 : a.length);\n  if (!lengths.length) continue;\n  const score = Math.max(...lengths);\n  if (score > best) { best = score; rules = [...g.rules]; }\n  else if (score === best) rules.push(...g.rules);\n}\nconst normalize = s => s.replace(/%[0-9a-f]{2}/gi, p => {\n  const ch = String.fromCharCode(parseInt(p.slice(1), 16));\n  return /^[A-Za-z0-9._~-]$/.test(ch) ? ch : p.toUpperCase();\n});\nconst target = '/search.json'; let selected = null;\nfor (const rule of rules) {\n  if (rule.limit) throw new Error('robots.txt содержит '+rule.limit+'; поиск остановлен для ручной настройки скорости');\n  const pattern = normalize(rule.pattern);\n  if (!rule.allow && pattern.includes('?')) {\n    throw new Error('В robots.txt есть запрет с параметрами запроса; поиск остановлен для ручной проверки');\n  }\n  const end = pattern.endsWith('$');\n  const body = end ? pattern.slice(0, -1) : pattern;\n  const escaped = body.split('*').map(s => s.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')).join('.*');\n  const matches = new RegExp('^' + escaped + (end ? '$' : '')).test(target);\n  if (!matches) continue;\n  const length = body.replace(/\\*/g, '').length;\n  if (!selected || length > selected.length || (length === selected.length && rule.allow && !selected.allow)) selected = {allow: rule.allow, length};\n}\nif (selected && !selected.allow) throw new Error('robots.txt запрещает /search.json для данного User-Agent; поиск остановлен');\nreturn [{json: {robots_status: status, robots_allowed: true}}];"
+      }
+    }
+  ],
+  "connections": {
+    "Manual start": {
+      "main": [
+        [
+          {
+            "node": "Fetch robots.txt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Daily schedule": {
+      "main": [
+        [
+          {
+            "node": "Fetch robots.txt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch books": {
+      "main": [
+        [
+          {
+            "node": "Check books response",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split records": {
+      "main": [
+        [
+          {
+            "node": "Transform fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform fields": {
+      "main": [
+        [
+          {
+            "node": "CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "CSV": {
+      "main": [
+        [
+          {
+            "node": "Save CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log HTTP error": {
+      "main": [
+        [
+          {
+            "node": "Error CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error CSV": {
+      "main": [
+        [
+          {
+            "node": "Save error log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check books response": {
+      "main": [
+        [
+          {
+            "node": "Log HTTP error",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Split records",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch robots.txt": {
+      "main": [
+        [
+          {
+            "node": "Check robots permission",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check robots permission": {
+      "main": [
+        [
+          {
+            "node": "Fetch books",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Yekaterinburg",
+    "saveDataSuccessExecution": "all",
+    "saveDataErrorExecution": "all"
+  }
+}
