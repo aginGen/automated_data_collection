@@ -150,6 +150,6 @@ CSV не поддерживает обновление по ключу, поэт
 ## 12. Источники
 
 1. [Quotes to Scrape](https://quotes.toscrape.com/) и [DummyJSON Quotes](https://dummyjson.com/docs/quotes).
-2. [Демонстрационный блокнот занятия 6](https://colab.research.google.com/drive/1tRXXnj0phaWJvBosnY3G_PNIBCQA1ve9) — структура этапов, адаптирован к цитатам. [Референс лабораторной № 3](https://github.com/aginGen/automated_data_collection/tree/main/lab3_3) — оформление.
+2. [Демонстрационный блокнот занятия 6](https://colab.research.google.com/drive/1tRXXnj0phaWJvBosnY3G_PNIBCQA1ve9) — структура этапов, адаптирован к цитатам.
 3. [Pydantic validators](https://docs.pydantic.dev/latest/concepts/validators/), [SQLite UPSERT](https://sqlite.org/lang_upsert.html), [PyArrow Parquet](https://arrow.apache.org/docs/python/parquet/), [n8n Remove Duplicates](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.removeduplicates/).
 4. [152-ФЗ, действующий текст](https://base.garant.ru/12148567/), [GDPR, официальный текст](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng).
