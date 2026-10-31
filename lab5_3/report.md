@@ -6,7 +6,7 @@
 
 Разработать Scrapy-проект с обходом «список цитат → страница автора», четырьмя звеньями Item Pipeline, SQLite, возобновлением и HTTP-кэшем; сравнить его с n8n на одинаковых 30 цитатах. В Excel назначен вариант 3: `quotes.toscrape.com`.
 
-Получены все 100 уникальных цитат с десяти страниц и сведения 50 авторов. Дополнительно выполнен обход тегов по подходу [LaintAge/web-scrapers](https://github.com/LaintAge/web-scrapers/tree/main/lb5): сохранены 190 связей «цитата–тег». Они относятся к 69 цитатам и не являются 190 новыми цитатами. Общий минимум ТЗ в 300 уникальных записей цитат на этом каталоге не достигнут: источник содержит 100; страница 11 пуста. Значение `CLOSESPIDER_ITEMCOUNT=300` задаёт предел, а не гарантирует объём.
+Получены все 100 уникальных цитат с десяти страниц и сведения 50 авторов. Дополнительно выполнен обход тегов: сохранены 190 связей «цитата–тег». Они относятся к 69 цитатам и не являются 190 новыми цитатами. Общий минимум ТЗ в 300 уникальных записей цитат на этом каталоге не достигнут: источник содержит 100; страница 11 пуста. Значение `CLOSESPIDER_ITEMCOUNT=300` задаёт предел, а не гарантирует объём.
 
 ## 2. Карта источника и ключи
 
@@ -152,6 +152,6 @@ Manual start / Daily schedule → HTTP Request с пагинацией трёх 
 
 ## 13. Источники
 
-ТЗ лабораторной работы 5 и Excel с вариантами из папки «ПапкиДляТЗ»; вариант 3. [Демонстрационный Colab занятия 5](https://colab.research.google.com/drive/1Th4wHsW0nryhd1IXwWJaZv0D8fDveXUI); [пример оформления лабораторной 3](https://github.com/aginGen/automated_data_collection/tree/main/lab3_3); [пример обхода тегов, вариант 4](https://github.com/LaintAge/web-scrapers/tree/main/lb5).
+ТЗ лабораторной работы 5 и Excel с вариантами из папки «ПапкиДляТЗ»; вариант 3. [Демонстрационный Colab занятия 5](https://colab.research.google.com/drive/1Th4wHsW0nryhd1IXwWJaZv0D8fDveXUI).
 
 [Учебные площадки ToScrape](https://toscrape.com/), [Quotes](https://quotes.toscrape.com/), [страница 11](https://quotes.toscrape.com/page/11/). Scrapy: [архитектура](https://docs.scrapy.org/en/latest/topics/architecture.html), [Item Pipeline](https://docs.scrapy.org/en/latest/topics/item-pipeline.html), [AutoThrottle](https://docs.scrapy.org/en/latest/topics/autothrottle.html), [JOBDIR](https://docs.scrapy.org/en/latest/topics/jobs.html), [HTTP Cache](https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware). n8n: [HTML](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.html/), [Loop Over Items](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.splitinbatches/). [152-ФЗ, публикация Минтруда](https://mintrud.gov.ru/docs/laws/130).
