@@ -1,0 +1,63 @@
+{
+  "url": "https://books.toscrape.com/",
+  "status": 200,
+  "response_bytes_utf8": 51294,
+  "sha256": "9fdd63da34161ebd13408d7a85105f83ec3c9f351c5d77cd0aa578790e121c1e",
+  "cards": 20,
+  "needle": "A Light in the Attic",
+  "needle_in_raw_html": true,
+  "price_raw": "£51.77",
+  "browser_required": false,
+  "category_count": 50,
+  "network": {
+    "browser": "Chromium 157.0.8103.79",
+    "scope": "initial catalogue page load until network idle",
+    "document_status": 200,
+    "cards_in_dom": 20,
+    "first_title_in_document_response": true,
+    "requests": [
+      {
+        "type": "document",
+        "url": "https://books.toscrape.com/",
+        "method": "GET"
+      },
+      {
+        "type": "script",
+        "url": "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",
+        "method": "GET"
+      },
+      {
+        "type": "script",
+        "url": "https://books.toscrape.com/static/oscar/js/jquery/jquery-1.9.1.min.js",
+        "method": "GET"
+      },
+      {
+        "type": "script",
+        "url": "https://books.toscrape.com/static/oscar/js/bootstrap3/bootstrap.min.js",
+        "method": "GET"
+      },
+      {
+        "type": "script",
+        "url": "https://books.toscrape.com/static/oscar/js/oscar/ui.js",
+        "method": "GET"
+      },
+      {
+        "type": "script",
+        "url": "https://books.toscrape.com/static/oscar/js/bootstrap-datetimepicker/bootstrap-datetimepicker.js",
+        "method": "GET"
+      },
+      {
+        "type": "script",
+        "url": "https://books.toscrape.com/static/oscar/js/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.all.js",
+        "method": "GET"
+      }
+    ],
+    "xhr_fetch": [],
+    "blocked_asset_types": [
+      "image",
+      "media",
+      "stylesheet",
+      "font"
+    ]
+  }
+}

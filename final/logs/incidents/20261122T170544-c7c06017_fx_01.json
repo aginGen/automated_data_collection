@@ -1,0 +1,7 @@
+{
+  "source": "fx",
+  "url": "http://127.0.0.1:49778/daily_json.js",
+  "reason": "temporary_server_error",
+  "status": 503,
+  "body": "{\"error\":\"local demonstration of an unavailable FX service\"}"
+}

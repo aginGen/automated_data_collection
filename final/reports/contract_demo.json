@@ -1,0 +1,42 @@
+{
+  "input": "Одна карточка каталога и четыре локальные копии с изменёнными полями",
+  "valid_books": 1,
+  "rejected": [
+    {
+      "stage": "contract",
+      "reasons": [
+        {
+          "field": "price_pence",
+          "reason": "Input should be a valid integer"
+        }
+      ]
+    },
+    {
+      "stage": "contract",
+      "reasons": [
+        {
+          "field": "title",
+          "reason": "String should have at least 1 character"
+        }
+      ]
+    },
+    {
+      "stage": "contract",
+      "reasons": [
+        {
+          "field": "record",
+          "reason": "Value error, адрес карточки не соответствует источнику и ID"
+        }
+      ]
+    },
+    {
+      "stage": "contract",
+      "reasons": [
+        {
+          "field": "collected_at",
+          "reason": "Value error, время сбора должно быть в UTC"
+        }
+      ]
+    }
+  ]
+}

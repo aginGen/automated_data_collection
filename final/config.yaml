@@ -1,0 +1,49 @@
+project:
+  author: aginGen
+  configuration: B
+  question: Как меняется доля книг разных категорий в бюджете 3500 ₽ при изменении курса фунта?
+  contact: https://github.com/aginGen
+  timezone: Asia/Yekaterinburg
+  parser_version: "1.0.0"
+  schedule_hour: 20
+  schedule_minute: 30
+  minimum_products: 500
+  budget_rub: 3500
+  sensitivity_percent: 10
+sources:
+  books:
+    url: https://books.toscrape.com/
+    requests_per_second: 0.9
+    missing_robots_ok: true
+    recheck_pages: 16
+    full_scan_days: 7
+    max_pages: 180
+  fx:
+    url: https://www.cbr-xml-daily.ru/daily_json.js
+    requests_per_second: 0.4
+    missing_robots_ok: false
+    currency: GBP
+http:
+  connect_timeout: 6
+  read_timeout: 15
+  max_attempts: 3
+  jitter: 0.2
+  backoff_base: 0.8
+  backoff_cap: 8
+  retry_wait_budget: 20
+  breaker_failures: 3
+  breaker_cooldown: 20
+quality:
+  required_completeness: {green: 1.0, yellow: 0.99, direction: min}
+  unique_keys: {green: 1.0, yellow: 1.0, direction: min}
+  contract_validity: {green: 0.99, yellow: 0.95, direction: min}
+  reject_share: {green: 0.01, yellow: 0.05, direction: max}
+  fx_coverage: {green: 1.0, yellow: 1.0, direction: min}
+  volume_change: {green: 0.10, yellow: 0.20, direction: max}
+  optional_completeness: {green: 0.98, yellow: 0.90, direction: min}
+  fx_age_days: {green: 4, yellow: 7, direction: max}
+alerts:
+  error_share: 0.15
+  limit_or_block_share: 0.05
+  volume_change: 0.15
+  no_new_records: 0

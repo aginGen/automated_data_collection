@@ -1,0 +1,102 @@
+{
+  "name": "Итоговый проект. Каталог книг и курс фунта",
+  "active": false,
+  "nodes": [
+    {
+      "id": "4b6e53af-6ed0-4a5a-a8a3-f5fa7126dbaf",
+      "name": "Ручной запуск",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [-460, 80],
+      "parameters": {}
+    },
+    {
+      "id": "8b1962a3-c4d0-49c0-af8d-ddd4412aec0b",
+      "name": "Каждый день в 20:30",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-460, 300],
+      "parameters": {
+        "rule": {"interval": [{"field": "cronExpression", "expression": "30 20 * * *"}]}
+      }
+    },
+    {
+      "id": "f8ed9dd0-da83-40c4-9192-149b127dbd71",
+      "name": "Запустить Python",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [-220, 180],
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8796/run",
+        "sendHeaders": true,
+        "headerParameters": {"parameters": [{"name": "X-Course-Runner", "value": "final-project"}]},
+        "options": {"timeout": 550000}
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "f08d4cb9-850e-42d5-a211-a78ece052be6",
+      "name": "Есть сбой или превышен порог",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [40, 80],
+      "parameters": {
+        "conditions": {
+          "options": {"caseSensitive": true, "leftValue": "", "typeValidation": "strict", "version": 2},
+          "conditions": [
+            {
+              "id": "e1656d03-1c27-4fb8-a2d2-7e74d9636aa8",
+              "leftValue": "={{ $json.exit_code !== 0 || $json.alerts.some(a => a.level === 'warning' || a.level === 'error') }}",
+              "rightValue": "",
+              "operator": {"type": "boolean", "operation": "true", "singleValue": true}
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "2d723b60-3ad3-4033-ad10-3e5d7a4d2baa",
+      "name": "Показать отчёт о прогоне",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [360, 240],
+      "parameters": {}
+    },
+    {
+      "id": "1bca5ac4-0293-4773-8091-e6d2e76114aa",
+      "name": "Оповещение в n8n",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [360, 40],
+      "parameters": {
+        "errorMessage": "={{ $json.report ? 'Код Python: ' + $json.exit_code + '. Отчёт: ' + $json.report + '. ' + ($json.reason || JSON.stringify($json.sources_failed || $json.alerts)) : 'Локальный запуск недоступен. Проверьте src.n8n_endpoint на порту 8796.' }}"
+      }
+    }
+  ],
+  "connections": {
+    "Ручной запуск": {"main": [[{"node": "Запустить Python", "type": "main", "index": 0}]]},
+    "Каждый день в 20:30": {"main": [[{"node": "Запустить Python", "type": "main", "index": 0}]]},
+    "Запустить Python": {
+      "main": [
+        [{"node": "Есть сбой или превышен порог", "type": "main", "index": 0}],
+        [{"node": "Оповещение в n8n", "type": "main", "index": 0}]
+      ]
+    },
+    "Есть сбой или превышен порог": {
+      "main": [
+        [{"node": "Оповещение в n8n", "type": "main", "index": 0}],
+        [{"node": "Показать отчёт о прогоне", "type": "main", "index": 0}]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Yekaterinburg",
+    "saveManualExecutions": true,
+    "saveDataSuccessExecution": "all",
+    "saveDataErrorExecution": "all"
+  }
+}

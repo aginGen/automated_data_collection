@@ -1,0 +1,27 @@
+{
+  "run_id": "20261122T165213-ad8718bc",
+  "mode": "full",
+  "requests": 10,
+  "codes": {
+    "200": 9,
+    "404": 1
+  },
+  "error_share": 0.0,
+  "limit_or_block_share": 0.0,
+  "retries": 0,
+  "median_ms": 406.0,
+  "p95_ms": 11641.0,
+  "wire_body_bytes": 310159,
+  "decoded_body_bytes": 315633,
+  "bytes_saved_304": 0,
+  "bytes_saved_gzip": 5474,
+  "breaker_opened": 0,
+  "duration_s": 22.625,
+  "log": "logs/run_20261122T165213-ad8718bc.jsonl",
+  "exit_code": 3,
+  "simulated_failure": false,
+  "status": "paused",
+  "reason": "Остановка после 6 страниц. Очередь сохранена.",
+  "mart_written": false,
+  "alerts": []
+}

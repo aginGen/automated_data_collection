@@ -1,0 +1,94 @@
+{
+  "run_id": "20261122T170234-49d166fd",
+  "quality_status": "green",
+  "metrics": [
+    {
+      "metric": "required_completeness",
+      "value": 1.0,
+      "status": "green",
+      "green": 1.0,
+      "yellow": 0.99,
+      "direction": "min"
+    },
+    {
+      "metric": "unique_keys",
+      "value": 1.0,
+      "status": "green",
+      "green": 1.0,
+      "yellow": 1.0,
+      "direction": "min"
+    },
+    {
+      "metric": "contract_validity",
+      "value": 1.0,
+      "status": "green",
+      "green": 0.99,
+      "yellow": 0.95,
+      "direction": "min"
+    },
+    {
+      "metric": "reject_share",
+      "value": 0.0,
+      "status": "green",
+      "green": 0.01,
+      "yellow": 0.05,
+      "direction": "max"
+    },
+    {
+      "metric": "fx_coverage",
+      "value": 1.0,
+      "status": "green",
+      "green": 1.0,
+      "yellow": 1.0,
+      "direction": "min"
+    },
+    {
+      "metric": "volume_change",
+      "value": 0.0,
+      "status": "green",
+      "green": 0.1,
+      "yellow": 0.2,
+      "direction": "max"
+    },
+    {
+      "metric": "optional_completeness",
+      "value": 1.0,
+      "status": "green",
+      "green": 0.98,
+      "yellow": 0.9,
+      "direction": "min"
+    },
+    {
+      "metric": "fx_age_days",
+      "value": 1,
+      "status": "green",
+      "green": 4,
+      "yellow": 7,
+      "direction": "max"
+    }
+  ],
+  "quality_failures": [],
+  "protocol": [
+    {
+      "step": "normalize_and_type",
+      "before": 1002,
+      "after": 1002,
+      "changed": 1002,
+      "removed": 0
+    },
+    {
+      "step": "validate",
+      "before": 1002,
+      "after": 1002,
+      "changed": 0,
+      "removed": 0
+    },
+    {
+      "step": "deduplicate",
+      "before": 1002,
+      "after": 1002,
+      "changed": 0,
+      "removed": 0
+    }
+  ]
+}

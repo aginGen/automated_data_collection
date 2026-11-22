@@ -1,0 +1,7 @@
+.venv/
+.runtime/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+state/*.lock
+*.tmp

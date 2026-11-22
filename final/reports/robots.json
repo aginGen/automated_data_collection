@@ -1,0 +1,24 @@
+{
+  "www.cbr-xml-daily.ru": {
+    "url": "https://www.cbr-xml-daily.ru/robots.txt",
+    "status": 200,
+    "rules": "Host: https://www.cbr-xml-daily.ru/\nSitemap: https://www.cbr-xml-daily.ru/sitemap.xml\n",
+    "entry_allowed": true,
+    "crawl_delay": null,
+    "request_rate": null,
+    "sitemaps": [
+      "https://www.cbr-xml-daily.ru/sitemap.xml"
+    ],
+    "minimum_interval_s": 2.5
+  },
+  "books.toscrape.com": {
+    "url": "https://books.toscrape.com/robots.txt",
+    "status": 404,
+    "rules": "",
+    "entry_allowed": true,
+    "crawl_delay": null,
+    "request_rate": null,
+    "sitemaps": [],
+    "minimum_interval_s": 1.1111111111111112
+  }
+}

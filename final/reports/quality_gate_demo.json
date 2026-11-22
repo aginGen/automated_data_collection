@@ -1,0 +1,10 @@
+{
+  "scenario": "Изолированная копия. Минимум повышен с 500 до 1001 только для демонстрации.",
+  "products": 1000,
+  "quality": "red",
+  "failures": [
+    "minimum_products: 1000 < 1001"
+  ],
+  "exit_code": 2,
+  "mart_unchanged": true
+}

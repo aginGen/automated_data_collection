@@ -1,0 +1,576 @@
+{
+  "https://www.cbr-xml-daily.ru/daily_json.js": {
+    "etag": null,
+    "last_modified": "Sun, 22 Nov 2026 16:00:00 GMT",
+    "content_type": "application/javascript; charset=utf-8",
+    "wire_bytes": 2131,
+    "sha256": "d54edc605193ab266029bc65b6438888ef5b1d58718609da9507c55403879bee"
+  },
+  "https://books.toscrape.com/": {
+    "etag": "\"63e40de8-c85e\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 51294,
+    "sha256": "9fdd63da34161ebd13408d7a85105f83ec3c9f351c5d77cd0aa578790e121c1e"
+  },
+  "https://books.toscrape.com/catalogue/category/books/travel_2/index.html": {
+    "etag": "\"63e40de8-9091\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 37009,
+    "sha256": "12647dc86ef4e070b3c47e3a152462545f99c53d9d8d3130636b921e078d8766"
+  },
+  "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html": {
+    "etag": "\"63e40de8-c4d4\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50388,
+    "sha256": "ff899bea5c8806ecd24542d7a195899ad46eeb9a12d4fbfc79a9ed6be9faf2a2"
+  },
+  "https://books.toscrape.com/catalogue/category/books/mystery_3/page-2.html": {
+    "etag": "\"63e40de8-9685\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 38533,
+    "sha256": "00282ec4839bd2a3c5f1e70e01d8bb61ce80aa66ff0dce913e3ba842e603d6a3"
+  },
+  "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html": {
+    "etag": "\"63e40de8-c3bd\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50109,
+    "sha256": "8c5f37afece8826792910cc612ac8b469e1ce0cf19d75acc851a937c7272ea38"
+  },
+  "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/page-2.html": {
+    "etag": "\"63e40de8-7157\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 29015,
+    "sha256": "efabe5d535056c9332d54d1c73e5d4e8baf824f478581bb3f0de0d0eb1977b0e"
+  },
+  "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html": {
+    "etag": "\"63e40de8-c8ff\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 51455,
+    "sha256": "125d234c65f99ee1f0d11262212fa7cde4928564888dcd97b67e6b8456d5cff9"
+  },
+  "https://books.toscrape.com/catalogue/category/books/sequential-art_5/page-2.html": {
+    "etag": "\"63e40de8-c7dd\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 51165,
+    "sha256": "08298a30f84cd301595341d15c13dc5a9c22714b91718faefb3dbe992f45996b"
+  },
+  "https://books.toscrape.com/catalogue/category/books/sequential-art_5/page-3.html": {
+    "etag": "\"63e40de8-c8c0\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 51392,
+    "sha256": "a68b15cb0dc5b07552ddaa80e522601e9b905ec48968759dfe24145d1c39a92c"
+  },
+  "https://books.toscrape.com/catalogue/category/books/sequential-art_5/page-4.html": {
+    "etag": "\"63e40de8-ab40\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 43840,
+    "sha256": "89f18dd023336717de95ffe1fe3f3c584465292b4d53f357aa8e33e293c2152b"
+  },
+  "https://books.toscrape.com/catalogue/category/books/classics_6/index.html": {
+    "etag": "\"63e40de8-bb02\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 47874,
+    "sha256": "556e6ddcd7b7302ea0a94b9f990f21cf8ae94376f6100da6a884bc134c888ade"
+  },
+  "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html": {
+    "etag": "\"63e40de8-90a8\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 37032,
+    "sha256": "41af3d014e253a586f100a485f477369e6ab63376c6a15fb807bc1df84326b15"
+  },
+  "https://books.toscrape.com/catalogue/category/books/romance_8/index.html": {
+    "etag": "\"63e40de8-c4dd\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50397,
+    "sha256": "81da39092ced13894c9e63375c6960821b0bf2b9932a1bf3468a1d037bf7adc0"
+  },
+  "https://books.toscrape.com/catalogue/category/books/romance_8/page-2.html": {
+    "etag": "\"63e40de8-a68c\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 42636,
+    "sha256": "303636fd6bbbf21e569b4392276063d1832ab34b0320a03c19eb66b4abe6b478"
+  },
+  "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html": {
+    "etag": "\"63e40de8-b0fc\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 45308,
+    "sha256": "f4fa46503dfc2c77673c04d8398cdebee28d4d4b98d4bd3cf961f83e9e2bb952"
+  },
+  "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html": {
+    "etag": "\"63e40de8-c20d\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 49677,
+    "sha256": "1e32748e08bfded40d2832ad5da034c5992489b3238ee649ec67aa3dbfd153c3"
+  },
+  "https://books.toscrape.com/catalogue/category/books/fiction_10/page-2.html": {
+    "etag": "\"63e40de8-c166\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 49510,
+    "sha256": "79a2f83adb7b79aa933ec036c0c01c0b33bb134dbd4c5e71f4fadf2810706923"
+  },
+  "https://books.toscrape.com/catalogue/category/books/fiction_10/page-3.html": {
+    "etag": "\"63e40de8-c12d\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 49453,
+    "sha256": "7f08560a0aac1cba1e89ae9b850af964594a1e8bc1117cc152bbb6aac7ef774c"
+  },
+  "https://books.toscrape.com/catalogue/category/books/fiction_10/page-4.html": {
+    "etag": "\"63e40de8-6b20\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 27424,
+    "sha256": "3b80977efa54760b8bac73b7a84c3c5c5de6b82cb48973b950522dcf2be8d562"
+  },
+  "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html": {
+    "etag": "\"63e40de8-c2c8\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 49864,
+    "sha256": "002f63c067f22598a319f4de2afdbb2961398f7cd95bb78be47ba75e835e4540"
+  },
+  "https://books.toscrape.com/catalogue/category/books/childrens_11/page-2.html": {
+    "etag": "\"63e40de8-83fc\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 33788,
+    "sha256": "89ad5e389dea3b6fe142bede9707fb56e6a4ae19741e4b67a984598bf52df9f6"
+  },
+  "https://books.toscrape.com/catalogue/category/books/religion_12/index.html": {
+    "etag": "\"63e40de8-78d5\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 30933,
+    "sha256": "f974743a47e8769cc3ed53197093c5b6735d3b95d333136ef51b2a0f4b932e2d"
+  },
+  "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html": {
+    "etag": "\"63e40de8-cdf5\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 52725,
+    "sha256": "be69d3a5293343cf9c27062b7819af219233cfe02e98ac0d36eb3a739d94c0d2"
+  },
+  "https://books.toscrape.com/catalogue/category/books/nonfiction_13/page-2.html": {
+    "etag": "\"63e40de8-ccf0\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 52464,
+    "sha256": "02c174a05cca4f8f6dd1ee2c219086da0e3320ad1616603a845b07f68bf42506"
+  },
+  "https://books.toscrape.com/catalogue/category/books/nonfiction_13/page-3.html": {
+    "etag": "\"63e40de8-ccb1\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 52401,
+    "sha256": "efc35452f31c59c805d905b4ffc0c34c41ec8fc505b7dd17b842b838af7bbb54"
+  },
+  "https://books.toscrape.com/catalogue/category/books/nonfiction_13/page-4.html": {
+    "etag": "\"63e40de8-cd3a\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 52538,
+    "sha256": "a09edb93765b35aab4dc3fcb9d2770dc0c72e61519530cfd8b2124c056f17cbb"
+  },
+  "https://books.toscrape.com/catalogue/category/books/nonfiction_13/page-5.html": {
+    "etag": "\"63e40de8-cb93\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 52115,
+    "sha256": "57d836c647afe89e6db8efe1261e0a15a537599732c6fefb507d73f181e5a15f"
+  },
+  "https://books.toscrape.com/catalogue/category/books/nonfiction_13/page-6.html": {
+    "etag": "\"63e40de8-8a25\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 35365,
+    "sha256": "5190d7fce61b485fea90c06dd41db9fed485af3555aed1c0e61b933518d4cc69"
+  },
+  "https://books.toscrape.com/catalogue/category/books/music_14/index.html": {
+    "etag": "\"63e40de8-9d01\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 40193,
+    "sha256": "b3d60d3475d6dfaa7c27b0f0576ab3a0cba58f5149fa1ec96647dde4f35593be"
+  },
+  "https://books.toscrape.com/catalogue/category/books/default_15/index.html": {
+    "etag": "\"63e40de8-c912\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 51474,
+    "sha256": "478c406a11c04a5452a58e8db612d1a5792778fcb768f5f0aee89c15f97fd06d"
+  },
+  "https://books.toscrape.com/catalogue/category/books/default_15/page-2.html": {
+    "etag": "\"63e40de8-c6aa\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50858,
+    "sha256": "a22d71cee940a0a60f78e29a4f89a9f386fbe698d1aaae91c67341914970e838"
+  },
+  "https://books.toscrape.com/catalogue/category/books/default_15/page-3.html": {
+    "etag": "\"63e40de8-c688\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50824,
+    "sha256": "c44b6da6810a386d9d0732ce804c9e5e946f0b9768a304303c6adcca40324cff"
+  },
+  "https://books.toscrape.com/catalogue/category/books/default_15/page-4.html": {
+    "etag": "\"63e40de8-c816\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 51222,
+    "sha256": "581b91393af41008ebe68d4b54104dcdb75d605f60b3c94c27109d87355254d8"
+  },
+  "https://books.toscrape.com/catalogue/category/books/default_15/page-5.html": {
+    "etag": "\"63e40de8-c753\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 51027,
+    "sha256": "89cdfdca689a15aeea8d9537f6280c864734a99b9b264f7ede8221a8008e7ec3"
+  },
+  "https://books.toscrape.com/catalogue/category/books/default_15/page-6.html": {
+    "etag": "\"63e40de8-c498\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50328,
+    "sha256": "8684b52bd852245340a3b5c6d40aed1fe81129819767c2b600f3df26f978ad50"
+  },
+  "https://books.toscrape.com/catalogue/category/books/default_15/page-7.html": {
+    "etag": "\"63e40de8-c5ec\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50668,
+    "sha256": "c2ae590c27041aa6938db604bf5dc1d60b8f545e14142560ed399226db4b1645"
+  },
+  "https://books.toscrape.com/catalogue/category/books/default_15/page-8.html": {
+    "etag": "\"63e40de8-9417\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 37911,
+    "sha256": "b866f7c79ea51adc2a1c95d5d4085e599d56378eac4a02aafc4f4db24b289877"
+  },
+  "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html": {
+    "etag": "\"63e40de8-ad9f\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 44447,
+    "sha256": "1169bebc13db84fa0ba4365a6d44df8170ff728d0967f38f6182d374dfef89c4"
+  },
+  "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html": {
+    "etag": "\"63e40de8-6ba6\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 27558,
+    "sha256": "bce5d4c63de175c36be3e1f3bb365dd7b01c95340400a500d5a60511479f96c3"
+  },
+  "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html": {
+    "etag": "\"63e40de8-c6f3\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50931,
+    "sha256": "07cbde187877b52186e307027adcd6c546cf0701115827f1ea2acd8d2add4493"
+  },
+  "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-2.html": {
+    "etag": "\"63e40de8-c3c7\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50119,
+    "sha256": "64c4ea95ff5e96a8585564e0506198ce46d0b39cb6058eff1ce4fffbc3c4a936"
+  },
+  "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-3.html": {
+    "etag": "\"63e40de8-c730\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50992,
+    "sha256": "4286e64ae5ff0d065c5560fff06a3d1deb86d6926eeaa61bb29b557b283d957e"
+  },
+  "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-4.html": {
+    "etag": "\"63e40de8-7659\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 30297,
+    "sha256": "414a14100e1337e14b2ea77bec8b299d892ffd38e24232889a44a3660b8a1668"
+  },
+  "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html": {
+    "etag": "\"63e40de8-c830\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 51248,
+    "sha256": "46fdad4c1445c4542544dc03dfca9f4bd1402995a553d2efa1452c93d3906dac"
+  },
+  "https://books.toscrape.com/catalogue/category/books/fantasy_19/page-2.html": {
+    "etag": "\"63e40de8-c68f\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50831,
+    "sha256": "57632fdb4ba10edd10d65d610c060544f036558ad5190f091323b561c83d5548"
+  },
+  "https://books.toscrape.com/catalogue/category/books/fantasy_19/page-3.html": {
+    "etag": "\"63e40de8-7dd2\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 32210,
+    "sha256": "243b4521df50f3abc09e13f2e515371f832a6a3aed74e5a4cf32963efa1e9b50"
+  },
+  "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html": {
+    "etag": "\"63e40de8-703c\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 28732,
+    "sha256": "76d8a52be615c7a92a6ccc39b605a099dc6d5604fb265b1c93bf21fbd6bc002c"
+  },
+  "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html": {
+    "etag": "\"63e40de8-c3f7\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50167,
+    "sha256": "6f61a2d404d2a82f7447b7899f636095af169350f9ee3ec17fcf217ade6dc306"
+  },
+  "https://books.toscrape.com/catalogue/category/books/young-adult_21/page-2.html": {
+    "etag": "\"63e40de8-c45c\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 50268,
+    "sha256": "bb24737b1876129403d5dda2e10563780cc522416fd84131230d6a9a13223cd3"
+  },
+  "https://books.toscrape.com/catalogue/category/books/young-adult_21/page-3.html": {
+    "etag": "\"63e40de8-9fbd\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 40893,
+    "sha256": "07c68ad651edac5460e52b114b7271d8cc54e36bf30048830a9ccee5fdb2a4e4"
+  },
+  "https://books.toscrape.com/catalogue/category/books/science_22/index.html": {
+    "etag": "\"63e40de8-a633\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 42547,
+    "sha256": "aed413eaf598a11dbe2a5a26338095a930de963551ed59e3a793c152ac654773"
+  },
+  "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html": {
+    "etag": "\"63e40de8-bc4f\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 48207,
+    "sha256": "bcd9e2b32175779a12bc7d369c8fe8445d29353a58f3dd2513d66bf7e86dc116"
+  },
+  "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html": {
+    "etag": "\"63e40de8-5389\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 21385,
+    "sha256": "44bd29ed42111e3c4863cbed6c509aef009fe155a9d8b4c8591bc3ab1a5baf99"
+  },
+  "https://books.toscrape.com/catalogue/category/books/art_25/index.html": {
+    "etag": "\"63e40de8-7c19\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 31769,
+    "sha256": "997470f8d85b2ba5b869f6491f9d640d8d4a0f12259b73d05ddf08a6a14ce3b1"
+  },
+  "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html": {
+    "etag": "\"63e40de8-78f8\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 30968,
+    "sha256": "15974e74f0f09d47199486363f32b095121d5f5e96222170f27a0438c39a03ad"
+  },
+  "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html": {
+    "etag": "\"63e40de8-810a\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 33034,
+    "sha256": "a629784cdb1d30d43a20d9ac05b7fe49c6f626e57bd69b171d82de684caad2c3"
+  },
+  "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html": {
+    "etag": "\"63e40de8-53f4\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 21492,
+    "sha256": "ad696a46cd5aa9410078dacfd951edbe3ead7910c304b9ba784c70d7f393e8dd"
+  },
+  "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html": {
+    "etag": "\"63e40de8-5381\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 21377,
+    "sha256": "ee501436a89b371efcf6df4cb4235fa67ac4d6f7703041e0346da5181fff2892"
+  },
+  "https://books.toscrape.com/catalogue/category/books/humor_30/index.html": {
+    "etag": "\"63e40de8-8ad6\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 35542,
+    "sha256": "e3282e3246fcbedea9a1b6fb459dd8ea2bf06fa7ea0ddc952e1586dc772a9ebe"
+  },
+  "https://books.toscrape.com/catalogue/category/books/horror_31/index.html": {
+    "etag": "\"63e40de8-adde\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 44510,
+    "sha256": "55da1842fcb07b3ddf897c823d4d2c6709c1f2a1aa19e7018095196d17e93b56"
+  },
+  "https://books.toscrape.com/catalogue/category/books/history_32/index.html": {
+    "etag": "\"63e40de8-c096\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 49302,
+    "sha256": "5ef8f2064d71d5b7d72a80c83ebd47d57ae990bd6e087743b0d4db1795da747a"
+  },
+  "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html": {
+    "etag": "\"63e40de8-d36c\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 54124,
+    "sha256": "fbfacb1a8c46fced4a08f51ac349700dbb97e9550b3345257e07eb2fda5727e4"
+  },
+  "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/page-2.html": {
+    "etag": "\"63e40de8-8e9e\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 36510,
+    "sha256": "8c52bfa8e193291b48cddd046b79a3d3492ae712dcc3c79584e30931f08fbcdb"
+  },
+  "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html": {
+    "etag": "\"63e40de8-705f\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 28767,
+    "sha256": "1d21422ee4a6d3e6735b4f5d1c5a150d5b695cc909cbd321eee4de019f067759"
+  },
+  "https://books.toscrape.com/catalogue/category/books/business_35/index.html": {
+    "etag": "\"63e40de8-985e\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 39006,
+    "sha256": "b827088e5ad5bca17e420923dd74c3e989b57c2b38b342177f31acfac19bf167"
+  },
+  "https://books.toscrape.com/catalogue/category/books/biography_36/index.html": {
+    "etag": "\"63e40de8-6d54\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 27988,
+    "sha256": "5c6fc12387ca6b3bf333fd6c9b9ca0e2a1997971776328b61f0edfa4565ae1a1"
+  },
+  "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html": {
+    "etag": "\"63e40de8-8ce3\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 36067,
+    "sha256": "bc60d7220c84ee35823a8ef8f99c2be9f5c42b4effe45c701b8ed303f1826d5a"
+  },
+  "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html": {
+    "etag": "\"63e40de8-5f19\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 24345,
+    "sha256": "7f8c79c97b1409ba65a7147ef5cf9e0242c3e53ce586bc45dabf36827001d02c"
+  },
+  "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html": {
+    "etag": "\"63e40de8-73d1\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 29649,
+    "sha256": "9cb7686b144b2e246d22d6575768ac440b3bdca82c75a818acecc2a16e9a433e"
+  },
+  "https://books.toscrape.com/catalogue/category/books/academic_40/index.html": {
+    "etag": "\"63e40de8-536f\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 21359,
+    "sha256": "66d7061f9a5fd8f80feea158b14e3ef8ff15e2ab4aca66449fe71f5dc060d84a"
+  },
+  "https://books.toscrape.com/catalogue/category/books/self-help_41/index.html": {
+    "etag": "\"63e40de8-6d5d\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 27997,
+    "sha256": "1cb3cc801808b82255be687d03f1ad8f1116a5120927041e1ca7fb0c6d0775e4"
+  },
+  "https://books.toscrape.com/catalogue/category/books/historical_42/index.html": {
+    "etag": "\"63e40de8-598c\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 22924,
+    "sha256": "aa7fb91e054b8c7f62ed970f956d0c965a4b7145bddfa123cf2dfcc38653be15"
+  },
+  "https://books.toscrape.com/catalogue/category/books/christian_43/index.html": {
+    "etag": "\"63e40de8-6056\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 24662,
+    "sha256": "9717b582e3b9f06157de06d9913f8003f0f4d2f61841c679262fb1bac4c6df40"
+  },
+  "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html": {
+    "etag": "\"63e40de8-5372\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 21362,
+    "sha256": "01244095ff91b7de91f0e8afb3d7fb7835bf5287b92ecbf2eb5dae232cba4611"
+  },
+  "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html": {
+    "etag": "\"63e40de8-5310\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 21264,
+    "sha256": "470684c34c0a0b7da626ce1f9e482eb810bed77ff8445fa4bca17b84e8f304f6"
+  },
+  "https://books.toscrape.com/catalogue/category/books/novels_46/index.html": {
+    "etag": "\"63e40de8-53d0\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 21456,
+    "sha256": "c6b8622625a0b9cc014b64f06624a054b635adf877a2e101ef336483bf5391d2"
+  },
+  "https://books.toscrape.com/catalogue/category/books/health_47/index.html": {
+    "etag": "\"63e40de8-6680\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 26240,
+    "sha256": "e252118f3455548ab79a3fbb25b25d2ba22c7d7f82592ab376aaadd2bbaa8b11"
+  },
+  "https://books.toscrape.com/catalogue/category/books/politics_48/index.html": {
+    "etag": "\"63e40de8-608d\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 24717,
+    "sha256": "d1e3a591853a9ac74a9f5c7f48d56498cc1c1020b3dc6f7621382dc693b53ba8"
+  },
+  "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html": {
+    "etag": "\"63e40de8-5315\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 21269,
+    "sha256": "749b0fc5c8418cbba742fc19d92f2e469fab5bcf0f9025e9fbbe90133cf417e5"
+  },
+  "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html": {
+    "etag": "\"63e40de8-5300\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 21248,
+    "sha256": "d1b68b95ece7f8c0189b2927805c0e5bb767a2b7ecec1e124009cc7619f02d9b"
+  },
+  "https://books.toscrape.com/catalogue/category/books/crime_51/index.html": {
+    "etag": "\"63e40de8-53f5\"",
+    "last_modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+    "content_type": "text/html",
+    "wire_bytes": 21493,
+    "sha256": "e311b39172dcfb7c5d795509b50af4c05ee550e4f5232dd0c1ae36dd163978d9"
+  }
+}

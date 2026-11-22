@@ -1,0 +1,9 @@
+{
+  "products": 1000,
+  "categories": 50,
+  "requests": 0,
+  "duration_s": 7.484,
+  "raw_unchanged": true,
+  "sqlite_integrity": "ok",
+  "rub_price_check_all": true
+}

@@ -1,0 +1,33 @@
+{
+  "pause": {
+    "report": "reports/run_report_20261122T165213-ad8718bc.json",
+    "log": "logs/run_20261122T165213-ad8718bc.jsonl"
+  },
+  "first": {
+    "report": "reports/run_report_20261122T165311-d04d6409.json",
+    "log": "logs/run_20261122T165311-d04d6409.jsonl"
+  },
+  "repeat": {
+    "report": "reports/run_report_20261122T170234-49d166fd.json",
+    "log": "logs/run_20261122T170234-49d166fd.jsonl"
+  },
+  "fault": {
+    "report": "reports/run_report_20261122T170544-c7c06017.json",
+    "log": "logs/run_20261122T170544-c7c06017.jsonl"
+  },
+  "upsert": "reports/idempotency.json",
+  "red_gate": "reports/quality_gate_demo.json",
+  "offline": "reports/offline_rebuild.json",
+  "rejected": "reports/contract_demo.json",
+  "n8n": "nocode/execution_metrics.json",
+  "n8n_screenshots": {
+    "workflow": "nocode/screenshots/workflow.png",
+    "repeat": "nocode/screenshots/result.png",
+    "fault": "nocode/screenshots/failure.png"
+  },
+  "resumed_pages": {
+    "before_pause": 6,
+    "after_resume": 74,
+    "repeated": 0
+  }
+}

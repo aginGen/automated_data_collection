@@ -1,0 +1,102 @@
+{
+  "products": 1000,
+  "categories": 50,
+  "budget_rub": 3500,
+  "sensitivity_percent": 10,
+  "top_categories": [
+    {
+      "category": "Default",
+      "products": 152,
+      "median_gbp": 36.025,
+      "median_rub": 3884.45,
+      "budget_count": 65,
+      "budget_share": 0.427632
+    },
+    {
+      "category": "Nonfiction",
+      "products": 110,
+      "median_gbp": 32.15,
+      "median_rub": 3466.625,
+      "budget_count": 56,
+      "budget_share": 0.509091
+    },
+    {
+      "category": "Sequential Art",
+      "products": 75,
+      "median_gbp": 36.52,
+      "median_rub": 3937.82,
+      "budget_count": 31,
+      "budget_share": 0.413333
+    },
+    {
+      "category": "Add a comment",
+      "products": 67,
+      "median_gbp": 36.17,
+      "median_rub": 3900.08,
+      "budget_count": 27,
+      "budget_share": 0.402985
+    },
+    {
+      "category": "Fiction",
+      "products": 65,
+      "median_gbp": 39.72,
+      "median_rub": 4282.87,
+      "budget_count": 30,
+      "budget_share": 0.461538
+    },
+    {
+      "category": "Young Adult",
+      "products": 54,
+      "median_gbp": 36.61,
+      "median_rub": 3947.53,
+      "budget_count": 23,
+      "budget_share": 0.425926
+    },
+    {
+      "category": "Fantasy",
+      "products": 48,
+      "median_gbp": 43.58,
+      "median_rub": 4699.08,
+      "budget_count": 17,
+      "budget_share": 0.354167
+    },
+    {
+      "category": "Romance",
+      "products": 35,
+      "median_gbp": 34.53,
+      "median_rub": 3723.25,
+      "budget_count": 15,
+      "budget_share": 0.428571
+    }
+  ],
+  "scenarios": {
+    "previous": {
+      "rate_date": "2026-11-20",
+      "rub_per_gbp": 107.7202,
+      "budget_count": 444,
+      "budget_share": 0.444,
+      "median_rub": 3875.78
+    },
+    "current": {
+      "rate_date": "2026-11-21",
+      "rub_per_gbp": 107.8265,
+      "budget_count": 443,
+      "budget_share": 0.443,
+      "median_rub": 3879.59
+    },
+    "lower": {
+      "rate_date": null,
+      "rub_per_gbp": 97.0439,
+      "budget_count": 502,
+      "budget_share": 0.502,
+      "median_rub": 3491.64
+    },
+    "higher": {
+      "rate_date": null,
+      "rub_per_gbp": 118.6092,
+      "budget_count": 391,
+      "budget_share": 0.391,
+      "median_rub": 4267.56
+    }
+  }
+}
