@@ -46,4 +46,5 @@ alerts:
   error_share: 0.15
   limit_or_block_share: 0.05
   volume_change: 0.15
+  p95_ms: 2000
   no_new_records: 0

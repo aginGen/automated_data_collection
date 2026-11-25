@@ -73,10 +73,11 @@ class RunLog:
 
 def alert_report(report, settings):
     warnings = []
-    for metric in ("error_share", "limit_or_block_share", "volume_change"):
-        value = report.get(metric, 0)
-        if value > settings[metric]:
-            warnings.append({"metric": metric, "value": value, "threshold": settings[metric], "level": "warning"})
+    for metric in ("error_share", "limit_or_block_share", "volume_change", "p95_ms"):
+        value = report.get(metric)
+        threshold = settings.get(metric)
+        if value is not None and threshold is not None and value > threshold:
+            warnings.append({"metric": metric, "value": value, "threshold": threshold, "level": "warning"})
     if report.get("mode") == "incremental" and report.get("new_products") == settings["no_new_records"]:
         warnings.append({"metric": "no_new_records", "value": 0, "threshold": 0, "level": "info"})
     if report.get("status") in ("degraded", "red"):
